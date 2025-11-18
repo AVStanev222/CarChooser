@@ -1,4 +1,9 @@
 {
+  "scripts": {
+    "dev": "npm run dev --prefix carchooser",
+    "build": "npm run build --prefix carchooser",
+    "lint": "npm run lint --prefix carchooser"
+  },
   "dependencies": {
     "clsx": "^2.1.1",
     "framer-motion": "^12.23.24"

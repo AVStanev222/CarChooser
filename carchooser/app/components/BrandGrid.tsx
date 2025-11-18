@@ -5,13 +5,27 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import SectionTitle from "./SectionTitle";
 
-const brands = [
-  { name: "BMW", logo: "/brands/bmw.png" },
+type Brand = {
+  name: string;
+  logo?: string;
+};
+
+const brands: Brand[] = [
   { name: "Audi", logo: "/brands/audi.png" },
-  { name: "Mercedes", logo: "/brands/mercedes.png" },
-  { name: "Volkswagen", logo: "/brands/vw.png" },
+  { name: "Bentley", logo: "/brands/bentley.png" },
+  { name: "BMW", logo: "/brands/bmw.png" },
+  { name: "Ferrari", logo: "/brands/ferrari-removebg-preview.png" },
   { name: "Hyundai", logo: "/brands/hyundai.png" },
-  { name: "Kia", logo: "/brands/kia.png" },
+  { name: "Kia", logo: "/brands/kia-removebg-preview.png" },
+  { name: "Koenigsegg", logo: "/brands/koenigsegg-removebg-preview.png" },
+  { name: "Mercedes-Benz", logo: "/brands/mercedes.png" },
+  { name: "Mitsubishi", logo: "/brands/mitsubishi-removebg-preview.png" },
+  { name: "Opel", logo: "/brands/opel.png" },
+  { name: "Renault", logo: "/brands/renault-removebg-preview.png" },
+  { name: "Subaru", logo: "/brands/subaru-removebg-preview.png" },
+  { name: "Tesla", logo: "/brands/tesla.svg" },
+  { name: "Toyota", logo: "/brands/toyota-removebg-preview.png" },
+  { name: "Volkswagen", logo: "/brands/volkswagen-removebg-preview.png" },
 ];
 
 export default function BrandGrid() {
@@ -28,7 +42,7 @@ export default function BrandGrid() {
         </p>
 
         {/* Brand cards */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-5">
           {brands.map((brand) => (
             <motion.button
               key={brand.name}
@@ -37,13 +51,13 @@ export default function BrandGrid() {
               className="bg-[#17112c] hover:bg-[#21173d] rounded-xl border border-white/10 shadow-lg
                          flex flex-col items-center justify-center py-5 px-3 gap-3 cursor-pointer"
             >
-              <div className="h-12 w-12 rounded-full bg-black/40 flex items-center justify-center">
+              <div className="h-16 w-16 rounded-full bg-white/95 border border-white/30 flex items-center justify-center overflow-hidden shadow-inner">
                 {brand.logo ? (
                   <Image
                     src={brand.logo}
-                    alt={brand.name}
-                    width={32}
-                    height={32}
+                    alt={`${brand.name} logo`}
+                    width={56}
+                    height={56}
                     className="object-contain"
                   />
                 ) : (
