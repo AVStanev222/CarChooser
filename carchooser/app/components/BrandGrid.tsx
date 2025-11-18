@@ -2,6 +2,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 import Image from "next/image";
 import SectionTitle from "./SectionTitle";
 
@@ -10,7 +11,7 @@ type Brand = {
   logo?: string;
 };
 
-const brands: Brand[] = [
+export const brands: Brand[] = [
   { name: "Audi", logo: "/brands/audi.png" },
   { name: "Bentley", logo: "/brands/bentley.png" },
   { name: "BMW", logo: "/brands/bmw.png" },
@@ -28,7 +29,20 @@ const brands: Brand[] = [
   { name: "Volkswagen", logo: "/brands/volkswagen-removebg-preview.png" },
 ];
 
-export default function BrandGrid() {
+const FEATURED_NAMES = new Set(["Mercedes-Benz", "BMW", "Toyota"]);
+
+type BrandGridProps = {
+  variant?: "home" | "all";
+};
+
+export default function BrandGrid({ variant = "home" }: BrandGridProps) {
+  const featuredBrands = brands.filter((brand) => FEATURED_NAMES.has(brand.name));
+  const visibleBrands = variant === "home" ? featuredBrands : brands;
+  const gridClasses =
+    variant === "home"
+      ? "max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 justify-items-center"
+      : "grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-5";
+
   return (
     <section className="relative bg-[#0a051d] pb-16 pt-4">
       <div className="max-w-6xl mx-auto px-6">
@@ -42,8 +56,8 @@ export default function BrandGrid() {
         </p>
 
         {/* Brand cards */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-5">
-          {brands.map((brand) => (
+        <div className={gridClasses}>
+          {visibleBrands.map((brand) => (
             <motion.button
               key={brand.name}
               whileHover={{ scale: 1.06, y: -4 }}
@@ -72,11 +86,16 @@ export default function BrandGrid() {
         </div>
 
         {/* View all brands button */}
-        <div className="flex justify-center mt-10">
-          <button className="px-6 py-3 rounded-full bg-purple-600 hover:bg-purple-700 font-semibold text-white text-sm">
-            View All Brands
-          </button>
-        </div>
+        {variant === "home" && (
+          <div className="flex justify-center mt-10">
+            <Link
+              href="/brands"
+              className="px-6 py-3 rounded-full bg-purple-600 hover:bg-purple-700 font-semibold text-white text-sm inline-flex items-center justify-center"
+            >
+              View All Brands
+            </Link>
+          </div>
+        )}
       </div>
     </section>
   );
