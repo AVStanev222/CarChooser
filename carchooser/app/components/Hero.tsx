@@ -3,6 +3,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -30,12 +31,18 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-wrap items-center gap-4">
-            <button className="px-6 py-3 bg-purple-600 hover:bg-purple-700 transition rounded-full font-semibold text-white">
+            <Link
+              href="/cars"
+              className="px-6 py-3 bg-purple-600 hover:bg-purple-700 transition rounded-full font-semibold text-white"
+            >
               Explore Brands
-            </button>
-            <button className="px-6 py-3 rounded-full border border-white/20 text-sm text-gray-200 hover:bg-white/10 transition">
+            </Link>
+            <Link
+              href="/about"
+              className="px-6 py-3 rounded-full border border-white/20 text-sm text-gray-200 hover:bg-white/10 transition"
+            >
               Learn How CarChooser Works
-            </button>
+            </Link>
           </div>
 
           <div className="flex gap-4 pt-4 text-xs text-gray-400">

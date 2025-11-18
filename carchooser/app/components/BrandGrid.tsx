@@ -1,4 +1,4 @@
-// app/components/BrandGrid.tsx
+﻿// app/components/BrandGrid.tsx
 "use client";
 
 import { motion } from "framer-motion";
@@ -42,17 +42,28 @@ export default function BrandGrid({ variant = "home" }: BrandGridProps) {
     variant === "home"
       ? "max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 justify-items-center"
       : "grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-5";
+  const heading =
+    variant === "home" ? (
+      <>
+        Explore <span className="text-purple-400">Popular Brands</span>
+      </>
+    ) : (
+      <>
+        Browse <span className="text-purple-400">Every Brand</span>
+      </>
+    );
+  const description =
+    variant === "home"
+      ? "Learn more about every brand, their models, engines and real-world prices - all curated and kept up to date."
+      : "Pick any badge to start exploring specs, trims, and pricing for that brand soon.";
 
   return (
     <section className="relative bg-[#0a051d] pb-16 pt-4">
       <div className="max-w-6xl mx-auto px-6">
-        <SectionTitle>
-          Explore <span className="text-purple-400">Popular Brands</span>
-        </SectionTitle>
+        <SectionTitle>{heading}</SectionTitle>
 
         <p className="text-center text-gray-400 max-w-2xl mx-auto mb-10 text-sm md:text-base">
-          Learn more about every brand, their models, engines and real-world
-          prices — all curated and kept up to date.
+          {description}
         </p>
 
         {/* Brand cards */}
@@ -89,7 +100,7 @@ export default function BrandGrid({ variant = "home" }: BrandGridProps) {
         {variant === "home" && (
           <div className="flex justify-center mt-10">
             <Link
-              href="/brands"
+              href="/cars"
               className="px-6 py-3 rounded-full bg-purple-600 hover:bg-purple-700 font-semibold text-white text-sm inline-flex items-center justify-center"
             >
               View All Brands
