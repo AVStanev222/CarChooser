@@ -13,6 +13,7 @@ type School = {
   lat: number;
   lng: number;
   url: string;
+  bookLink: string;
 };
 
 const schools: School[] = [
@@ -24,6 +25,7 @@ const schools: School[] = [
     lat: 42.6977,
     lng: 23.3219,
     url: "https://vasilevi.com",
+    bookLink: "mailto:info@vasilevi.com?subject=Discovery%20call",
   },
   {
     name: "Avto-Shkola.bg",
@@ -33,6 +35,7 @@ const schools: School[] = [
     lat: 42.1354,
     lng: 24.7453,
     url: "https://www.avto-shkola.bg",
+    bookLink: "mailto:b.bochev@percenta.bg?subject=Discovery%20call",
   },
   {
     name: "Автошкола Валек",
@@ -42,6 +45,7 @@ const schools: School[] = [
     lat: 43.1541,
     lng: 27.9147,
     url: "https://shofiorskikursove-varna.com/?gad_source=1&gad_campaignid=8773370342&gbraid=0AAAAADrniWWRMYii6wqyl630iRrgcu2Sa&gclid=CjwKCAiAz_DIBhBJEiwAVH2XwKLcOcCR6ZGSuMKagpmkE2Oee6knWk1aeLnHDbwdWbFUaINn0x6VwRoCAMMQAvD_BwE",
+    bookLink: "mailto:valek@gmail.com?subject=Discovery%20call",
   },
   {
     name: "Автошкола Панайотов",
@@ -51,6 +55,7 @@ const schools: School[] = [
     lat: 43.8356,
     lng: 25.9657,
     url: "https://avtoshkola-panayotov.com",
+    bookLink: "mailto:panayotovcar@abv.bg?subject=Discovery%20call",
   },
   {
     name: "Автошкола Бургас – Кънчо Николов 2015",
@@ -60,6 +65,7 @@ const schools: School[] = [
     lat: 42.3648,
     lng: 27.4526,
     url: "https://www.avtoschool-burgas.bg",
+    bookLink: "mailto:info@avtoscool-burgas.bg?subject=Discovery%20call",
   },
 ];
 
@@ -190,6 +196,7 @@ export default function YoungDriversPage() {
     [selectedSchool]
   );
 
+
   return (
     <main className="min-h-screen bg-[#050214] text-white">
       <section className="border-b border-white/5 bg-gradient-to-b from-[#120a3a] to-transparent py-16">
@@ -304,12 +311,14 @@ export default function YoungDriversPage() {
               </span>
             </div>
             <div className="mt-6 flex flex-wrap gap-3">
-              <button className="rounded-full bg-white px-4 py-2 text-sm font-semibold text-[#050214] transition hover:bg-gray-100">
+              <Link
+                href={spotlightSchool.bookLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-full bg-white px-4 py-2 text-sm font-semibold text-[#050214] transition hover:bg-gray-100"
+              >
                 Book a discovery call
-              </button>
-              <button className="rounded-full border border-white/20 px-4 py-2 text-sm font-semibold text-white transition hover:border-white">
-                Share with a parent
-              </button>
+              </Link>
             </div>
           </div>
         )}
