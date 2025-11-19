@@ -62,8 +62,8 @@ export default function Hero() {
           <div className="absolute -inset-6 bg-purple-600/40 blur-3xl opacity-40 pointer-events-none" />
           <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
             <Image
-              src="/hero-car.jpg"
-              alt="Car in scenic landscape"
+              src="/homepage.png"
+              alt="CarChooser homepage preview"
               width={900}
               height={500}
               priority

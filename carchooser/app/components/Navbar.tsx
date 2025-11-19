@@ -1,18 +1,23 @@
 // app/components/Navbar.tsx
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <header className="w-full border-b border-white/5 bg-[#050214]/80 backdrop-blur z-30">
+    <header className="w-full border-b border-white/5 bg-[#050214]/80 backdrop-blur text-white">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2">
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-purple-600 text-xs font-bold">
-            CC
-          </div>
-          <span className="font-semibold tracking-tight">CarChooser</span>
+        <Link href="/" className="flex items-center gap-3">
+          <Image
+            src="/logo-carchooser.svg"
+            alt="CarChooser"
+            width={140}
+            height={40}
+            priority
+            className="h-10 w-auto"
+          />
         </Link>
 
         {/* Links */}
