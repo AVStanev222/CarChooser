@@ -1,7 +1,6 @@
 ﻿// app/components/BrandGrid.tsx
 "use client";
 
-import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import SectionTitle from "./SectionTitle";
@@ -69,12 +68,10 @@ export default function BrandGrid({ variant = "home" }: BrandGridProps) {
         {/* Brand cards */}
         <div className={gridClasses}>
           {visibleBrands.map((brand) => (
-            <motion.button
+            <button
               key={brand.name}
-              whileHover={{ scale: 1.06, y: -4 }}
-              transition={{ type: "spring", stiffness: 220, damping: 15 }}
               className="bg-[#17112c] hover:bg-[#21173d] rounded-xl border border-white/10 shadow-lg
-                         flex flex-col items-center justify-center py-5 px-3 gap-3 cursor-pointer"
+                         flex flex-col items-center justify-center py-5 px-3 gap-3 cursor-pointer transition-transform duration-200 hover:-translate-y-1 hover:scale-[1.02]"
             >
               <div className="h-16 w-16 rounded-full bg-white/95 border border-white/30 flex items-center justify-center overflow-hidden shadow-inner">
                 {brand.logo ? (
@@ -92,7 +89,7 @@ export default function BrandGrid({ variant = "home" }: BrandGridProps) {
               <span className="text-sm font-medium text-white">
                 {brand.name}
               </span>
-            </motion.button>
+            </button>
           ))}
         </div>
 
