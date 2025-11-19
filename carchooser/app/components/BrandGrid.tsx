@@ -12,13 +12,13 @@ type Brand = {
 };
 
 export const brands: Brand[] = [
-  { name: "Audi", logo: "/brands/audi.png" },
-  { name: "Bentley", logo: "/brands/bentley.png" },
-  { name: "BMW", logo: "/brands/bmw.png" },
-  { name: "Ferrari", logo: "/brands/ferrari-removebg-preview.png" },
+  { name: "Audi", logo: "/brands/audi.png", href: "/brands/audi" },
+  { name: "Bentley", logo: "/brands/bentley.png", href: "/brands/bentley" },
+  { name: "BMW", logo: "/brands/bmw.png", href: "/brands/bmw" },
+  { name: "Ferrari", logo: "/brands/ferrari-removebg-preview.png", href: "/brands/ferrari" },
   { name: "Hyundai", logo: "/brands/hyundai.png" },
   { name: "Kia", logo: "/brands/kia-removebg-preview.png" },
-  { name: "Koenigsegg", logo: "/brands/koenigsegg-removebg-preview.png" },
+  { name: "Koenigsegg", logo: "/brands/koenigsegg-removebg-preview.png", href: "/brands/koenigsegg" },
   { name: "Mercedes-Benz", logo: "/brands/mercedes.png" },
   { name: "Mitsubishi", logo: "/brands/mitsubishi-removebg-preview.png" },
   { name: "Opel", logo: "/brands/opel.png" },
