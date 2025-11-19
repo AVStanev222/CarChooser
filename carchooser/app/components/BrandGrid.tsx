@@ -8,6 +8,7 @@ import SectionTitle from "./SectionTitle";
 type Brand = {
   name: string;
   logo?: string;
+  href?: string;
 };
 
 export const brands: Brand[] = [
@@ -22,9 +23,9 @@ export const brands: Brand[] = [
   { name: "Mitsubishi", logo: "/brands/mitsubishi-removebg-preview.png" },
   { name: "Opel", logo: "/brands/opel.png" },
   { name: "Renault", logo: "/brands/renault-removebg-preview.png" },
-  { name: "Subaru", logo: "/brands/subaru-removebg-preview.png" },
+  { name: "Subaru", logo: "/brands/subaru-removebg-preview.png", href: "/brands/subaru" },
   { name: "Tesla", logo: "/brands/tesla.svg" },
-  { name: "Toyota", logo: "/brands/toyota-removebg-preview.png" },
+  { name: "Toyota", logo: "/brands/toyota-removebg-preview.png", href: "/brands/toyota" },
   { name: "Volkswagen", logo: "/brands/volkswagen-removebg-preview.png" },
 ];
 
@@ -67,15 +68,21 @@ export default function BrandGrid({ variant = "home" }: BrandGridProps) {
 
         {/* Brand cards */}
         <div className={gridClasses}>
-          {visibleBrands.map((brand) => (
-            <button
-              key={brand.name}
-              className="bg-[#17112c] hover:bg-[#21173d] rounded-xl border border-white/10 shadow-lg
-                         flex flex-col items-center justify-center py-5 px-3 gap-3 cursor-pointer transition-transform duration-200 hover:-translate-y-1 hover:scale-[1.02]"
-            >
-              <div className="h-16 w-16 rounded-full bg-white/95 border border-white/30 flex items-center justify-center overflow-hidden shadow-inner">
-                {brand.logo ? (
-                  <Image
+          {visibleBrands.map((brand) => {
+            const Card = brand.href ? Link : "div";
+            const cardProps = brand.href
+              ? { href: brand.href }
+              : { role: "presentation" };
+            return (
+              <Card
+                key={brand.name}
+                {...cardProps}
+                className="bg-[#17112c] hover:bg-[#21173d] rounded-xl border border-white/10 shadow-lg
+                           flex flex-col items-center justify-center py-5 px-3 gap-3 cursor-pointer transition-transform duration-200 hover:-translate-y-1 hover:scale-[1.02]"
+              >
+                <div className="h-16 w-16 rounded-full bg-white/95 border border-white/30 flex items-center justify-center overflow-hidden shadow-inner">
+                  {brand.logo ? (
+                    <Image
                     src={brand.logo}
                     alt={`${brand.name} logo`}
                     width={56}
@@ -86,18 +93,19 @@ export default function BrandGrid({ variant = "home" }: BrandGridProps) {
                   <span className="text-sm font-semibold">{brand.name[0]}</span>
                 )}
               </div>
-              <span className="text-sm font-medium text-white">
-                {brand.name}
-              </span>
-            </button>
-          ))}
+                <span className="text-sm font-medium text-white">
+                  {brand.name}
+                </span>
+              </Card>
+            );
+          })}
         </div>
 
         {/* View all brands button */}
         {variant === "home" && (
           <div className="flex justify-center mt-10">
             <Link
-              href="/cars"
+              href="/brands"
               className="px-6 py-3 rounded-full bg-purple-600 hover:bg-purple-700 font-semibold text-white text-sm inline-flex items-center justify-center"
             >
               View All Brands
