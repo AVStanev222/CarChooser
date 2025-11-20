@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import SectionTitle from "@/app/components/SectionTitle";
+import BackLink from "@/app/components/BackLink";
 import { toyotaModels } from "@/app/data/toyota";
 
 interface ToyotaModelPageProps {
@@ -32,6 +33,7 @@ export default function ToyotaModelPage({ params }: ToyotaModelPageProps) {
   return (
     <main className="min-h-screen bg-[#050214] text-white">
       <section className="max-w-5xl mx-auto px-6 pt-16 pb-20">
+        <BackLink href="/brands/toyota">Back to Toyota cars</BackLink>
         <SectionTitle>
           Toyota {car.model} <span className="text-purple-400">{car.year}</span>
         </SectionTitle>

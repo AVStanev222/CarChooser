@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import SectionTitle from "@/app/components/SectionTitle";
+import BackLink from "@/app/components/BackLink";
 import { subaruModels } from "@/app/data/subaru";
 
 interface SubaruModelPageProps {
@@ -30,6 +31,7 @@ export default function SubaruModelPage({ params }: SubaruModelPageProps) {
   return (
     <main className="min-h-screen bg-[#050214] text-white">
       <section className="max-w-5xl mx-auto px-6 pt-16 pb-20">
+        <BackLink href="/brands/subaru">Back to Subaru cars</BackLink>
         <SectionTitle>
           Subaru {car.model} <span className="text-purple-400">{car.year}</span>
         </SectionTitle>

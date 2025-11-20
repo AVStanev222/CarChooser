@@ -1,11 +1,13 @@
 import Link from "next/link";
 import SectionTitle from "@/app/components/SectionTitle";
+import BackLink from "@/app/components/BackLink";
 import { renaultModels } from "@/app/data/renault";
 
 export default function RenaultModelsPage() {
   return (
     <main className="min-h-screen bg-[#050214] text-white">
       <section className="max-w-6xl mx-auto px-6 pt-16 pb-12">
+        <BackLink href="/brands">Back to all brands</BackLink>
         <SectionTitle>
           Renault <span className="text-purple-400">Lineage</span>
         </SectionTitle>

@@ -1,11 +1,13 @@
 import Link from "next/link";
 import SectionTitle from "@/app/components/SectionTitle";
+import BackLink from "@/app/components/BackLink";
 import { mercedesModels } from "@/app/data/mercedes";
 
 export default function MercedesModelsPage() {
   return (
     <main className="min-h-screen bg-[#050214] text-white">
       <section className="max-w-6xl mx-auto px-6 pt-16 pb-12">
+        <BackLink href="/brands">Back to all brands</BackLink>
         <SectionTitle>
           Mercedes-Benz <span className="text-purple-400">Collection</span>
         </SectionTitle>

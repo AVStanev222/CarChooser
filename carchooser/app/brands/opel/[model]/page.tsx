@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import SectionTitle from "@/app/components/SectionTitle";
+import BackLink from "@/app/components/BackLink";
 import { opelModels } from "@/app/data/opel";
 
 interface OpelModelPageProps {
@@ -30,6 +31,7 @@ export default function OpelModelPage({ params }: OpelModelPageProps) {
   return (
     <main className="min-h-screen bg-[#050214] text-white">
       <section className="max-w-5xl mx-auto px-6 pt-16 pb-20">
+        <BackLink href="/brands/opel">Back to Opel cars</BackLink>
         <SectionTitle>
           Opel {car.model} <span className="text-purple-400">{car.year}</span>
         </SectionTitle>
