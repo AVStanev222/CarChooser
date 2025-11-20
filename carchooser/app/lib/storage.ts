@@ -2,12 +2,19 @@ import { randomBytes, randomUUID } from "crypto";
 import fs from "fs";
 import path from "path";
 
+export type CarBookmark = {
+  label: string;
+  path: string;
+};
+
 export type UserRecord = {
   id: string;
   email: string;
   name: string | null;
   image: string | null;
   hashedPassword: string | null;
+  recentCars: CarBookmark[];
+  pinnedCars: CarBookmark[];
   createdAt: string;
   updatedAt: string;
 };
@@ -19,8 +26,13 @@ export type SessionRecord = {
   createdAt: string;
 };
 
+type StoredUser = Omit<UserRecord, "recentCars" | "pinnedCars"> & {
+  recentCars?: Array<CarBookmark | string>;
+  pinnedCars?: Array<CarBookmark | string>;
+};
+
 type DatabaseFile = {
-  users: UserRecord[];
+  users: StoredUser[];
   sessions: SessionRecord[];
 };
 
@@ -51,14 +63,16 @@ function writeDatabase(data: DatabaseFile) {
 
 export function findUserByEmail(email: string) {
   const db = readDatabase();
-  return db.users.find(
-    (user) => user.email?.toLowerCase() === email.toLowerCase(),
+  const user = db.users.find(
+    (record) => record.email?.toLowerCase() === email.toLowerCase(),
   );
+  return normalizeUser(user);
 }
 
 export function findUserById(userId: string) {
   const db = readDatabase();
-  return db.users.find((user) => user.id === userId);
+  const user = db.users.find((record) => record.id === userId);
+  return normalizeUser(user);
 }
 
 export function createUserRecord(data: {
@@ -75,6 +89,8 @@ export function createUserRecord(data: {
     name: data.name,
     hashedPassword: data.hashedPassword,
     image: data.image ?? null,
+    recentCars: [],
+    pinnedCars: [],
     createdAt: now,
     updatedAt: now,
   };
@@ -99,7 +115,7 @@ export function upsertUserByEmail(data: {
     existing.image = data.image ?? existing.image;
     existing.updatedAt = now;
     writeDatabase(db);
-    return existing;
+    return normalizeUser(existing)!;
   }
 
   const user: UserRecord = {
@@ -108,6 +124,8 @@ export function upsertUserByEmail(data: {
     name: data.name ?? null,
     image: data.image ?? null,
     hashedPassword: null,
+    recentCars: [],
+    pinnedCars: [],
     createdAt: now,
     updatedAt: now,
   };
@@ -152,7 +170,9 @@ export function findSessionWithUser(token: string) {
     return null;
   }
 
-  const user = db.users.find((record) => record.id === session.userId);
+  const user = normalizeUser(
+    db.users.find((record) => record.id === session.userId),
+  );
 
   if (!user) {
     deleteSessionByToken(token);
@@ -160,4 +180,82 @@ export function findSessionWithUser(token: string) {
   }
 
   return { session, user };
+}
+
+function normalizeBookmark(entry: CarBookmark | string): CarBookmark {
+  if (typeof entry === "string") {
+    const slug = entry
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/gi, "-")
+      .replace(/^-+|-+$/g, "");
+    return {
+      label: entry,
+      path: `/account/history/${slug || "legacy"}`,
+    };
+  }
+  return entry;
+}
+
+function normalizeBookmarkArray(entries?: Array<CarBookmark | string>) {
+  if (!Array.isArray(entries)) {
+    return [];
+  }
+
+  return entries.map((entry) => normalizeBookmark(entry));
+}
+
+function normalizeUser(user?: StoredUser | null): UserRecord | undefined {
+  if (!user) {
+    return undefined;
+  }
+
+  return {
+    ...user,
+    recentCars: normalizeBookmarkArray(user.recentCars),
+    pinnedCars: normalizeBookmarkArray(user.pinnedCars),
+  };
+}
+
+export function recordRecentCar(userId: string, car: CarBookmark) {
+  const db = readDatabase();
+  const user = db.users.find((record) => record.id === userId);
+
+  if (!user) {
+    return undefined;
+  }
+
+  const existing = normalizeBookmarkArray(user.recentCars);
+  const updated = [
+    car,
+    ...existing.filter((entry) => entry.path !== car.path),
+  ].slice(0, 10);
+
+  user.recentCars = updated;
+  user.updatedAt = new Date().toISOString();
+  writeDatabase(db);
+  return normalizeUser(user);
+}
+
+export function togglePinnedCar(userId: string, car: CarBookmark) {
+  const db = readDatabase();
+  const user = db.users.find((record) => record.id === userId);
+
+  if (!user) {
+    return undefined;
+  }
+
+  const existing = normalizeBookmarkArray(user.pinnedCars);
+  const exists = existing.find((entry) => entry.path === car.path);
+  let updated: CarBookmark[];
+
+  if (exists) {
+    updated = existing.filter((entry) => entry.path !== car.path);
+  } else {
+    updated = [car, ...existing].slice(0, 10);
+  }
+
+  user.pinnedCars = updated;
+  user.updatedAt = new Date().toISOString();
+  writeDatabase(db);
+  return normalizeUser(user);
 }

@@ -7,7 +7,6 @@ export default function CarsPage() {
     <main className="min-h-screen bg-[#050214] text-white">
       <Navbar />
       <section className="max-w-6xl mx-auto px-6 pt-16 pb-12">
-        <BackLink href="/">Back to homepage</BackLink>
         <div className="max-w-3xl">
           <p className="text-sm uppercase tracking-[0.25em] text-purple-300/80">
             All brands

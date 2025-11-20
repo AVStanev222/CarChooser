@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { getSessionUser } from "@/app/lib/auth";
+import { getSessionUser, deleteSession } from "@/app/lib/auth";
 
 export async function GET() {
   const user = await getSessionUser();
@@ -14,6 +14,14 @@ export async function GET() {
       email: user.email,
       name: user.name,
       image: user.image,
+      createdAt: user.createdAt,
+      recentCars: user.recentCars ?? [],
+      pinnedCars: user.pinnedCars ?? [],
     },
   });
+}
+
+export async function DELETE() {
+  await deleteSession();
+  return NextResponse.json({ success: true });
 }

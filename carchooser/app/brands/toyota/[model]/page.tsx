@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import SectionTitle from "@/app/components/SectionTitle";
 import BackLink from "@/app/components/BackLink";
 import { toyotaModels } from "@/app/data/toyota";
+import CarActivityTracker from "@/app/components/CarActivityTracker";
 
 interface ToyotaModelPageProps {
   params: {
@@ -38,6 +39,10 @@ export default function ToyotaModelPage({ params }: ToyotaModelPageProps) {
           Toyota {car.model} <span className="text-purple-400">{car.year}</span>
         </SectionTitle>
         <p className="text-gray-300 max-w-3xl mb-10">{car.summary}</p>
+        <CarActivityTracker
+          carLabel={`Toyota ${car.model} ${car.year}`}
+          carPath={`/brands/toyota/${car.slug}`}
+        />
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-12">
           <div className="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-4">
