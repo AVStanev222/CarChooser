@@ -34,9 +34,12 @@ export default function Navbar() {
           >
             Under 18? Driving Schools
           </Link>
-          <button className="rounded-full bg-white px-4 py-2 text-sm font-semibold text-black transition hover:bg-gray-200">
-            Sign In
-          </button>
+          <Link
+            href="/signup"
+            className="rounded-full bg-white px-4 py-2 text-sm font-semibold text-black transition hover:bg-gray-200"
+          >
+            Register
+          </Link>
         </div>
       </nav>
     </header>
