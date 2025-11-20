@@ -22,11 +22,11 @@ export const brands: Brand[] = [
   { name: "Mercedes-Benz", logo: "/brands/mercedes.png", href: "/brands/mercedes-benz" },
   { name: "Mitsubishi", logo: "/brands/mitsubishi-removebg-preview.png", href: "/brands/mitsubishi" },
   { name: "Opel", logo: "/brands/opel.png", href: "/brands/opel" },
-  { name: "Renault", logo: "/brands/renault-removebg-preview.png" },
+  { name: "Renault", logo: "/brands/renault-removebg-preview.png", href: "/brands/renault" },
   { name: "Subaru", logo: "/brands/subaru-removebg-preview.png", href: "/brands/subaru" },
   { name: "Tesla", logo: "/brands/tesla.svg" },
   { name: "Toyota", logo: "/brands/toyota-removebg-preview.png", href: "/brands/toyota" },
-  { name: "Volkswagen", logo: "/brands/volkswagen-removebg-preview.png" },
+  { name: "Volkswagen", logo: "/brands/volkswagen-removebg-preview.png", href: "/brands/volkswagen" },
 ];
 
 const FEATURED_NAMES = new Set(["Mercedes-Benz", "BMW", "Toyota"]);
