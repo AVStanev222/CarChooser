@@ -2,6 +2,7 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 import { getSessionUser } from "@/app/lib/auth";
 import LogoutButton from "./sections/LogoutButton";
+import RecentCarsPanel from "./sections/RecentCarsPanel";
 
 function placeholderItems(message: string) {
   return (
@@ -41,37 +42,7 @@ export default async function AccountPage() {
         </header>
 
         <section className="grid gap-8 lg:grid-cols-2">
-          <article className="rounded-3xl border border-white/10 bg-black/30 p-6">
-            <div className="flex items-center justify-between">
-              <div>
-                <p className="text-sm uppercase tracking-wide text-white/50">
-                  Last viewed cars
-                </p>
-                <h2 className="text-2xl font-semibold text-white">
-                  Continue your research
-                </h2>
-              </div>
-              <Link
-                href="/cars"
-                className="rounded-full border border-white/20 px-4 py-2 text-sm text-white transition hover:border-white hover:bg-white/10"
-              >
-                Browse cars
-              </Link>
-            </div>
-            <div className="mt-4 space-y-3">
-              {recent.length
-                ? recent.map((entry) => (
-                    <Link
-                      key={entry.path}
-                      href={entry.path}
-                      className="block rounded-2xl border border-white/5 bg-white/5 px-4 py-3 text-white/90 transition hover:border-white/30 hover:bg-white/10"
-                    >
-                      {entry.label}
-                    </Link>
-                  ))
-                : placeholderItems("No browsing history yet. Explore to see it here.")}
-            </div>
-          </article>
+          <RecentCarsPanel initialCars={recent} />
 
           <article className="rounded-3xl border border-white/10 bg-black/30 p-6">
             <div className="flex items-center justify-between">

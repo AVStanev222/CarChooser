@@ -1,6 +1,6 @@
 import BrandGrid from "../components/BrandGrid";
 import Navbar from "../components/Navbar";
-import BackLink from "../components/BackLink";
+import CarGuideChat from "../components/CarGuideChat";
 
 export default function CarsPage() {
   return (
@@ -20,6 +20,7 @@ export default function CarsPage() {
             notes so that the Cars page becomes your central garage.
           </p>
         </div>
+        <CarGuideChat />
       </section>
       <BrandGrid variant="all" />
     </main>

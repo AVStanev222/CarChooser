@@ -105,7 +105,7 @@ export default function BrandGrid({ variant = "home" }: BrandGridProps) {
         {variant === "home" && (
           <div className="flex justify-center mt-10">
             <Link
-              href="/brands"
+              href="/cars"
               className="px-6 py-3 rounded-full bg-purple-600 hover:bg-purple-700 font-semibold text-white text-sm inline-flex items-center justify-center"
             >
               View All Brands

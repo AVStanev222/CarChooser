@@ -16,6 +16,7 @@ import { volkswagenModels } from "@/app/data/volkswagen";
 
 export type CatalogCar = {
   brand: string;
+  path: string;
   slug: string;
   model: string;
   year: number;
@@ -66,33 +67,35 @@ const parseEuroRange = (
 };
 
 const collections = [
-  { brand: "Audi", models: audiModels },
-  { brand: "Bentley", models: bentleyModels },
-  { brand: "BMW", models: bmwModels },
-  { brand: "Ferrari", models: ferrariModels },
-  { brand: "Hyundai", models: hyundaiModels },
-  { brand: "Kia", models: kiaModels },
-  { brand: "Koenigsegg", models: koenigseggModels },
-  { brand: "Mercedes-Benz", models: mercedesModels },
-  { brand: "Mitsubishi", models: mitsubishiModels },
-  { brand: "Opel", models: opelModels },
-  { brand: "Renault", models: renaultModels },
-  { brand: "Subaru", models: subaruModels },
-  { brand: "Tesla", models: teslaModels },
-  { brand: "Toyota", models: toyotaModels },
-  { brand: "Volkswagen", models: volkswagenModels },
+  { brand: "Audi", segment: "audi", models: audiModels },
+  { brand: "Bentley", segment: "bentley", models: bentleyModels },
+  { brand: "BMW", segment: "bmw", models: bmwModels },
+  { brand: "Ferrari", segment: "ferrari", models: ferrariModels },
+  { brand: "Hyundai", segment: "hyundai", models: hyundaiModels },
+  { brand: "Kia", segment: "kia", models: kiaModels },
+  { brand: "Koenigsegg", segment: "koenigsegg", models: koenigseggModels },
+  { brand: "Mercedes-Benz", segment: "mercedes-benz", models: mercedesModels },
+  { brand: "Mitsubishi", segment: "mitsubishi", models: mitsubishiModels },
+  { brand: "Opel", segment: "opel", models: opelModels },
+  { brand: "Renault", segment: "renault", models: renaultModels },
+  { brand: "Subaru", segment: "subaru", models: subaruModels },
+  { brand: "Tesla", segment: "tesla", models: teslaModels },
+  { brand: "Toyota", segment: "toyota", models: toyotaModels },
+  { brand: "Volkswagen", segment: "volkswagen", models: volkswagenModels },
 ];
 
-export const catalogCars: CatalogCar[] = collections.flatMap(({ brand, models }) =>
-  models.map((model) => {
-    const priceNewValue = parseEuroValue(model.priceNew);
-    const priceRange = parseEuroRange(model.priceUsed);
-    return {
-      brand,
-      ...model,
-      priceNewValue,
-      priceUsedMin: priceRange.min,
-      priceUsedMax: priceRange.max,
-    };
-  }),
+export const catalogCars: CatalogCar[] = collections.flatMap(
+  ({ brand, segment, models }) =>
+    models.map((model) => {
+      const priceNewValue = parseEuroValue(model.priceNew);
+      const priceRange = parseEuroRange(model.priceUsed);
+      return {
+        brand,
+        path: `/brands/${segment}/${model.slug}`,
+        ...model,
+        priceNewValue,
+        priceUsedMin: priceRange.min,
+        priceUsedMax: priceRange.max,
+      };
+    }),
 );

@@ -32,7 +32,7 @@ export default function KoenigseggModelPage({ params }: KoenigseggModelPageProps
   return (
     <main className="min-h-screen bg-[#050214] text-white">
       <section className="max-w-5xl mx-auto px-6 pt-16 pb-20">
-        <BackLink href="/brands/koenigsegg">Back to Koenigsegg cars</BackLink>
+        <BackLink href="/cars">Back to all brands</BackLink>
         <SectionTitle>
           Koenigsegg {car.model} <span className="text-purple-400">{car.year}</span>
         </SectionTitle>

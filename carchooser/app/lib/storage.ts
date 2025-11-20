@@ -259,3 +259,18 @@ export function togglePinnedCar(userId: string, car: CarBookmark) {
   writeDatabase(db);
   return normalizeUser(user);
 }
+
+export function removeRecentCar(userId: string, carPath: string) {
+  const db = readDatabase();
+  const user = db.users.find((record) => record.id === userId);
+
+  if (!user) {
+    return undefined;
+  }
+
+  const existing = normalizeBookmarkArray(user.recentCars);
+  user.recentCars = existing.filter((entry) => entry.path !== carPath);
+  user.updatedAt = new Date().toISOString();
+  writeDatabase(db);
+  return normalizeUser(user);
+}

@@ -7,7 +7,7 @@ export default function KoenigseggModelsPage() {
   return (
     <main className="min-h-screen bg-[#050214] text-white">
       <section className="max-w-6xl mx-auto px-6 pt-16 pb-12">
-        <BackLink href="/brands">Back to all brands</BackLink>
+        <BackLink href="/cars">Back to all brands</BackLink>
         <SectionTitle>
           Koenigsegg <span className="text-purple-400">Hypercars</span>
         </SectionTitle>

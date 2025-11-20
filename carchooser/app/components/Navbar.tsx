@@ -64,7 +64,7 @@ export default function Navbar() {
             <Link href="/" className="transition hover:text-white">
               Home
             </Link>
-            <Link href="/brands" className="transition hover:text-white">
+            <Link href="/cars" className="transition hover:text-white">
               Brands
             </Link>
             <Link
