@@ -498,6 +498,45 @@ VALUES
   ((SELECT id FROM public.brands WHERE name = 'Volkswagen' LIMIT 1), 'ID.3', 2021, 'Electric', 150, 'Electric', '15 kWh/100km', 'RWD', 'Electric Hatchback', '€35,000', '€28,000–€32,000', 35000.00, 28000.00, 32000.00, (SELECT id FROM public.fuel_types WHERE name = 'Electric'), (SELECT id FROM public.drive_types WHERE name = 'RWD'), (SELECT id FROM public.body_types WHERE name = 'Electric Hatchback'), 15.0, 'kWh/100km')
   ((SELECT id FROM public.brands WHERE name = 'Volkswagen' LIMIT 1), 'ID.4', 2021, 'Electric', 204, 'Electric', '18 kWh/100km', 'RWD / AWD', 'Electric SUV', '€42,000', '€35,000–€40,000', 42000.00, 35000.00, 40000.00, (SELECT id FROM public.fuel_types WHERE name = 'Electric'), (SELECT id FROM public.drive_types WHERE name = 'RWD / AWD'), (SELECT id FROM public.body_types WHERE name = 'Electric SUV'), 18.0, 'kWh/100km');
 
+-- TESLA entries
+INSERT INTO public.cars (
+  brand_id,
+  model,
+  year,
+  engine,
+  horsepower,
+  fuel,
+  consumption,
+  drivetrain,
+  body_type,
+  price_new,
+  price_used,
+  price_new_eur,
+  price_used_min_eur,
+  price_used_max_eur,
+  fuel_type_id,
+  drive_type_id,
+  body_type_id,
+  consumption_value,
+  consumption_unit
+)
+VALUES
+  ((SELECT id FROM public.brands WHERE name = 'Tesla' LIMIT 1), 'Model S', 2014, 'Electric', 380, 'Electric', '20 kWh/100km', 'RWD', 'Electric Sedan', '€70,000', '€25,000–€30,000', 70000.00, 25000.00, 30000.00, (SELECT id FROM public.fuel_types WHERE name = 'Electric'), (SELECT id FROM public.drive_types WHERE name = 'RWD'), (SELECT id FROM public.body_types WHERE name = 'Electric Sedan'), 20.0, 'kWh/100km')
+  ((SELECT id FROM public.brands WHERE name = 'Tesla' LIMIT 1), 'Model S P90D', 2016, 'Electric', 762, 'Electric', '22 kWh/100km', 'AWD', 'Performance Sedan', '€110,000', '€40,000–€55,000', 110000.00, 40000.00, 55000.00, (SELECT id FROM public.fuel_types WHERE name = 'Electric'), (SELECT id FROM public.drive_types WHERE name = 'AWD'), (SELECT id FROM public.body_types WHERE name = 'Performance Sedan'), 22.0, 'kWh/100km')
+  ((SELECT id FROM public.brands WHERE name = 'Tesla' LIMIT 1), 'Model S Long Range', 2020, 'Electric', 670, 'Electric', '18 kWh/100km', 'AWD', 'Electric Sedan', '€90,000', '€70,000–€80,000', 90000.00, 70000.00, 80000.00, (SELECT id FROM public.fuel_types WHERE name = 'Electric'), (SELECT id FROM public.drive_types WHERE name = 'AWD'), (SELECT id FROM public.body_types WHERE name = 'Electric Sedan'), 18.0, 'kWh/100km')
+  ((SELECT id FROM public.brands WHERE name = 'Tesla' LIMIT 1), 'Model 3', 2018, 'Electric', 283, 'Electric', '14 kWh/100km', 'RWD', 'Sedan', '€45,000', '€25,000–€30,000', 45000.00, 25000.00, 30000.00, (SELECT id FROM public.fuel_types WHERE name = 'Electric'), (SELECT id FROM public.drive_types WHERE name = 'RWD'), (SELECT id FROM public.body_types WHERE name = 'Sedan'), 14.0, 'kWh/100km')
+  ((SELECT id FROM public.brands WHERE name = 'Tesla' LIMIT 1), 'Model 3 Performance', 2021, 'Electric', 490, 'Electric', '16 kWh/100km', 'AWD', 'Performance Sedan', '€60,000', '€45,000–€55,000', 60000.00, 45000.00, 55000.00, (SELECT id FROM public.fuel_types WHERE name = 'Electric'), (SELECT id FROM public.drive_types WHERE name = 'AWD'), (SELECT id FROM public.body_types WHERE name = 'Performance Sedan'), 16.0, 'kWh/100km')
+  ((SELECT id FROM public.brands WHERE name = 'Tesla' LIMIT 1), 'Model Y', 2021, 'Electric', 351, 'Electric', '16.5 kWh/100km', 'AWD', 'Crossover', '€60,000', '€50,000–€55,000', 60000.00, 50000.00, 55000.00, (SELECT id FROM public.fuel_types WHERE name = 'Electric'), (SELECT id FROM public.drive_types WHERE name = 'AWD'), (SELECT id FROM public.body_types WHERE name = 'Crossover'), 16.5, 'kWh/100km')
+  ((SELECT id FROM public.brands WHERE name = 'Tesla' LIMIT 1), 'Model Y Long Range', 2022, 'Electric', 384, 'Electric', '15.5 kWh/100km', 'AWD', 'Crossover', '€63,000', '€52,000–€56,000', 63000.00, 52000.00, 56000.00, (SELECT id FROM public.fuel_types WHERE name = 'Electric'), (SELECT id FROM public.drive_types WHERE name = 'AWD'), (SELECT id FROM public.body_types WHERE name = 'Crossover'), 15.5, 'kWh/100km')
+  ((SELECT id FROM public.brands WHERE name = 'Tesla' LIMIT 1), 'Model X', 2016, 'Electric', 518, 'Electric', '23 kWh/100km', 'AWD', 'SUV', '€100,000', '€38,000–€50,000', 100000.00, 38000.00, 50000.00, (SELECT id FROM public.fuel_types WHERE name = 'Electric'), (SELECT id FROM public.drive_types WHERE name = 'AWD'), (SELECT id FROM public.body_types WHERE name = 'SUV'), 23.0, 'kWh/100km')
+  ((SELECT id FROM public.brands WHERE name = 'Tesla' LIMIT 1), 'Model X P100D', 2017, 'Electric', 778, 'Electric', '25 kWh/100km', 'AWD', 'Performance SUV', '€140,000', '€60,000–€75,000', 140000.00, 60000.00, 75000.00, (SELECT id FROM public.fuel_types WHERE name = 'Electric'), (SELECT id FROM public.drive_types WHERE name = 'AWD'), (SELECT id FROM public.body_types WHERE name = 'Performance SUV'), 25.0, 'kWh/100km')
+  ((SELECT id FROM public.brands WHERE name = 'Tesla' LIMIT 1), 'Model X Long Range', 2021, 'Electric', 670, 'Electric', '22 kWh/100km', 'AWD', 'Luxury SUV', '€115,000', '€95,000–€110,000', 115000.00, 95000.00, 110000.00, (SELECT id FROM public.fuel_types WHERE name = 'Electric'), (SELECT id FROM public.drive_types WHERE name = 'AWD'), (SELECT id FROM public.body_types WHERE name = 'Luxury SUV'), 22.0, 'kWh/100km')
+  ((SELECT id FROM public.brands WHERE name = 'Tesla' LIMIT 1), 'Cybertruck AWD', 2024, 'Electric', 600, 'Electric', '21 kWh/100km', 'AWD', 'Pickup', '€60,000', '€80,000–€95,000', 60000.00, 80000.00, 95000.00, (SELECT id FROM public.fuel_types WHERE name = 'Electric'), (SELECT id FROM public.drive_types WHERE name = 'AWD'), (SELECT id FROM public.body_types WHERE name = 'Pickup'), 21.0, 'kWh/100km')
+  ((SELECT id FROM public.brands WHERE name = 'Tesla' LIMIT 1), 'Cybertruck Tri-Motor', 2024, 'Electric', 845, 'Electric', '24 kWh/100km', 'AWD', 'Pickup', '€80,000', '€100,000–€120,000', 80000.00, 100000.00, 120000.00, (SELECT id FROM public.fuel_types WHERE name = 'Electric'), (SELECT id FROM public.drive_types WHERE name = 'AWD'), (SELECT id FROM public.body_types WHERE name = 'Pickup'), 24.0, 'kWh/100km')
+  ((SELECT id FROM public.brands WHERE name = 'Tesla' LIMIT 1), 'Roadster', 2010, 'Electric', 288, 'Electric', '17 kWh/100km', 'RWD', 'Sports Car', '€110,000', '€70,000–€80,000', 110000.00, 70000.00, 80000.00, (SELECT id FROM public.fuel_types WHERE name = 'Electric'), (SELECT id FROM public.drive_types WHERE name = 'RWD'), (SELECT id FROM public.body_types WHERE name = 'Sports Car'), 17.0, 'kWh/100km')
+  ((SELECT id FROM public.brands WHERE name = 'Tesla' LIMIT 1), 'Roadster', 2025, 'Electric', 1100, 'Electric', '20 kWh/100km', 'AWD', 'Hyper-EV', '€200,000', 'N/A', 200000.00, 0.00, 0.00, (SELECT id FROM public.fuel_types WHERE name = 'Electric'), (SELECT id FROM public.drive_types WHERE name = 'AWD'), (SELECT id FROM public.body_types WHERE name = 'Hyper-EV'), 20.0, 'kWh/100km')
+  ((SELECT id FROM public.brands WHERE name = 'Tesla' LIMIT 1), 'Semi', 2023, 'Electric', 1000, 'Electric', '30 kWh/100km', 'AWD', 'Truck', '€150,000', '€130,000–€150,000', 150000.00, 130000.00, 150000.00, (SELECT id FROM public.fuel_types WHERE name = 'Electric'), (SELECT id FROM public.drive_types WHERE name = 'AWD'), (SELECT id FROM public.body_types WHERE name = 'Truck'), 30.0, 'kWh/100km');
+
 -- SUBARU entries
 INSERT INTO public.cars (
   brand_id,

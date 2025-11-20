@@ -24,7 +24,7 @@ export const brands: Brand[] = [
   { name: "Opel", logo: "/brands/opel.png", href: "/brands/opel" },
   { name: "Renault", logo: "/brands/renault-removebg-preview.png", href: "/brands/renault" },
   { name: "Subaru", logo: "/brands/subaru-removebg-preview.png", href: "/brands/subaru" },
-  { name: "Tesla", logo: "/brands/tesla.svg" },
+  { name: "Tesla", logo: "/brands/tesla.svg", href: "/brands/tesla" },
   { name: "Toyota", logo: "/brands/toyota-removebg-preview.png", href: "/brands/toyota" },
   { name: "Volkswagen", logo: "/brands/volkswagen-removebg-preview.png", href: "/brands/volkswagen" },
 ];
