@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import SectionTitle from "@/app/components/SectionTitle";
+import VehicleImageGallery from "@/app/components/VehicleImageGallery";
 import BackLink from "@/app/components/BackLink";
 import { volkswagenModels } from "@/app/data/volkswagen";
 import CarActivityTracker from "@/app/components/CarActivityTracker";
@@ -43,16 +44,7 @@ export default function VolkswagenModelPage({ params }: VolkswagenModelPageProps
         />
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-12">
-          <div className="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {Array.from({ length: 3 }).map((_, index) => (
-              <div
-                key={index}
-                className="h-48 rounded-2xl border border-dashed border-white/20 flex items-center justify-center text-sm text-gray-400 bg-[#100826]"
-              >
-                Add photo {index + 1}
-              </div>
-            ))}
-          </div>
+          <VehicleImageGallery brand="Volkswagen" model={car.model} year={car.year} slug={car.slug} />
           <div className="bg-[#17112c] border border-white/10 rounded-2xl p-5 shadow-lg">
             <h2 className="text-lg font-semibold mb-4">Key Specs</h2>
             <dl className="space-y-3 text-sm">
