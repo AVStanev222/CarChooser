@@ -22,6 +22,7 @@ const hyundaiKey = (slug: string) => buildManualImageKey("Hyundai", slug);
 const kiaKey = (slug: string) => buildManualImageKey("Kia", slug);
 const bmwKey = (slug: string) => buildManualImageKey("BMW", slug);
 const bentleyKey = (slug: string) => buildManualImageKey("Bentley", slug);
+const koenigseggKey = (slug: string) => buildManualImageKey("Koenigsegg", slug);
 
 // Extend this map with additional models or brands if you have static image URLs.
 export const manualVehicleImages: ManualVehicleImageMap = {
@@ -748,6 +749,82 @@ export const manualVehicleImages: ManualVehicleImageMap = {
     front: "https://upload.wikimedia.org/wikipedia/commons/d/d9/2018_Bentley_Mulsanne_Speed_in_Glacier_White%2C_front_right.jpg",
     rear: "https://upload.wikimedia.org/wikipedia/commons/7/7d/2017_Bentley_Mulsanne_EWB_in_Peacock_Metallic%2C_rear_right.jpg",
     interior: "https://upload.wikimedia.org/wikipedia/commons/8/89/2017_Bentley_Mulsanne_EWB_interior.jpg",
+  },
+
+  [koenigseggKey("cc8s-2002")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/a/ab/Koenigsegg_CC8S_%28front%29.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/e/ef/Geneva_Motor_Show_2015_Koenigsegg_CC8S_%2824521144705%29.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/b/b4/2008_Koenigsegg_CCX_in_Silver%2C_interior.jpg",
+  },
+  [koenigseggKey("ccr-2004")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/6/66/Koenigsegg_CCR_KN05EGG.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/8/83/Koenigsegg_CCR_%285023387556%29.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/c/ce/Koenigsegg_ccx_interior_-_AIMS.JPG",
+  },
+  [koenigseggKey("ccx-2008")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/a/a7/Koenigsegg_CCX_For_Anija_Car_Front_%28NEW%29.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/8/8c/2008_Koenigsegg_CCX_in_Silver%2C_rear_right.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/b/b4/2008_Koenigsegg_CCX_in_Silver%2C_interior.jpg",
+  },
+  [koenigseggKey("agera-2011")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/a/a6/Koenigsegg_Agera_RS_at_Bridgehampton%2C_front_right.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/f/f7/2012_Koenigsegg_Agera_S_Rear_SCD24.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/7/78/KoenigseggAgeraR-interior.jpg",
+  },
+  [koenigseggKey("agera-r-2013")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/a/ac/Agera_RS_Naraya_front.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/e/e5/Koenigsegg_Agera_R_%285488114439%29.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/5/50/Koenigsegg_Agera_R_%285488113699%29.jpg",
+  },
+  [koenigseggKey("one-1-2015")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/c/c2/Koenigsegg_One-1_-_Gen%C3%A8ve_2014_-_01.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/1/1d/Koenigsegg_One-1_-_Gen%C3%A8ve_2014_-_02.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/7/78/KoenigseggAgeraR-interior.jpg",
+  },
+  [koenigseggKey("regera-2016")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/4/4c/Koenigsegg_Regera_Front.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/d/d6/2019_Koenigsegg_Regera_Rear_Side_Detail.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/b/b3/Swedish_Blue_Koenigsegg_Regera_d%E2%80%99Elegance_at_GIMS_2018_%28Ank_Kumar%29_04.jpg",
+  },
+  [koenigseggKey("jesko-2020")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/3/35/Koenigsegg_Jesko_at_Bridgehampton_C%26C%2C_front_right.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/4/4a/Koenigsegg_Jesko%2C_GIMS_2019%2C_Le_Grand-Saconnex_%28GIMS0844%29.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/5/5c/Koenigsegg_Jesko_Absolut_Lego_Technic_%28interior%29.jpg",
+  },
+  [koenigseggKey("jesko-absolut-2021")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/4/45/2024_Koenigsegg_Jesko_Absolut_2.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/d/de/2025_Koenigsegg_Jesko_Absolut_7389_FOS25.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/5/50/Koenigsegg_Jesko_Absolut_Lego_Technic_%28Interior%29.jpg",
+  },
+  [koenigseggKey("gemera-2023")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/7/75/Koenigsegg_Gemera_%282022%29_%2852571686589%29.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/d/df/Koenigsegg_Gemera_%282022%29_%2852571859105%29.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/b/b3/Koenigsegg_Gemera_%282022%29_%2852571939473%29.jpg",
   },
 
 };
