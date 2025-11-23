@@ -4,15 +4,16 @@ import { createSessionRecord, deleteSessionByToken, findSessionWithUser } from "
 const SESSION_COOKIE = "cc_session";
 const SESSION_MAX_AGE = 60 * 60 * 24 * 30; // 30 days
 
-function getCookieStore() {
-  return cookies();
+async function getCookieStore() {
+  return await cookies();
 }
 
 export async function createSession(userId: string) {
   const expires = new Date(Date.now() + SESSION_MAX_AGE * 1000);
   const { token } = createSessionRecord(userId, expires);
 
-  getCookieStore().set({
+  const cookieStore = await getCookieStore();
+  cookieStore.set({
     name: SESSION_COOKIE,
     value: token,
     httpOnly: true,
@@ -24,7 +25,7 @@ export async function createSession(userId: string) {
 }
 
 export async function deleteSession() {
-  const cookieStore = getCookieStore();
+  const cookieStore = await getCookieStore();
   const token = cookieStore.get(SESSION_COOKIE)?.value;
 
   if (token) {
@@ -35,7 +36,8 @@ export async function deleteSession() {
 }
 
 export async function getSessionUser() {
-  const token = getCookieStore().get(SESSION_COOKIE)?.value;
+  const cookieStore = await getCookieStore();
+  const token = cookieStore.get(SESSION_COOKIE)?.value;
 
   if (!token) {
     return null;
@@ -44,7 +46,7 @@ export async function getSessionUser() {
   const result = findSessionWithUser(token);
 
   if (!result) {
-    getCookieStore().delete(SESSION_COOKIE);
+    cookieStore.delete(SESSION_COOKIE);
     return null;
   }
 

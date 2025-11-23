@@ -19,6 +19,7 @@ export const buildManualImageKey = (brand: string, slug?: string) => {
 const ferrariKey = (slug: string) => buildManualImageKey("Ferrari", slug);
 const audiKey = (slug: string) => buildManualImageKey("Audi", slug);
 const hyundaiKey = (slug: string) => buildManualImageKey("Hyundai", slug);
+const kiaKey = (slug: string) => buildManualImageKey("Kia", slug);
 const bmwKey = (slug: string) => buildManualImageKey("BMW", slug);
 const bentleyKey = (slug: string) => buildManualImageKey("Bentley", slug);
 
@@ -411,6 +412,137 @@ export const manualVehicleImages: ManualVehicleImageMap = {
     interior: "https://upload.wikimedia.org/wikipedia/commons/5/58/2012_Hyundai_Veloster_%28FS2%29_hatchback_%282012-10-26%29_04.jpg",
   },
 
+  [kiaKey("carnival-2015")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/2/2a/20201013_Kia_Carnival_Front_Side.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/1/1b/Kia_Carnival_2015%2C_2016_%2827286241541%29.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/3/3f/Kia_Carnival_2.2_SX_2023_%28interior%29.jpg",
+  },
+  [kiaKey("ceed-2012")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/9/98/2012_KIA_Ceed_4_EcoDynamics_CRDi_-_1582cc_1.6_%28127PS%29_Diesel_-_Silver_-_05-2024%2C_Front.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/5/5d/2016_KIA_Ceed_4_EcoDynamics_CRDi_-_1582cc_1.6_%28136PS%29_Diesel_-_Grey_-_02-2024%2C_Rear.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/0/09/Kia_cee%27d_SW_Facelift_interior_-_GMS_2009.jpg",
+  },
+  [kiaKey("ceed-2019")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/b/b2/2019_Kia_Ceed_sw_2_NAV_CRDI_ISG_1.6_Front_%281%29.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/1/1c/2019_Kia_Ceed_sw_2_NAV_CRDI_ISG_1.6_Rear_%281%29.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/0/06/2017_Kia_Cee%27d_Interior.jpg",
+  },
+  [kiaKey("ceed-sw-2018")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/4/4f/Kia_Ceed_SW_Front_Genf_2018.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/e/eb/Kia_cee%27d_SW_GT_Line_-_prawy_ty%C5%82_%28MSP17%29.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/0/09/Kia_cee%27d_SW_Facelift_interior_-_GMS_2009.jpg",
+  },
+  [kiaKey("ev6-2022")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/1/1f/2022_Kia_EV6_Air_Long_Range_2WD_%28Front%29.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/e/e4/2022_Kia_EV6_Air_Long_Range_2WD_%28Rear%29.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/6/69/Kia_EV6_GT-Line_interior.jpg",
+  },
+  [kiaKey("ev9-2023")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/b/bc/2023_Kia_EV9_front_view.png",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/7/70/2023_Kia_EV9_rear_view_01.png",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/d/db/2023_Kia_EV9_interior.png",
+  },
+  [kiaKey("forte-2010")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/1/11/2010_Kia_Forte_SX_in_Titanium_Metallic%2C_front_right%2C_2024-09-09.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/b/b0/2010_Kia_Forte_SX_rear_--_08-22-2009.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/1/18/Kia_Forte_2014_interior_MIAS.JPG",
+  },
+  [kiaKey("forte-koup-2014")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/7/74/2015_Kia_Forte_Koup_SX_front_%2821013695525%29.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/7/72/2015_Kia_Forte_Koup_SX_rear_%2820826858579%29.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/1/18/2010_Kia_Forte_Koup_-_2009_NY_Int._Auto_Show.jpg",
+  },
+  [kiaKey("k5-2021")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/f/f8/2021_Kia_K5_GT-Line%2C_front_left%2C_09-09-2023.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/d/d9/2021_Kia_K5_EX%2C_Rear_Left%2C_05-02-2021.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/3/38/KIA_K5_INTERIOR_China.jpg",
+  },
+  [kiaKey("k900-2019")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/7/70/%2715_Kia_K900_Inside_Carrefour_Laval_--_Front.JPG",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/1/16/2015_Hyundai_Genesis_3.8_AWD_in_Urban_Grey_Metallic%2C_rear_left.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/6/6e/Hyundai_Genesis_Interior_%284594377812%29.jpg",
+  },
+  [kiaKey("kona-2018")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/e/ed/2018_Hyundai_Kona_%28OS_MY18%29_Elite_2WD_wagon_%282018-03-26%29.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/a/ad/2018_Hyundai_Kona_1.6_T-GDI_rear_4.2.18.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/c/ca/2017_Hyundai_Kona_Interior.jpg",
+  },
+  [kiaKey("kona-electric-2021")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/9/9c/2020_Hyundai_Kona_Electric_in_Chalk_White%2C_front_left.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/b/b5/2020_Hyundai_Kona_Electric_in_Chalk_White%2C_rear_left.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/5/59/Hyundai_Kona_Electric_N_Line_SX2_EV_Black_Monotone_N_Line_%281%29.jpg",
+  },
+  [kiaKey("niro-2020")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/c/ca/2017_Kia_Niro_base%2C_left_front_%28USA%29.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/b/b4/2018_Kia_Niro_FE_Eco-Hybrid%2C_rear_5.12.19.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/9/9b/2022_Kia_Niro_Hybrid_Interior_%281%29.jpg",
+  },
+  [kiaKey("optima-hybrid-2016")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/4/45/2016_Kia_Optima_LX_Plus_in_Snow_White_Pearl%2C_front_left%2C_2024-09-06.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/a/aa/2016_Kia_Optima_LX_Plus_in_Snow_White_Pearl%2C_rear_left%2C_2024-09-06.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/7/7e/Kia_Optima_%28JF%29_Interior.jpg",
+  },
+  [kiaKey("picanto-2005")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/e/ec/2005_Kia_Picanto_LX_1.1_Front.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/5/50/2005_Kia_Picanto_LX_1.1_Rear.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/1/14/2018_Kia_Picanto_GT-Line_S_-_Interior_1.jpg",
+  },
+  [kiaKey("proceed-2019")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/4/4a/2019_Kia_Proceed_GT_ISG_S-A_1.6_Front_%281%29.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/e/e1/2019_Kia_Proceed_GT_ISG_S-A_1.6_Rear_%281%29.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/8/8a/KiaCeedActive_interno.jpg",
+  },
+  [kiaKey("rio-2008")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/4/4e/Kia_Rio_front_20080224.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/6/64/Kia_Rio_rear_20080224.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/5/5e/Small_Window_Interior_-_2012_Kia_Rio_SX_%287176604015%29.jpg",
+  },
+  [kiaKey("rio-2015")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/e/e0/2015_KIA_Rio_3_EcoDynamics_CRDi_-_1396cc_1.4_%2890PS%29_Diesel_-_Clear_White_-_02-2024%2C_Front.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/5/5b/2015_KIA_Rio_3_EcoDynamics_CRDi_-_1396cc_1.4_%2890PS%29_Diesel_-_Clear_White_-_02-2024%2C_Rear.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/5/5e/Small_Window_Interior_-_2012_Kia_Rio_SX_%287176604015%29.jpg",
+  },
+  [kiaKey("rio-sedan-2016")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/f/f1/Kia_Rio_sedan_%28UB%29_rear.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/f/f1/Kia_Rio_sedan_%28UB%29_rear.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/8/8a/KiaCeedActive_interno.jpg",
+  },
+  [kiaKey("sedona-2018")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/f/fa/2018_Kia_Sedona_LX_3.3L_V6_front_5.23.18.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/e/ef/2018_Kia_Sedona_LX_3.3L_V6_rear_5.23.18.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/5/53/Kia_Sedona%27s_la-z-boy_seat_%2820420238744%29.jpg",
+  },
+  [kiaKey("soul-2014")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/d/d4/2014_Kia_Soul_Plus_US_front_left.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/2/2e/2014_Kia_Soul_Plus_%28US%29%2C_rear_left.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/8/8a/KIA_Soul_Interior_-_CIAS_2012_%286933519091%29.jpg",
+  },
+  [kiaKey("soul-ev-2019")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/6/6f/2019_Kia_Soul_EV_Front.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/b/ba/2019_Kia_Soul_EV_Rear.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/2/23/2017_Kia_Soul_EV_%28Cockpit%29.jpg",
+  },
+  [kiaKey("sportage-2010")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/9/9f/2010_Kia_Sportage_LX_V6_Luxury_Package_4WD_in_Black_Cherry_Metallic%2C_Front_Right%2C_2023-12-22.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/a/a3/2010_Kia_Sportage_LX_V6_Luxury_Package_4WD_in_Black_Cherry_Metallic%2C_Rear_Right%2C_2023-12-22.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/5/5f/2010_Kia_Sportage_%28Second_Generation%29_%28Second_Facelift%29%29Interior%28Black%29.jpg",
+  },
+  [kiaKey("sportage-2019")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/4/4b/2019_Kia_Sportage_EX_in_Modern_Bronze%2C_front_right%2C_2024-03-31.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/5/50/2019_Kia_Sportage_2_CRDi_ISG_S-A_1.6_Rear.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/c/c8/2019_Kia_Sportage_2.0_EX_%2828%29.jpg",
+  },
+  [kiaKey("stinger-2018")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/a/af/2018_Kia_Stinger_GT_Limited_front_4.2.18.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/d/dc/2018_Kia_Stinger_AWD%2C_rear_7.17.19.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/f/fa/Kia_Stinger_interior.jpg",
+  },
+  [kiaKey("telluride-2020")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/9/9d/2020_Kia_Telluride_front_view_1_%28United_States%29.png",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/8/8a/2020_Kia_Telluride%2C_Cleveland_Auto_Show_%28Rear%29.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/6/64/2023_Kia_Telluride_interior.jpg",
+  },
+
   [bmwKey("316i-2004")]: {
     front: "https://upload.wikimedia.org/wikipedia/commons/7/75/1988_BMW_316i_Front.png",
     rear: "https://upload.wikimedia.org/wikipedia/commons/2/2f/BMW_M43_Engine_316i_Compact_1996.jpg",
@@ -630,6 +762,10 @@ manualVehicleImages[buildManualImageKey("Audi")] = {
 
 manualVehicleImages[buildManualImageKey("Hyundai")] = {
   ...manualVehicleImages[hyundaiKey("ioniq-5-2022")],
+};
+
+manualVehicleImages[buildManualImageKey("Kia")] = {
+  ...manualVehicleImages[kiaKey("ev6-2022")],
 };
 
 manualVehicleImages[buildManualImageKey("BMW")] = {
