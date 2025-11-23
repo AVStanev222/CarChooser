@@ -18,6 +18,7 @@ export const buildManualImageKey = (brand: string, slug?: string) => {
 
 const ferrariKey = (slug: string) => buildManualImageKey("Ferrari", slug);
 const audiKey = (slug: string) => buildManualImageKey("Audi", slug);
+const hyundaiKey = (slug: string) => buildManualImageKey("Hyundai", slug);
 const bmwKey = (slug: string) => buildManualImageKey("BMW", slug);
 const bentleyKey = (slug: string) => buildManualImageKey("Bentley", slug);
 
@@ -254,6 +255,162 @@ export const manualVehicleImages: ManualVehicleImageMap = {
     interior: "https://upload.wikimedia.org/wikipedia/commons/7/71/Audi_TT_Coup%C3%A9_1.8_TFSI_%288S%29_interior.jpg",
   },
 
+  [hyundaiKey("accent-2008")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/7/7d/2008_Hyundai_Accent_GS_Hatchback_in_Dark_Sapphire_Blue_Metallic%2C_Front_Left%2C_11-01-2022.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/c/c6/Hyundai_Accent_Coupe_GLS_2008_%28rear%29.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/3/35/Hyundai_Accent_SRX_%282573554177%29.jpg",
+  },
+  [hyundaiKey("accent-2015")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/9/9d/2019_Hyundai_Accent_1.6L%2C_front_10.8.19.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/9/9b/2019_Hyundai_Accent_1.6L%2C_rear_10.8.19.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/5/56/Hyundai_Accent_SR_Interior_%284433419473%29.jpg",
+  },
+  [hyundaiKey("creta-2018")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/3/3a/2018_HYUNDAI_Creta_facelift_1.6_Brunei_%28Front_seats%29.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/0/02/2018_HYUNDAI_Creta_facelift_1.6_Brunei_%28Rear_seats%29.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/f/fb/2018_HYUNDAI_Creta_facelift_1.6_Brunei_%28Interior%29.jpg",
+  },
+  [hyundaiKey("elantra-2011")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/5/53/2011_Hyundai_Elantra_Touring_GL_in_Atlantic_Blue%2C_front_left%2C_2024-10-28.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/d/d0/2011_Hyundai_Elantra_Touring_GL_in_Atlantic_Blue%2C_rear_left%2C_2024-10-28.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/5/5b/Hyundai_Elantra_2015_Car_Interior_with_Dashboard.jpg",
+  },
+  [hyundaiKey("elantra-2018")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/e/ec/2018_Hyundai_Elantra_SE%2C_front_left%2C_12-01-2022.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/7/76/2018_Hyundai_Elantra_GT_GL_in_Polar_White%2C_Rear_Left.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/4/42/2024_Hyundai_Elantra_N_2.0T_in_Performance_Blue%2C_front_left%2C_06-16-2024.jpg",
+  },
+  [hyundaiKey("genesis-2012")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/c/c2/Hyundai_Genesis_Coupe_%28front_quarter%29.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/9/90/Hyundai_Genesis_3.8_%28US%29_%287700700014%29.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/6/6e/Hyundai_Genesis_Interior_%284594377812%29.jpg",
+  },
+  [hyundaiKey("genesis-coupe-2015")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/1/1b/Hyundai_Genesis_coupe_I.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/5/58/Hyundai_Genesis_Coupe_2.0T_2013_%2852409233967%29.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/6/6e/Hyundai_Genesis_Interior_%284594377812%29.jpg",
+  },
+  [hyundaiKey("i10-2010")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/c/c4/2010_Hyundai_i10_Comfort_-_1248cc_1.2_%2885PS%29_Petrol_-_Electric_Red_-_12-12-2023%2C_Front_Left.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/5/51/2010_Hyundai_i10_Comfort_-_1248cc_1.2_%2885PS%29_Petrol_-_Electric_Red_-_12-12-2023%2C_Rear_Left.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/b/ba/Hyundai_Grand_i10_1.2_Interior_2.jpg",
+  },
+  [hyundaiKey("i10-2016")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/0/0c/2014_Hyundai_i10_Rear_Front.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/0/0c/2014_Hyundai_i10_Rear_Front.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/b/ba/Hyundai_Grand_i10_1.2_Interior_2.jpg",
+  },
+  [hyundaiKey("i20-2009")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/4/4d/Hyundai_i20_5D_front_-_PSM_2009.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/0/09/Hyundai_i20_5D_rear-_PSM_2009.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/4/42/2018_Hyundai_i20_facelift_Interior.jpg",
+  },
+  [hyundaiKey("i20-2015")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/f/f3/2015_Hyundai_i20_SE_Automatic_1.4_Front.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/4/47/2015_Hyundai_i20_SE_Automatic_1.4_Rear.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/4/42/2018_Hyundai_i20_facelift_Interior.jpg",
+  },
+  [hyundaiKey("i20-n-2021")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/6/67/2021_Hyundai_i20_N_Line_%28BI3%3B_India%29_front_view.png",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/5/57/Hyundai_i20N_Rally1_No.11_in_2022_FIA_World_Rally_Championship.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/4/42/2018_Hyundai_i20_facelift_Interior.jpg",
+  },
+  [hyundaiKey("i30-2008")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/c/c0/Hyundai_i30-Wagon_Front.JPG",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/d/d4/2019_Hyundai_i30_Hatchback_N_Performance_%28Rear%29.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/8/8f/2018_Hyundai_i30_N_Interior.jpg",
+  },
+  [hyundaiKey("i30-2014")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/8/86/2014_Hyundai_i30_Coupe_in_Creamy_White%2C_front_left%2C_06-05-2025.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/9/92/2014_Hyundai_i30_Coupe_in_Creamy_White%2C_rear_left%2C_06-05-2025.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/8/8f/2018_Hyundai_i30_N_Interior.jpg",
+  },
+  [hyundaiKey("i30-n-2018")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/6/61/2018_Hyundai_i30_N_Performance_T-GDi_2.0_Front_Side.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/6/6e/2018_Hyundai_i30_N_Performance_T-GDi_2.0_Rear.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/8/8f/2018_Hyundai_i30_N_Interior.jpg",
+  },
+  [hyundaiKey("ioniq-5-2022")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/f/ff/2022_Hyundai_Ioniq_5_SEL_AWD_in_Shooting_Star%2C_front_left.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/0/0f/2022_Hyundai_Ioniq_5_SEL_AWD_in_Shooting_Star%2C_rear_left.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/5/58/Hyundai_Ioniq_5_NE_Interior_%281%29.jpg",
+  },
+  [hyundaiKey("ioniq-electric-2018")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/6/6e/17_Hyundai_Ioniq_Electric_front.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/e/ee/Hyundai_IONIQ_Electric_Blazing_Yellow_%2833477626770%29.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/8/87/Hyundai_IONIQ_Electric_Blazing_Yellow_%2833862208005%29.jpg",
+  },
+  [hyundaiKey("kona-2018")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/2/27/2018_Hyundai_Kona_1.6_T-GDI_front_4.2.18.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/a/ad/2018_Hyundai_Kona_1.6_T-GDI_rear_4.2.18.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/9/9a/2024_Hyundai_Kona%2C_front_NYIAS_2023.jpg",
+  },
+  [hyundaiKey("kona-electric-2021")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/9/9c/2020_Hyundai_Kona_Electric_in_Chalk_White%2C_front_left.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/b/b5/2020_Hyundai_Kona_Electric_in_Chalk_White%2C_rear_left.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/5/55/Hyundai_Kona_Electric_N_Line_SX2_EV_Black_Monotone_N_Line_%284%29.jpg",
+  },
+  [hyundaiKey("palisade-2020")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/9/99/2020_Hyundai_Palisade_front_NYIAS_2019.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/0/03/2020_Hyundai_Palisade_SE_HTrac%2C_rear_8.18.19.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/0/08/HYUNDAI_PALISADE_INTERIOR_%282%29.jpg",
+  },
+  [hyundaiKey("santa-fe-2008")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/b/be/Hyundai_Santa_Fe_front_20080326.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/4/47/Hyundai_Santa_Fe_rear_20080325.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/b/b1/Hyundai_Santa_Fe_MX5_1.6T_Calligraphy_HEV_-_interior_view.jpg",
+  },
+  [hyundaiKey("santa-fe-2013")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/f/f4/2013_Hyundai_Santa_Fe_Front_Side_Profile-_2013_Hyundai_Santa_Fe_Launch_Event_%287872777010%29.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/4/4c/2013_Hyundai_Santa_Fe_Sport%2C_Rear_Left%2C_10-31-2020.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/3/3f/Interior_-_2013_Hyundai_Santa_Fe_Launch_Event_%287872770636%29.jpg",
+  },
+  [hyundaiKey("santa-fe-2020")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/8/86/2020_Hyundai_Santa_Fe_SEL%2C_front_right.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/1/13/2004_Hyundai_Santa_Fe_GL%2C_Rear_Right%2C_09-22-2020.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/b/b1/Hyundai_Santa_Fe_MX5_1.6T_Calligraphy_HEV_-_interior_view.jpg",
+  },
+  [hyundaiKey("sonata-2006")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/9/95/2006_Hyundai_Sonata_in_Black%2C_front_right.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/f/ff/2006_Hyundai_Sonata_in_Black%2C_rear_right.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/8/8a/Hyundai_Sonata_Interior_%284593764611%29.jpg",
+  },
+  [hyundaiKey("sonata-2015")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/e/ef/2017_hyundai_sonata_front-side_%282%29.png",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/a/a3/2018_Hyundai_Sonata_GL_in_Phantom_Black%2C_rear_left%2C_2024-06-07.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/0/0a/2014_Hyundai_Sonata_%28LF_MY15%29_Premium_sedan_%282015-10-10%29_01.jpg",
+  },
+  [hyundaiKey("sonata-hybrid-2020")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/8/85/2013_Hyundai_Sonata_Hybrid_with_US_Government_license_plates_%28Front-Left%29.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/b/b7/2013_Hyundai_Sonata_Hybrid_with_US_Government_license_plates_%28Rear-Left%29.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/4/4e/2013072911_Hyundai_Sonata_Hybrid.png",
+  },
+  [hyundaiKey("tucson-2007")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/a/a1/2007_Hyundai_Tucson_ViVa_V6_AWD_in_Platinum%2C_front_left%2C_2024-11-20.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/b/ba/2007_Hyundai_Tucson_ViVa_V6_AWD_in_Platinum%2C_rear_left%2C_2024-11-20.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/1/13/Hyundai_Tucson_NX4_1.6_GLS_HEV_-_interior_view.jpg",
+  },
+  [hyundaiKey("tucson-2014")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/e/ec/2014_Hyundai_Tucson_GLS_AWD_in_Garnet_Red%2C_Front_Right%2C_05-18-2023.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/0/05/2014_Hyundai_Tucson_GLS_AWD_in_Garnet_Red%2C_Rear_Right%2C_05-18-2023.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/1/13/Hyundai_Tucson_NX4_1.6_GLS_HEV_-_interior_view.jpg",
+  },
+  [hyundaiKey("tucson-2021")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/c/c6/2022_Hyundai_Tucson_Preferred%2C_Front_Right%2C_05-24-2021.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/3/37/2021_Hyundai_Tucson_Ultimate_T-GDi_MHEV_1.6_Rear.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/1/13/Hyundai_Tucson_NX4_1.6_GLS_HEV_-_interior_view.jpg",
+  },
+  [hyundaiKey("veloster-2013")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/f/fc/2013_Hyundai_Veloster_1.6_Turbo%2C_front_right%2C_06-08-2024.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/9/99/2013_Hyundai_Veloster_1.6_Turbo%2C_rear_left%2C_06-08-2024.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/d/d5/2013-hyundai-veloster-turbo-15-1326142957_-_Flickr_-_theKCB.jpg",
+  },
+  [hyundaiKey("veloster-n-2019")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/b/b7/2019_Hyundai_Veloster_N_front_4.2.18.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/b/bf/2019_Hyundai_Veloster_N_rear_4.2.18.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/5/58/2012_Hyundai_Veloster_%28FS2%29_hatchback_%282012-10-26%29_04.jpg",
+  },
+
   [bmwKey("316i-2004")]: {
     front: "https://upload.wikimedia.org/wikipedia/commons/7/75/1988_BMW_316i_Front.png",
     rear: "https://upload.wikimedia.org/wikipedia/commons/2/2f/BMW_M43_Engine_316i_Compact_1996.jpg",
@@ -469,6 +626,10 @@ manualVehicleImages[buildManualImageKey("Ferrari")] = {
 
 manualVehicleImages[buildManualImageKey("Audi")] = {
   ...manualVehicleImages[audiKey("a6-2022")],
+};
+
+manualVehicleImages[buildManualImageKey("Hyundai")] = {
+  ...manualVehicleImages[hyundaiKey("ioniq-5-2022")],
 };
 
 manualVehicleImages[buildManualImageKey("BMW")] = {
