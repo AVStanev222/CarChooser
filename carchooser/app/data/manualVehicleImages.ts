@@ -18,6 +18,7 @@ export const buildManualImageKey = (brand: string, slug?: string) => {
 
 const ferrariKey = (slug: string) => buildManualImageKey("Ferrari", slug);
 const audiKey = (slug: string) => buildManualImageKey("Audi", slug);
+const bentleyKey = (slug: string) => buildManualImageKey("Bentley", slug);
 
 // Extend this map with additional models or brands if you have static image URLs.
 export const manualVehicleImages: ManualVehicleImageMap = {
@@ -252,6 +253,57 @@ export const manualVehicleImages: ManualVehicleImageMap = {
     interior: "https://upload.wikimedia.org/wikipedia/commons/7/71/Audi_TT_Coup%C3%A9_1.8_TFSI_%288S%29_interior.jpg",
   },
 
+  [bentleyKey("bentayga-2017")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/3/36/Bentley_Bentayga_2015_-_front.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/7/73/Bentley_Bentayga_2015_-_rear.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/7/7e/Bentley_Bentayga_-_Interior.jpg",
+  },
+  [bentleyKey("bentayga-2021")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/e/ef/Bentley_Bentayga_Azure_in_Dove_Grey%2C_front_right.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/d/d6/Bentley_Bentayga_Azure_in_Dove_Grey%2C_rear_right.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/1/1e/Bentley_Bentayga_interior_2.jpg",
+  },
+  [bentleyKey("continental-gt-2004")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/4/46/Gray_Bentley_Continental_GT_front_side.JPG",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/c/ca/2005_green_Bentley_Continental_GT_rear.JPG",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/9/94/2006_Bentley_Continental_GT_Mulliner_-_Flickr_-_The_Car_Spy_%2819%29.jpg",
+  },
+  [bentleyKey("continental-gt-2012")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/d/d0/2012_Bentley_Continental_GT_W12_in_Beluga%2C_Front_Left%2C_08-02-2023.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/1/10/2012_Bentley_Continental_GT_V8_Convertible_4.0_Auto_Rear.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/f/f9/2005_Bentley_Continental_GT_-_Flickr_-_The_Car_Spy_%2811%29.jpg",
+  },
+  [bentleyKey("continental-gt-2020")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/6/69/2020_Bentley_Continental_GT_V8_Convertible_in_Dark_Sapphire%2C_front_left.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/5/55/2020_Bentley_Continental_GT_V8_Convertible_in_Dark_Sapphire%2C_rear_left.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/8/8b/Interior_of_Bentley_Continental_GT-2006.jpg",
+  },
+  [bentleyKey("flying-spur-2006")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/0/03/Bentley_Flying_Spur_Macau_front_view_%28June_9%2C_2025%29.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/d/d4/Bentley_Flying_Spur_Macau_rear_view_%28June_9%2C_2025%29.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/d/d0/Geneva_MotorShow_2013_-_Bentley_New_Flying_Spur_seats_buttons.jpg",
+  },
+  [bentleyKey("flying-spur-2015")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/0/03/Bentley_Flying_Spur_Macau_front_view_%28June_9%2C_2025%29.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/d/d4/Bentley_Flying_Spur_Macau_rear_view_%28June_9%2C_2025%29.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/d/d0/Geneva_MotorShow_2013_-_Bentley_New_Flying_Spur_seats_buttons.jpg",
+  },
+  [bentleyKey("flying-spur-2022")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/2/2c/2022_Bentley_Flying_Spur_Hybrid_in_Ghost_White%2C_Odyssean_Specs%2C_front_right.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/7/7c/Bentley_Flying_Spur_II_Black.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/3/34/Geneva_MotorShow_2013_-_Bentley_New_Flying_Spur_rear_console.jpg",
+  },
+  [bentleyKey("mulsanne-2010")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/9/9d/2017_Bentley_Mulsanne_EWB_in_Peacock_Metallic%2C_front_right.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/7/7d/2017_Bentley_Mulsanne_EWB_in_Peacock_Metallic%2C_rear_right.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/e/e1/Bentley_Mulsanne_-_Mondial_de_l%27Automobile_de_Paris_2010_-_001.jpg",
+  },
+  [bentleyKey("mulsanne-2018")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/d/d9/2018_Bentley_Mulsanne_Speed_in_Glacier_White%2C_front_right.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/7/7d/2017_Bentley_Mulsanne_EWB_in_Peacock_Metallic%2C_rear_right.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/8/89/2017_Bentley_Mulsanne_EWB_interior.jpg",
+  },
+
 };
 
 manualVehicleImages[buildManualImageKey("Ferrari")] = {
@@ -260,4 +312,8 @@ manualVehicleImages[buildManualImageKey("Ferrari")] = {
 
 manualVehicleImages[buildManualImageKey("Audi")] = {
   ...manualVehicleImages[audiKey("a6-2022")],
+};
+
+manualVehicleImages[buildManualImageKey("Bentley")] = {
+  ...manualVehicleImages[bentleyKey("continental-gt-2020")],
 };
