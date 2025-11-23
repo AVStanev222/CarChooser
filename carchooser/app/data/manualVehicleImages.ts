@@ -18,6 +18,7 @@ export const buildManualImageKey = (brand: string, slug?: string) => {
 
 const ferrariKey = (slug: string) => buildManualImageKey("Ferrari", slug);
 const audiKey = (slug: string) => buildManualImageKey("Audi", slug);
+const bmwKey = (slug: string) => buildManualImageKey("BMW", slug);
 const bentleyKey = (slug: string) => buildManualImageKey("Bentley", slug);
 
 // Extend this map with additional models or brands if you have static image URLs.
@@ -253,6 +254,162 @@ export const manualVehicleImages: ManualVehicleImageMap = {
     interior: "https://upload.wikimedia.org/wikipedia/commons/7/71/Audi_TT_Coup%C3%A9_1.8_TFSI_%288S%29_interior.jpg",
   },
 
+  [bmwKey("316i-2004")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/7/75/1988_BMW_316i_Front.png",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/2/2f/BMW_M43_Engine_316i_Compact_1996.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/7/7a/BMW_316i_E30_%289166328479%29.jpg",
+  },
+  [bmwKey("318d-2007")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/9/96/BMW_318d_E90_%28seit_2008%29_Facelift_front_MJ.JPG",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/b/b6/BMW_318d.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/4/46/BMW_3_Series_%28E90%29_interior.jpg",
+  },
+  [bmwKey("320d-2010")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/2/2b/2010_BMW_320D_E90%2C_front_left%2C_05-19-2024.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/9/94/BMW_320d_Edition_Sport_%28E90%29_Facelift_rear_20100724.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/f/f0/BMW_320d_Interior.jpg",
+  },
+  [bmwKey("320i-2005")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/c/cf/BMW_320i_WTCC_2005_vr_TCE.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/a/a5/1981_BMW_320i_in_dk_grey_rear.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/7/71/BMW_320i_Coupe_interior.jpg",
+  },
+  [bmwKey("330d-2013")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/9/97/BMW_320d%2C_BMW_335i_Gran_Turismo%2C_BMW_330d_in_Munich.JPG",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/8/88/BMW_330d_%28E46%29.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/d/da/BMW_320d_Luxury_%28F30%29_interior.jpg",
+  },
+  [bmwKey("330i-2010")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/0/09/2024_BMW_330i_Touring_M_Sport_Brookland_Grey_taken_in_Bandung%2C_West_Java_01.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/b/b2/Rear_view_of_a_BMW_E90_330i_2006_pre-LCI_black_color_with_style_162_rims.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/2/22/2019_BMW_330i_M_Sport_%2834%29.jpg",
+  },
+  [bmwKey("335i-2012")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/b/b0/Front_Grill_-_2014_BMW_335i_xDrive_GT_%2814535229806%29.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/3/3f/Rear_View_-_2014_BMW_335i_xDrive_GT_%2814371634130%29.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/1/14/BMW_335i_Individual_F30_%288210208094%29.jpg",
+  },
+  [bmwKey("340i-2016")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/3/35/B_58_engine_on_Bmw_340i.jpeg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/6/64/2017_BMW_340i_%28F30_LCI%29_Luxury_Line_sedan_%282018-07-30%29_01.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/c/cd/2018_BMW_340i_M_Sport_Shadow_3.0_Interior.jpg",
+  },
+  [bmwKey("520d-2008")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/a/a5/2007_BMW_520d_E60%2C_front_right%2C_06-30-2024.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/a/a1/2007_BMW_520d_E60%2C_rear_right%2C_06-30-2024.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/6/63/2018_BMW_520d_SE_Touring_Automatic_Interior.jpg",
+  },
+  [bmwKey("525d-2011")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/c/ca/Bmw_525d.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/3/3b/BMW_525d_EXE_28.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/3/3a/BMW_525d_EXE_18.jpg",
+  },
+  [bmwKey("530d-2014")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/3/30/BMW_530d_%28F10%29_front_20100821.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/9/9b/BMW_530d_Gran_Turismo_%282009%29_-_rear.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/3/32/BMW_535i_interior.jpg",
+  },
+  [bmwKey("530i-2017")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/9/97/BMW_530i_Touring_Sport_%2836661685032crop%29.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/1/15/2010_brown_BMW_530i_rear.JPG",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/6/66/BMW_530i_Sport_Individual_-_Flickr_-_The_Car_Spy_%289%29.jpg",
+  },
+  [bmwKey("540i-2021")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/3/39/2018_BMW_540i_in_white%2C_front_right.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/0/0f/2018_BMW_540i_in_white%2C_rear_right.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/2/25/2019_BMW_530e_M_Sport_%2812%29.jpg",
+  },
+  [bmwKey("i3-2017")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/d/df/BMW_i3_front.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/c/c9/2017_BMW_i3_Rear.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/a/a2/The_interior_of_BMW_i3.JPG",
+  },
+  [bmwKey("i8-2015")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/b/b4/BMW_i8_front_%2821038420335%29.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/6/64/BMW_i8_rear_%2820850464008%29.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/3/38/BMW_i8_Cockpit.jpg",
+  },
+  [bmwKey("m3-2008")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/e/eb/BMW_M3_%28front%29_%283936446582%29.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/7/77/2008_BMW_M3_DCT_Rear_FOS22.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/1/14/Geneva_Motor_Show_2011_-_BMW_M3_Coupe_Interior_%285560367245%29.jpg",
+  },
+  [bmwKey("m3-2016")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/e/eb/BMW_M3_%28front%29_%283936446582%29.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/c/c4/BMW_M3_saloon_rear_%2810518824844%29.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/0/08/BMW_M3_interior_PL_60.JPG",
+  },
+  [bmwKey("m5-2006")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/7/7c/BMW_M5_front_left.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/a/a7/BMW_M5_rear.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/4/44/BMW_M5_interior_PL_01.JPG",
+  },
+  [bmwKey("m5-2012")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/4/44/BMW_M5_F10_%28front_quarter%29.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/8/8f/BMW_M5_%282012%29_%2853333000701%29.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/c/ce/2006_BMW_M5_-_Flickr_-_The_Car_Spy_%2813%29.jpg",
+  },
+  [bmwKey("m5-2019")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/9/9f/2019_BMW_M5_Competition_in_Silver%2C_front_right_%28US%29.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/1/12/2018_BMW_M5_Competition_in_Alpinwei%C3%9F%2C_rear_left.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/4/44/BMW_M5_interior_PL_01.JPG",
+  },
+  [bmwKey("x1-2014")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/4/4c/2018_BMW_X1_sDrive18i_xLine_1.5_Front.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/8/8a/BMW_X1_xDrive20i_%28E84%29_rear.JPG",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/4/4f/2018_BMW_X1_xDrive18d_xLine_2.0_Interior.jpg",
+  },
+  [bmwKey("x3-2012")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/c/c2/2018_BMW_X3_xDrive30d_M_Sport_Automatic_3.0_Front.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/f/f2/BMW_X3_%28Rear%29%2C_Jakarta%2C_Indonesia.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/f/fa/2017_BMW_X3_xDrive35d_M_Sport_Automatic_Interior.jpg",
+  },
+  [bmwKey("x3-2019")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/0/0e/2019_BMW_X3_M_Competition_Automatic_3.0_Front.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/7/76/2019_BMW_X3_Comp_Rear_black.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/a/ae/2019_BMW_X3_xDrive_30i_Luxury_%2859%29.jpg",
+  },
+  [bmwKey("x5-2007")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/a/a9/2007_BMW_X5_SE_7S_Automatic_3.0_Front.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/f/fc/2007_BMW_X5_SE_7S_Automatic_3.0_Rear.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/f/f1/BMW_X5_LWB_%28G05%29_INTERIOR.jpg",
+  },
+  [bmwKey("x5-2014")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/1/1e/Front_Grill_-_2014_BMW_X5_xDrive_35i_%2814856833058%29.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/8/8c/Rear_Hatch_-_2014_BMW_X5_xDrive_35i_%2815040366241%29.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/e/e1/Front_Interior_-_2014_BMW_X5_xDrive_35i_%2814856833658%29.jpg",
+  },
+  [bmwKey("x5-2021")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/a/a9/2007_BMW_X5_SE_7S_Automatic_3.0_Front.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/f/fc/2007_BMW_X5_SE_7S_Automatic_3.0_Rear.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/f/f1/BMW_X5_LWB_%28G05%29_INTERIOR.jpg",
+  },
+  [bmwKey("x6-2010")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/b/bb/BMW_X6-xDrivei50_Front-view.JPG",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/e/e8/BMW_X6_xDrive35d_rear_20100425.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/8/86/BMW_X6_M_Hamann_Tycoon_EVO_M_interior.jpg",
+  },
+  [bmwKey("x6-2017")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/b/bb/BMW_X6-xDrivei50_Front-view.JPG",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/1/16/2017_BMW_X6_M_4.4L_rear_6.13.18.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/b/bb/2023_BMW_X6_M_%28G06%29_IAA_2023_1X7A0767.jpg",
+  },
+  [bmwKey("x7-2020")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/9/9e/2019_BMW_X7_xDrive30d_M_Sport_Automatic_3.0_Front.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/b/bf/2019_BMW_X7_xDrive30d_M_Sport_Automatic_3.0_Rear.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/c/c9/2019_BMW_X7_xDrive30d_M_Sport_3.0_Interior.jpg",
+  },
+  [bmwKey("z4-2006")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/9/9c/2006_BMW_Z4_SE_2.0_Front.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/1/1a/2006_BMW_Z4_SE_2.0_Rear.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/b/b0/2019_BMW_Z4_M40i_Interior.jpg",
+  },
+  [bmwKey("z4-2019")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/d/d6/2019_BMW_Z4_M40i_Front.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/5/59/2019_BMW_Z4_M40i_Rear.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/b/b0/2019_BMW_Z4_M40i_Interior.jpg",
+  },
+
   [bentleyKey("bentayga-2017")]: {
     front: "https://upload.wikimedia.org/wikipedia/commons/3/36/Bentley_Bentayga_2015_-_front.jpg",
     rear: "https://upload.wikimedia.org/wikipedia/commons/7/73/Bentley_Bentayga_2015_-_rear.jpg",
@@ -312,6 +469,10 @@ manualVehicleImages[buildManualImageKey("Ferrari")] = {
 
 manualVehicleImages[buildManualImageKey("Audi")] = {
   ...manualVehicleImages[audiKey("a6-2022")],
+};
+
+manualVehicleImages[buildManualImageKey("BMW")] = {
+  ...manualVehicleImages[bmwKey("540i-2021")],
 };
 
 manualVehicleImages[buildManualImageKey("Bentley")] = {
