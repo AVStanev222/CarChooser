@@ -5,11 +5,9 @@ import BackLink from "@/app/components/BackLink";
 import { renaultModels } from "@/app/data/renault";
 import CarActivityTracker from "@/app/components/CarActivityTracker";
 
-interface RenaultModelPageProps {
-  params: {
-    model: string;
-  };
-}
+type RenaultModelPageProps = {
+  params: Promise<{ model: string }>;
+};
 
 const specEntries = (car: (typeof renaultModels)[number]) => [
   { label: "Year", value: car.year.toString() },
@@ -23,8 +21,11 @@ const specEntries = (car: (typeof renaultModels)[number]) => [
   { label: "Price (used)", value: car.priceUsed },
 ];
 
-export default function RenaultModelPage({ params }: RenaultModelPageProps) {
-  const car = renaultModels.find((entry) => entry.slug === params.model);
+export default async function RenaultModelPage({
+  params,
+}: RenaultModelPageProps) {
+  const { model } = await params;
+  const car = renaultModels.find((entry) => entry.slug === model);
 
   if (!car) {
     notFound();

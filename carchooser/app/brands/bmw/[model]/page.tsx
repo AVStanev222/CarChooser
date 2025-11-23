@@ -5,11 +5,9 @@ import BackLink from "@/app/components/BackLink";
 import { bmwModels } from "@/app/data/bmw";
 import CarActivityTracker from "@/app/components/CarActivityTracker";
 
-interface BMWModelPageProps {
-  params: {
-    model: string;
-  };
-}
+type BMWModelPageProps = {
+  params: Promise<{ model: string }>;
+};
 
 const specEntries = (car: (typeof bmwModels)[number]) => [
   { label: "Year", value: car.year.toString() },
@@ -23,8 +21,9 @@ const specEntries = (car: (typeof bmwModels)[number]) => [
   { label: "Price (used)", value: car.priceUsed },
 ];
 
-export default function BMWModelPage({ params }: BMWModelPageProps) {
-  const car = bmwModels.find((entry) => entry.slug === params.model);
+export default async function BMWModelPage({ params }: BMWModelPageProps) {
+  const { model } = await params;
+  const car = bmwModels.find((entry) => entry.slug === model);
 
   if (!car) {
     notFound();

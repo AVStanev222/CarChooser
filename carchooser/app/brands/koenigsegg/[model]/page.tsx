@@ -5,11 +5,9 @@ import BackLink from "@/app/components/BackLink";
 import { koenigseggModels } from "@/app/data/koenigsegg";
 import CarActivityTracker from "@/app/components/CarActivityTracker";
 
-interface KoenigseggModelPageProps {
-  params: {
-    model: string;
-  };
-}
+type KoenigseggModelPageProps = {
+  params: Promise<{ model: string }>;
+};
 
 const specEntries = (car: (typeof koenigseggModels)[number]) => [
   { label: "Year", value: car.year.toString() },
@@ -23,8 +21,11 @@ const specEntries = (car: (typeof koenigseggModels)[number]) => [
   { label: "Price (used)", value: car.priceUsed },
 ];
 
-export default function KoenigseggModelPage({ params }: KoenigseggModelPageProps) {
-  const car = koenigseggModels.find((entry) => entry.slug === params.model);
+export default async function KoenigseggModelPage({
+  params,
+}: KoenigseggModelPageProps) {
+  const { model } = await params;
+  const car = koenigseggModels.find((entry) => entry.slug === model);
 
   if (!car) {
     notFound();

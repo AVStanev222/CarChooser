@@ -5,11 +5,9 @@ import BackLink from "@/app/components/BackLink";
 import { audiModels } from "@/app/data/audi";
 import CarActivityTracker from "@/app/components/CarActivityTracker";
 
-interface AudiModelPageProps {
-  params: {
-    model: string;
-  };
-}
+type AudiModelPageProps = {
+  params: Promise<{ model: string }>;
+};
 
 const specEntries = (car: (typeof audiModels)[number]) => [
   { label: "Year", value: car.year.toString() },
@@ -23,8 +21,9 @@ const specEntries = (car: (typeof audiModels)[number]) => [
   { label: "Price (used)", value: car.priceUsed },
 ];
 
-export default function AudiModelPage({ params }: AudiModelPageProps) {
-  const car = audiModels.find((entry) => entry.slug === params.model);
+export default async function AudiModelPage({ params }: AudiModelPageProps) {
+  const { model } = await params;
+  const car = audiModels.find((entry) => entry.slug === model);
 
   if (!car) {
     notFound();

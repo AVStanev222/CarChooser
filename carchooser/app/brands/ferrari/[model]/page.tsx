@@ -5,11 +5,9 @@ import BackLink from "@/app/components/BackLink";
 import { ferrariModels } from "@/app/data/ferrari";
 import CarActivityTracker from "@/app/components/CarActivityTracker";
 
-interface FerrariModelPageProps {
-  params: {
-    model: string;
-  };
-}
+type FerrariModelPageProps = {
+  params: Promise<{ model: string }>;
+};
 
 const specEntries = (car: (typeof ferrariModels)[number]) => [
   { label: "Year", value: car.year.toString() },
@@ -23,8 +21,11 @@ const specEntries = (car: (typeof ferrariModels)[number]) => [
   { label: "Price (used)", value: car.priceUsed },
 ];
 
-export default function FerrariModelPage({ params }: FerrariModelPageProps) {
-  const car = ferrariModels.find((entry) => entry.slug === params.model);
+export default async function FerrariModelPage({
+  params,
+}: FerrariModelPageProps) {
+  const { model } = await params;
+  const car = ferrariModels.find((entry) => entry.slug === model);
 
   if (!car) {
     notFound();

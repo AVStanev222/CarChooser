@@ -5,11 +5,9 @@ import BackLink from "@/app/components/BackLink";
 import { teslaModels } from "@/app/data/tesla";
 import CarActivityTracker from "@/app/components/CarActivityTracker";
 
-interface TeslaModelPageProps {
-  params: {
-    model: string;
-  };
-}
+type TeslaModelPageProps = {
+  params: Promise<{ model: string }>;
+};
 
 const specEntries = (car: (typeof teslaModels)[number]) => [
   { label: "Year", value: car.year.toString() },
@@ -23,8 +21,9 @@ const specEntries = (car: (typeof teslaModels)[number]) => [
   { label: "Price (used)", value: car.priceUsed },
 ];
 
-export default function TeslaModelPage({ params }: TeslaModelPageProps) {
-  const car = teslaModels.find((entry) => entry.slug === params.model);
+export default async function TeslaModelPage({ params }: TeslaModelPageProps) {
+  const { model } = await params;
+  const car = teslaModels.find((entry) => entry.slug === model);
 
   if (!car) {
     notFound();

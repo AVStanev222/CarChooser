@@ -13,6 +13,10 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "https",
+        hostname: "commons.wikimedia.org",
+      },
+      {
+        protocol: "https",
         hostname: "carsguide-res.cloudinary.com",
       },
       {

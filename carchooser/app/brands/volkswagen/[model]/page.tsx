@@ -5,11 +5,9 @@ import BackLink from "@/app/components/BackLink";
 import { volkswagenModels } from "@/app/data/volkswagen";
 import CarActivityTracker from "@/app/components/CarActivityTracker";
 
-interface VolkswagenModelPageProps {
-  params: {
-    model: string;
-  };
-}
+type VolkswagenModelPageProps = {
+  params: Promise<{ model: string }>;
+};
 
 const specEntries = (car: (typeof volkswagenModels)[number]) => [
   { label: "Year", value: car.year.toString() },
@@ -23,8 +21,11 @@ const specEntries = (car: (typeof volkswagenModels)[number]) => [
   { label: "Price (used)", value: car.priceUsed },
 ];
 
-export default function VolkswagenModelPage({ params }: VolkswagenModelPageProps) {
-  const car = volkswagenModels.find((entry) => entry.slug === params.model);
+export default async function VolkswagenModelPage({
+  params,
+}: VolkswagenModelPageProps) {
+  const { model } = await params;
+  const car = volkswagenModels.find((entry) => entry.slug === model);
 
   if (!car) {
     notFound();

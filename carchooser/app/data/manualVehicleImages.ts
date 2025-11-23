@@ -22,7 +22,9 @@ const hyundaiKey = (slug: string) => buildManualImageKey("Hyundai", slug);
 const kiaKey = (slug: string) => buildManualImageKey("Kia", slug);
 const bmwKey = (slug: string) => buildManualImageKey("BMW", slug);
 const bentleyKey = (slug: string) => buildManualImageKey("Bentley", slug);
+const mercedesKey = (slug: string) => buildManualImageKey("Mercedes-Benz", slug);
 const koenigseggKey = (slug: string) => buildManualImageKey("Koenigsegg", slug);
+
 
 // Extend this map with additional models or brands if you have static image URLs.
 export const manualVehicleImages: ManualVehicleImageMap = {
@@ -122,8 +124,8 @@ export const manualVehicleImages: ManualVehicleImageMap = {
     interior: "https://upload.wikimedia.org/wikipedia/commons/5/5e/Audi_A3_Sportback_1.4TFSI_sport_%28DBA-8VCXS%29_interior.jpg",
   },
   [audiKey("a4-2004")]: {
-    front: "https://upload.wikimedia.org/wikipedia/commons/1/1a/Audi_A4_B6_%282000%E2%80%932004%29_front_MJ.JPG",
-    rear: "https://upload.wikimedia.org/wikipedia/commons/7/7a/Audi_A4_B6_%282000%E2%80%932004%29_rear_MJ.JPG",
+    front: "https://upload.wikimedia.org/wikipedia/commons/1/1a/Audi_A4_B6_%282000–2004%29_front_MJ.JPG",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/7/7a/Audi_A4_B6_%282000–2004%29_rear_MJ.JPG",
     interior: "https://upload.wikimedia.org/wikipedia/commons/d/de/Audi_A4_Avant_1.4TFSI_%28ABA-8WCVN%29_interior.jpg",
   },
   [audiKey("a4-2012")]: {
@@ -751,6 +753,255 @@ export const manualVehicleImages: ManualVehicleImageMap = {
     interior: "https://upload.wikimedia.org/wikipedia/commons/8/89/2017_Bentley_Mulsanne_EWB_interior.jpg",
   },
 
+  [mercedesKey("a180-2013")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/a/a2/Mercedes-Benz_A_200d_AMG_Line_%28W177%29_%E2%80%93_Front.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/5/58/Mercedes-Benz_A_200d_AMG_Line_%28W177%29_%E2%80%93_Rear.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/4/4b/Mercedes-Benz_A-Class_%28W177%29_interior.jpg",
+  },
+  [mercedesKey("a200-2018")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/2/25/Mercedes-Benz_A_250e_%28W177%29_%E2%80%93_Front.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/f/f3/Mercedes-Benz_A_250e_%28W177%29_%E2%80%93_Rear.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/4/4b/Mercedes-Benz_A-Class_%28W177%29_interior.jpg",
+  },
+  [mercedesKey("a45-amg-2016")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/7/79/Mercedes-Benz_A_45_AMG_%28W176%29_front.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/b/ba/Mercedes-Benz_A_45_AMG_%28W176%29_rear.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/4/4b/Mercedes-Benz_A-Class_%28W177%29_interior.jpg",
+  },
+  [mercedesKey("b180-2014")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/3/37/2014_Mercedes-Benz_B_200_CDI_BlueEFFICIENCY_%28W246%29_Front.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/a/a0/2014_Mercedes-Benz_B_200_CDI_BlueEFFICIENCY_%28W246%29_Rear.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/b/b2/Mercedes-Benz_B-Class_%28W247%29_interior.jpg",
+  },
+  [mercedesKey("c180-2006")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/7/76/2004_Mercedes-Benz_C_180_Kompressor_%28W203%29_front.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/a/af/2004_Mercedes-Benz_C_180_Kompressor_%28W203%29_rear.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/7/73/Mercedes-Benz_C-Class_%28W203%29_interior.jpg",
+  },
+  [mercedesKey("c200-2013")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/0/0b/2013_Mercedes-Benz_C_200_Avantgarde_%28W204%29_front.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/9/95/2013_Mercedes-Benz_C_200_Avantgarde_%28W204%29_rear.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/4/46/Mercedes-Benz_C-Class_%28W204%29_interior.jpg",
+  },
+  [mercedesKey("c220-cdi-2011")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/5/5b/2012_Mercedes-Benz_C_220_CDI_Elegance_%28W204%29_front.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/9/92/2012_Mercedes-Benz_C_220_CDI_Elegance_%28W204%29_rear.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/4/46/Mercedes-Benz_C-Class_%28W204%29_interior.jpg",
+  },
+  [mercedesKey("c300-2020")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/3/3a/Mercedes-Benz_C_300_%28W205%29_front.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/7/75/Mercedes-Benz_C_300_%28W205%29_rear.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/a/a6/Mercedes-Benz_C-Class_%28W205%29_interior.jpg",
+  },
+  [mercedesKey("c63-amg-2012")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/5/5a/Mercedes-Benz_C_63_AMG_%28W204%29_front.JPG",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/e/e2/Mercedes-Benz_C_63_AMG_%28W204%29_rear.JPG",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/6/60/Mercedes-Benz_C_63_AMG_%28W204%29_interior.JPG",
+  },
+  [mercedesKey("c63-amg-2020")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/f/fc/Mercedes-Benz_C_63_AMG_%28W205%29_front.JPG",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/e/ea/Mercedes-Benz_C_63_AMG_%28W205%29_rear.JPG",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/a/a6/Mercedes-Benz_C-Class_%28W205%29_interior.jpg",
+  },
+  [mercedesKey("e200-2007")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/5/58/2007_Mercedes-Benz_E_200_Kompressor_%28W211%29_front.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/a/a8/2007_Mercedes-Benz_E_200_Kompressor_%28W211%29_rear.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/8/80/Mercedes-Benz_E-Class_%28W211%29_interior.jpg",
+  },
+  [mercedesKey("e220-cdi-2012")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/5/51/2012_Mercedes-Benz_E_220_CDI_%28W212%29_front.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/c/c6/2012_Mercedes-Benz_E_220_CDI_%28W212%29_rear.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/3/3a/Mercedes-Benz_E-Class_%28W212%29_interior.jpg",
+  },
+  [mercedesKey("e300-2019")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/3/3c/Mercedes-Benz_E_300_%28W213%29_front.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/9/90/Mercedes-Benz_E_300_%28W213%29_rear.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/1/13/Mercedes-Benz_E-Class_%28W213%29_interior.jpg",
+  },
+  [mercedesKey("e350-cdi-2014")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/d/de/2014_Mercedes-Benz_E_350_CDI_%28W212%29_front.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/f/f3/2014_Mercedes-Benz_E_350_CDI_%28W212%29_rear.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/3/3a/Mercedes-Benz_E-Class_%28W212%29_interior.jpg",
+  },
+  [mercedesKey("e63-amg-2010")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/d/d7/2011_Mercedes-Benz_E_63_AMG_%28W212%29_front.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/7/75/2011_Mercedes-Benz_E_63_AMG_%28W212%29_rear.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/b/b4/Mercedes-Benz_E_63_AMG_%28W212%29_interior.jpg",
+  },
+  [mercedesKey("e63-amg-2018")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/c/c0/2018_Mercedes-Benz_E_63_AMG_S_%28W213%29_front.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/6/6c/2018_Mercedes-Benz_E_63_AMG_S_%28W213%29_rear.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/1/13/Mercedes-Benz_E-Class_%28W213%29_interior.jpg",
+  },
+  [mercedesKey("s320-2005")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/5/55/2005_Mercedes-Benz_S_320_%28W220%29_front.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/7/72/2005_Mercedes-Benz_S_320_%28W220%29_rear.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/7/7a/Mercedes-Benz_S-Class_%28W220%29_interior.jpg",
+  },
+  [mercedesKey("s350-2012")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/d/d7/2012_Mercedes-Benz_S_350_%28W221%29_front.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/f/f0/2012_Mercedes-Benz_S_350_%28W221%29_rear.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/a/ac/Mercedes-Benz_S-Class_%28W221%29_interior.jpg",
+  },
+  [mercedesKey("s500-2020")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/4/4a/2021_Mercedes-Benz_S_500_4MATIC_%28W223%29_front.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/3/31/2021_Mercedes-Benz_S_500_4MATIC_%28W223%29_rear.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/0/00/Mercedes-Benz_S-Class_%28W223%29_interior.jpg",
+  },
+  [mercedesKey("s63-amg-2016")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/5/57/2016_Mercedes-Benz_S_63_AMG_%28W222%29_front.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/d/d6/2016_Mercedes-Benz_S_63_AMG_%28W222%29_rear.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/6/6f/Mercedes-Benz_S-Class_%28W222%29_interior.jpg",
+  },
+  [mercedesKey("s65-amg-2014")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/2/2f/2015_Mercedes-Benz_S_65_AMG_%28W222%29_front.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/9/94/2015_Mercedes-Benz_S_65_AMG_%28W222%29_rear.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/6/6f/Mercedes-Benz_S-Class_%28W222%29_interior.jpg",
+  },
+  [mercedesKey("cla180-2015")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/6/62/2016_Mercedes-Benz_CLA_180_AMG_Line_%28C117%29_front.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/4/4a/2016_Mercedes-Benz_CLA_180_AMG_Line_%28C117%29_rear.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/1/1a/Mercedes-Benz_CLA_%28C117%29_interior.jpg",
+  },
+  [mercedesKey("cla45-amg-2017")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/3/32/2017_Mercedes-Benz_CLA_45_AMG_%28C117%29_front.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/7/7b/2017_Mercedes-Benz_CLA_45_AMG_%28C117%29_rear.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/1/1a/Mercedes-Benz_CLA_%28C117%29_interior.jpg",
+  },
+  [mercedesKey("gla200-2018")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/8/8d/2019_Mercedes-Benz_GLA_200_AMG_Line_%28X156%29_front.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/0/0c/2019_Mercedes-Benz_GLA_200_AMG_Line_%28X156%29_rear.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/b/b6/Mercedes-Benz_GLA_%28X156%29_interior.jpg",
+  },
+  [mercedesKey("glc220d-2016")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/a/a2/2017_Mercedes-Benz_GLC_220d_4MATIC_%28X253%29_front.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/6/60/2017_Mercedes-Benz_GLC_220d_4MATIC_%28X253%29_rear.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/e/e2/Mercedes-Benz_GLC_%28X253%29_interior.jpg",
+  },
+  [mercedesKey("glc300-2020")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/9/90/2020_Mercedes-Benz_GLC_300_e_4MATIC_%28X253%29_front.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/0/09/2020_Mercedes-Benz_GLC_300_e_4MATIC_%28X253%29_rear.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/e/e2/Mercedes-Benz_GLC_%28X253%29_interior.jpg",
+  },
+  [mercedesKey("gle350d-2018")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/4/4c/2018_Mercedes-Benz_GLE_350d_4MATIC_%28W166%29_front.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/c/cf/2018_Mercedes-Benz_GLE_350d_4MATIC_%28W166%29_rear.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/c/cf/Mercedes-Benz_GLE_%28W166%29_interior.jpg",
+  },
+  [mercedesKey("gle450-2021")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/1/15/2021_Mercedes-Benz_GLE_450_4MATIC_%28V167%29_front.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/f/f9/2021_Mercedes-Benz_GLE_450_4MATIC_%28V167%29_rear.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/3/32/Mercedes-Benz_GLE_%28V167%29_interior.jpg",
+  },
+  [mercedesKey("gls500-2016")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/7/79/2016_Mercedes-Benz_GLS_500_4MATIC_%28X166%29_front.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/2/22/2016_Mercedes-Benz_GLS_500_4MATIC_%28X166%29_rear.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/3/3e/Mercedes-Benz_GLS_%28X166%29_interior.jpg",
+  },
+  [mercedesKey("g63-amg-2014")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/d/da/2015_Mercedes-Benz_G_63_AMG_%28W463%29_front.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/6/62/2015_Mercedes-Benz_G_63_AMG_%28W463%29_rear.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/a/a0/Mercedes-Benz_G-Class_%28W463%29_interior.jpg",
+  },
+  [mercedesKey("g63-amg-2020")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/f/fd/2019_Mercedes-Benz_AMG_G_63_%28W463%29_front.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/e/e3/2019_Mercedes-Benz_AMG_G_63_%28W463%29_rear.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/a/a0/Mercedes-Benz_G-Class_%28W463%29_interior.jpg",
+  },
+
   [koenigseggKey("cc8s-2002")]: {
     front: "https://upload.wikimedia.org/wikipedia/commons/a/ab/Koenigsegg_CC8S_%28front%29.jpg",
     rear:
@@ -851,4 +1102,8 @@ manualVehicleImages[buildManualImageKey("BMW")] = {
 
 manualVehicleImages[buildManualImageKey("Bentley")] = {
   ...manualVehicleImages[bentleyKey("continental-gt-2020")],
+};
+
+manualVehicleImages[buildManualImageKey("Mercedes-Benz")] = {
+  ...manualVehicleImages[mercedesKey("c300-2020")],
 };

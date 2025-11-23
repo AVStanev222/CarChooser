@@ -5,11 +5,9 @@ import BackLink from "@/app/components/BackLink";
 import { hyundaiModels } from "@/app/data/hyundai";
 import CarActivityTracker from "@/app/components/CarActivityTracker";
 
-interface HyundaiModelPageProps {
-  params: {
-    model: string;
-  };
-}
+type HyundaiModelPageProps = {
+  params: Promise<{ model: string }>;
+};
 
 const specEntries = (car: (typeof hyundaiModels)[number]) => [
   { label: "Year", value: car.year.toString() },
@@ -23,8 +21,11 @@ const specEntries = (car: (typeof hyundaiModels)[number]) => [
   { label: "Price (used)", value: car.priceUsed },
 ];
 
-export default function HyundaiModelPage({ params }: HyundaiModelPageProps) {
-  const car = hyundaiModels.find((entry) => entry.slug === params.model);
+export default async function HyundaiModelPage({
+  params,
+}: HyundaiModelPageProps) {
+  const { model } = await params;
+  const car = hyundaiModels.find((entry) => entry.slug === model);
 
   if (!car) {
     notFound();

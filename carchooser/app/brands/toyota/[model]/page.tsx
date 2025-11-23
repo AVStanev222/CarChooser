@@ -5,11 +5,9 @@ import BackLink from "@/app/components/BackLink";
 import { toyotaModels } from "@/app/data/toyota";
 import CarActivityTracker from "@/app/components/CarActivityTracker";
 
-interface ToyotaModelPageProps {
-  params: {
-    model: string;
-  };
-}
+type ToyotaModelPageProps = {
+  params: Promise<{ model: string }>;
+};
 
 const specEntries = (car: (typeof toyotaModels)[number]) => [
   { label: "Year", value: car.year.toString() },
@@ -23,8 +21,9 @@ const specEntries = (car: (typeof toyotaModels)[number]) => [
   { label: "Price (used)", value: car.priceUsed },
 ];
 
-export default function ToyotaModelPage({ params }: ToyotaModelPageProps) {
-  const car = toyotaModels.find((entry) => entry.slug === params.model);
+export default async function ToyotaModelPage({ params }: ToyotaModelPageProps) {
+  const { model } = await params;
+  const car = toyotaModels.find((entry) => entry.slug === model);
 
   if (!car) {
     notFound();

@@ -5,11 +5,9 @@ import BackLink from "@/app/components/BackLink";
 import { bentleyModels } from "@/app/data/bentley";
 import CarActivityTracker from "@/app/components/CarActivityTracker";
 
-interface BentleyModelPageProps {
-  params: {
-    model: string;
-  };
-}
+type BentleyModelPageProps = {
+  params: Promise<{ model: string }>;
+};
 
 const specEntries = (car: (typeof bentleyModels)[number]) => [
   { label: "Year", value: car.year.toString() },
@@ -23,8 +21,11 @@ const specEntries = (car: (typeof bentleyModels)[number]) => [
   { label: "Price (used)", value: car.priceUsed },
 ];
 
-export default function BentleyModelPage({ params }: BentleyModelPageProps) {
-  const car = bentleyModels.find((entry) => entry.slug === params.model);
+export default async function BentleyModelPage({
+  params,
+}: BentleyModelPageProps) {
+  const { model } = await params;
+  const car = bentleyModels.find((entry) => entry.slug === model);
 
   if (!car) {
     notFound();

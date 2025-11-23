@@ -5,11 +5,9 @@ import BackLink from "@/app/components/BackLink";
 import { subaruModels } from "@/app/data/subaru";
 import CarActivityTracker from "@/app/components/CarActivityTracker";
 
-interface SubaruModelPageProps {
-  params: {
-    model: string;
-  };
-}
+type SubaruModelPageProps = {
+  params: Promise<{ model: string }>;
+};
 
 const specEntries = (car: (typeof subaruModels)[number]) => [
   { label: "Year", value: car.year.toString() },
@@ -23,8 +21,9 @@ const specEntries = (car: (typeof subaruModels)[number]) => [
   { label: "Price (used)", value: car.priceUsed },
 ];
 
-export default function SubaruModelPage({ params }: SubaruModelPageProps) {
-  const car = subaruModels.find((entry) => entry.slug === params.model);
+export default async function SubaruModelPage({ params }: SubaruModelPageProps) {
+  const { model } = await params;
+  const car = subaruModels.find((entry) => entry.slug === model);
 
   if (!car) {
     notFound();

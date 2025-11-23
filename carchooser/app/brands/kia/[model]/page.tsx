@@ -5,11 +5,9 @@ import BackLink from "@/app/components/BackLink";
 import { kiaModels } from "@/app/data/kia";
 import CarActivityTracker from "@/app/components/CarActivityTracker";
 
-interface KiaModelPageProps {
-  params: {
-    model: string;
-  };
-}
+type KiaModelPageProps = {
+  params: Promise<{ model: string }>;
+};
 
 const specEntries = (car: (typeof kiaModels)[number]) => [
   { label: "Year", value: car.year.toString() },
@@ -23,8 +21,9 @@ const specEntries = (car: (typeof kiaModels)[number]) => [
   { label: "Price (used)", value: car.priceUsed },
 ];
 
-export default function KiaModelPage({ params }: KiaModelPageProps) {
-  const car = kiaModels.find((entry) => entry.slug === params.model);
+export default async function KiaModelPage({ params }: KiaModelPageProps) {
+  const { model } = await params;
+  const car = kiaModels.find((entry) => entry.slug === model);
 
   if (!car) {
     notFound();

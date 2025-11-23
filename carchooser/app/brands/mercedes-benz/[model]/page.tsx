@@ -5,11 +5,9 @@ import BackLink from "@/app/components/BackLink";
 import { mercedesModels } from "@/app/data/mercedes";
 import CarActivityTracker from "@/app/components/CarActivityTracker";
 
-interface MercedesModelPageProps {
-  params: {
-    model: string;
-  };
-}
+type MercedesModelPageProps = {
+  params: Promise<{ model: string }>;
+};
 
 const specEntries = (car: (typeof mercedesModels)[number]) => [
   { label: "Year", value: car.year.toString() },
@@ -23,8 +21,11 @@ const specEntries = (car: (typeof mercedesModels)[number]) => [
   { label: "Price (used)", value: car.priceUsed },
 ];
 
-export default function MercedesModelPage({ params }: MercedesModelPageProps) {
-  const car = mercedesModels.find((entry) => entry.slug === params.model);
+export default async function MercedesModelPage({
+  params,
+}: MercedesModelPageProps) {
+  const { model } = await params;
+  const car = mercedesModels.find((entry) => entry.slug === model);
 
   if (!car) {
     notFound();

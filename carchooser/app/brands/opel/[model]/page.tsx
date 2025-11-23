@@ -5,11 +5,9 @@ import BackLink from "@/app/components/BackLink";
 import { opelModels } from "@/app/data/opel";
 import CarActivityTracker from "@/app/components/CarActivityTracker";
 
-interface OpelModelPageProps {
-  params: {
-    model: string;
-  };
-}
+type OpelModelPageProps = {
+  params: Promise<{ model: string }>;
+};
 
 const specEntries = (car: (typeof opelModels)[number]) => [
   { label: "Year", value: car.year.toString() },
@@ -23,8 +21,9 @@ const specEntries = (car: (typeof opelModels)[number]) => [
   { label: "Price (used)", value: car.priceUsed },
 ];
 
-export default function OpelModelPage({ params }: OpelModelPageProps) {
-  const car = opelModels.find((entry) => entry.slug === params.model);
+export default async function OpelModelPage({ params }: OpelModelPageProps) {
+  const { model } = await params;
+  const car = opelModels.find((entry) => entry.slug === model);
 
   if (!car) {
     notFound();

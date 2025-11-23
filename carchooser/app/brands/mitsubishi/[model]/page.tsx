@@ -5,11 +5,9 @@ import BackLink from "@/app/components/BackLink";
 import { mitsubishiModels } from "@/app/data/mitsubishi";
 import CarActivityTracker from "@/app/components/CarActivityTracker";
 
-interface MitsubishiModelPageProps {
-  params: {
-    model: string;
-  };
-}
+type MitsubishiModelPageProps = {
+  params: Promise<{ model: string }>;
+};
 
 const specEntries = (car: (typeof mitsubishiModels)[number]) => [
   { label: "Year", value: car.year.toString() },
@@ -23,8 +21,11 @@ const specEntries = (car: (typeof mitsubishiModels)[number]) => [
   { label: "Price (used)", value: car.priceUsed },
 ];
 
-export default function MitsubishiModelPage({ params }: MitsubishiModelPageProps) {
-  const car = mitsubishiModels.find((entry) => entry.slug === params.model);
+export default async function MitsubishiModelPage({
+  params,
+}: MitsubishiModelPageProps) {
+  const { model } = await params;
+  const car = mitsubishiModels.find((entry) => entry.slug === model);
 
   if (!car) {
     notFound();
