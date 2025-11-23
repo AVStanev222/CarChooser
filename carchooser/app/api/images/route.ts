@@ -1,8 +1,7 @@
 import { NextResponse } from "next/server";
 import {
-  manualVehicleImages,
   buildManualImageKey,
-  ImageSlots,
+  manualVehicleImages,
 } from "@/app/data/manualVehicleImages";
 
 const ANGLES = [
@@ -14,42 +13,13 @@ const ANGLES = [
 const API_ENDPOINT =
   process.env.CARSXE_API_BASE ?? "https://api.carsxe.com/vehicle-images";
 
-const normalize = (value: string) =>
-  value.trim().toLowerCase().replace(/\s+/g, "-");
-
-const manualLookupKeys = (
-  brand: string,
-  model: string,
-  year?: number,
-  slug?: string,
-) => {
-  const keys: string[] = [];
-  if (slug) {
-    keys.push(buildManualImageKey(brand, slug));
+function resolveManualImages(brand: string, slug?: string) {
+  const slugKey = slug ? manualVehicleImages[buildManualImageKey(brand, slug)] : null;
+  if (slugKey) {
+    return slugKey;
   }
-  const baseKey = `${normalize(brand)}:${normalize(model)}`;
-  if (year) {
-    keys.push(`${baseKey}-${year}`);
-  }
-  keys.push(baseKey);
-  keys.push(buildManualImageKey(brand)); // brand-level fallback
-  return keys;
-};
-
-const getManualImages = (
-  brand: string,
-  model: string,
-  year?: number,
-  slug?: string,
-): ImageSlots | null => {
-  for (const key of manualLookupKeys(brand, model, year, slug)) {
-    const images = manualVehicleImages[key];
-    if (images) {
-      return { ...images };
-    }
-  }
-  return null;
-};
+  return manualVehicleImages[buildManualImageKey(brand)] ?? null;
+}
 
 export async function POST(request: Request) {
   let payload: {
@@ -74,36 +44,20 @@ export async function POST(request: Request) {
     );
   }
 
-  const results: Record<string, string | null> = {};
-  const manualImages = getManualImages(brand, model, year, slug);
-
+  const manualImages = resolveManualImages(brand, slug);
   if (manualImages) {
-    ANGLES.forEach(({ key }) => {
-      if (manualImages[key]) {
-        results[key] = manualImages[key] ?? null;
-      }
-    });
+    return NextResponse.json({ images: manualImages });
   }
-
-  const slotsToFetch = ANGLES.filter(({ key }) => !results[key]);
 
   const apiKey = process.env.CARSXE_API_KEY;
-  if (!apiKey && slotsToFetch.length === 0) {
-    return NextResponse.json({ images: results });
+  if (!apiKey) {
+    return NextResponse.json({ images: {} });
   }
 
-  if (!apiKey && slotsToFetch.length > 0) {
-    if (Object.keys(results).length > 0) {
-      return NextResponse.json({ images: results });
-    }
-    return NextResponse.json(
-      { error: "CARSXE_API_KEY is not configured" },
-      { status: 500 },
-    );
-  }
+  const results: Record<string, string | null> = {};
 
   await Promise.all(
-    slotsToFetch.map(async ({ key, angle, type }) => {
+    ANGLES.map(async ({ key, angle, type }) => {
       try {
         const url = new URL(API_ENDPOINT);
         url.searchParams.set("key", apiKey);
@@ -120,11 +74,14 @@ export async function POST(request: Request) {
         }
 
         const response = await fetch(url.toString());
+        const body = await response.text();
+        console.log("CarsXE", response.status, body);
+
         if (!response.ok) {
           throw new Error("Image request failed");
         }
-
-        const data = await response.json();
+        const data = JSON.parse(body);
+        
         const resolvedUrl =
           data?.image ??
           data?.url ??
