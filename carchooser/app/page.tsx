@@ -5,7 +5,7 @@ import BrandGrid from "./components/BrandGrid";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#050214] text-white">
+    <main className="min-h-screen bg-page text-text transition-colors">
       <Navbar />
       <Hero />
       <BrandGrid />

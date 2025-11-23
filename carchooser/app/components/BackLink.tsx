@@ -10,7 +10,7 @@ export default function BackLink({ href, children }: BackLinkProps) {
   return (
     <Link
       href={href}
-      className="inline-flex items-center gap-2 text-sm text-purple-300 hover:text-purple-100 transition-colors mb-6"
+      className="mb-6 inline-flex items-center gap-2 text-sm text-purple-600 transition-colors hover:text-purple-500 dark:text-purple-300 dark:hover:text-purple-100"
     >
       <span aria-hidden="true">←</span>
       <span>{children}</span>

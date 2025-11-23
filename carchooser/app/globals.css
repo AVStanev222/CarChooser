@@ -4,5 +4,33 @@
 
 /* Your custom global styles */
 :root {
-  /* you can add custom colors later */
+  --color-page: #f4f6fb;
+  --color-section: #ffffff;
+  --color-card: #f8f7ff;
+  --color-card-muted: #eef0ff;
+  --color-card-hover: #ebe6ff;
+  --color-border: rgba(15, 23, 42, 0.12);
+  --color-text: #0b0d18;
+  --color-text-muted: #646a87;
+  --color-button: #7c3aed;
+  --color-button-hover: #6d28d9;
+}
+
+:root.dark {
+  --color-page: #050214;
+  --color-section: #0a051d;
+  --color-card: #17112c;
+  --color-card-muted: #100826;
+  --color-card-hover: #21173d;
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-text: #ffffff;
+  --color-text-muted: rgba(255, 255, 255, 0.7);
+  --color-button: #a855f7;
+  --color-button-hover: #c084fc;
+}
+
+body {
+  background-color: var(--color-page);
+  color: var(--color-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }

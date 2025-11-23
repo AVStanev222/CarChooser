@@ -87,13 +87,13 @@ export default function CarGuideChat() {
   };
 
   return (
-    <section className="mt-10 rounded-3xl border border-white/10 bg-[#08041a] p-6 text-white shadow-2xl">
+    <section className="mt-10 rounded-3xl border border-border bg-section p-6 text-text shadow-2xl">
       <div className="flex flex-col gap-4">
         <div className="space-y-4 max-h-[24rem] overflow-y-auto pr-1">
           {messages.map((message, index) => (
             <div
               key={`message-${index}`}
-              className={`rounded-2xl px-4 py-3 text-sm ${message.sender === "bot" ? "bg-white/5 text-white" : "bg-emerald-500/20 text-emerald-100"}`}
+              className={`rounded-2xl px-4 py-3 text-sm ${message.sender === "bot" ? "bg-white/5 text-text" : "bg-emerald-500/20 text-emerald-100"}`}
             >
               <p>{message.text}</p>
               {message.suggestions ? (
@@ -102,12 +102,12 @@ export default function CarGuideChat() {
                     <Link
                       key={suggestion.path}
                       href={suggestion.path}
-                      className="block rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm transition hover:border-emerald-400 hover:bg-white/10"
+                      className="block rounded-2xl border border-border bg-white/5 px-4 py-3 text-sm transition hover:border-emerald-400 hover:bg-white/10"
                     >
-                      <p className="font-semibold text-white">
+                      <p className="font-semibold text-text">
                         {suggestion.brand} {suggestion.model} {suggestion.year}
                       </p>
-                      <p className="text-white/70">{suggestion.summary}</p>
+                      <p className="text-muted">{suggestion.summary}</p>
                       <p className="mt-1 text-xs uppercase tracking-[0.2em] text-emerald-300">
                         {suggestion.priceUsed}
                       </p>
@@ -125,7 +125,7 @@ export default function CarGuideChat() {
             value={input}
             onChange={(event) => setInput(event.target.value)}
             placeholder="Example: Looking for a BMW coupe from 2008 around 15k"
-            className="flex-1 rounded-2xl border border-white/20 bg-transparent px-4 py-3 text-sm text-white placeholder:text-white/40 focus:border-emerald-400 focus:outline-none"
+            className="flex-1 rounded-2xl border border-border bg-transparent px-4 py-3 text-sm text-text placeholder:text-text/40 focus:border-emerald-400 focus:outline-none"
           />
           <button
             type="submit"

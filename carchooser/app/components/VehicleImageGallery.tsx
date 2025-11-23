@@ -72,7 +72,7 @@ export default function VehicleImageGallery({
         return (
           <div
             key={slot.key}
-            className="relative h-48 rounded-2xl border border-white/10 flex items-center justify-center overflow-hidden bg-[#100826]"
+            className="relative h-48 rounded-2xl border border-border flex items-center justify-center overflow-hidden bg-card-muted"
           >
             {url ? (
               <Image
@@ -84,7 +84,7 @@ export default function VehicleImageGallery({
                 priority={false}
               />
             ) : (
-              <div className="text-center px-4 text-sm text-gray-400">
+              <div className="text-center px-4 text-sm text-muted">
                 {status === "loading" && !images[slot.key]
                   ? "Fetching photo..."
                   : slot.label}

@@ -53,10 +53,10 @@ export default function SignInPage() {
     : null;
 
   return (
-    <section className="flex min-h-screen items-center justify-center bg-neutral-950 px-4 py-16 text-white">
-      <div className="w-full max-w-md rounded-2xl border border-white/10 bg-black/40 p-8 shadow-2xl">
+    <section className="flex min-h-screen items-center justify-center bg-neutral-950 px-4 py-16 text-text">
+      <div className="w-full max-w-md rounded-2xl border border-border bg-black/40 p-8 shadow-2xl">
         <h1 className="text-3xl font-semibold">Welcome back</h1>
-        <p className="mt-2 text-sm text-white/60">
+        <p className="mt-2 text-sm text-muted">
           Sign in to continue exploring cars and exclusive offers.
         </p>
 
@@ -67,24 +67,24 @@ export default function SignInPage() {
         ) : null}
 
         <form className="mt-8 space-y-4" onSubmit={handleCredentialsSignIn}>
-          <label className="block text-sm font-medium text-white/80">
+          <label className="block text-sm font-medium text-muted">
             Email
             <input
               type="email"
               value={email}
               onChange={(event) => setEmail(event.target.value)}
-              className="mt-1 w-full rounded-lg border border-white/10 bg-white/5 px-4 py-2 text-white outline-none focus:border-white/40"
+              className="mt-1 w-full rounded-lg border border-border bg-white/5 px-4 py-2 text-text outline-none focus:border-border"
               required
             />
           </label>
 
-          <label className="block text-sm font-medium text-white/80">
+          <label className="block text-sm font-medium text-muted">
             Password
             <input
               type="password"
               value={password}
               onChange={(event) => setPassword(event.target.value)}
-              className="mt-1 w-full rounded-lg border border-white/10 bg-white/5 px-4 py-2 text-white outline-none focus:border-white/40"
+              className="mt-1 w-full rounded-lg border border-border bg-white/5 px-4 py-2 text-text outline-none focus:border-border"
               required
             />
           </label>
@@ -102,7 +102,7 @@ export default function SignInPage() {
           </button>
         </form>
 
-        <p className="mt-8 text-center text-sm text-white/70">
+        <p className="mt-8 text-center text-sm text-muted">
           Don&apos;t have an account?{" "}
           <Link href="/signup" className="font-semibold text-emerald-400">
             Sign up

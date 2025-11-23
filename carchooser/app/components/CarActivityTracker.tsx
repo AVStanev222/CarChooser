@@ -90,9 +90,9 @@ export default function CarActivityTracker({
   }
 
   return (
-    <div className="mt-6 flex flex-col gap-3 rounded-2xl border border-white/10 bg-white/5 p-4 text-white">
+    <div className="mt-6 flex flex-col gap-3 rounded-2xl border border-border bg-card p-4 text-text dark:bg-white/5">
       <div className="flex flex-wrap items-center gap-3">
-        <p className="text-sm text-white/70">
+        <p className="text-sm text-muted">
           Viewing as a logged-in driver. This model is saved to your history.
         </p>
         <button
@@ -101,14 +101,14 @@ export default function CarActivityTracker({
           className={`rounded-full px-4 py-1 text-sm font-semibold transition ${
             pinned
               ? "bg-emerald-500 text-black hover:bg-emerald-400"
-              : "border border-white/30 text-white hover:border-white hover:bg-white/10"
+              : "border border-border text-text hover:border-button hover:text-button"
           } disabled:cursor-not-allowed disabled:opacity-60`}
         >
           {pinning ? "Updating..." : pinned ? "Pinned" : "Pin this car"}
         </button>
       </div>
       {infoText ? (
-        <p className="text-xs text-white/70">{infoText}</p>
+        <p className="text-xs text-muted">{infoText}</p>
       ) : null}
     </div>
   );

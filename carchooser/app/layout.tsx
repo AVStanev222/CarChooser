@@ -2,6 +2,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import React from "react";
+import { ThemeProvider } from "./components/ThemeProvider";
 
 export const metadata: Metadata = {
   title: "CarChooser",
@@ -15,8 +16,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-[#050214] text-white antialiased">
-        {children}
+      <body className="bg-page text-text antialiased transition-colors">
+        <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
   );

@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative w-full bg-gradient-to-b from-[#0d061f] to-[#160a38] text-white">
+    <section className="relative w-full bg-section text-text transition-colors dark:bg-gradient-to-b dark:from-[#0d061f] dark:to-[#160a38]">
       <div className="max-w-6xl mx-auto px-6 pt-24 pb-20 flex flex-col md:flex-row items-center justify-between gap-10">
         {/* LEFT TEXT */}
         <motion.div
@@ -25,27 +25,27 @@ export default function Hero() {
             <span className="text-purple-400">Accelerate Your Choice</span>
           </h1>
 
-          <p className="text-lg text-gray-300">
+          <p className="text-lg text-muted">
             Compare brands, explore real specs and prices, and discover the best
             car for your lifestyle in just a few clicks.
           </p>
 
           <div className="flex flex-wrap items-center gap-4">
             <Link
-              href="/cars"
+              href="/brands"
               className="px-6 py-3 bg-purple-600 hover:bg-purple-700 transition rounded-full font-semibold text-white"
             >
               Explore Brands
             </Link>
             <Link
               href="/about"
-              className="px-6 py-3 rounded-full border border-white/20 text-sm text-gray-200 hover:bg-white/10 transition"
+              className="px-6 py-3 rounded-full border border-border text-sm text-muted transition hover:border-button hover:text-button dark:text-gray-200 dark:hover:bg-white/10"
             >
               Learn How CarChooser Works
             </Link>
           </div>
 
-          <div className="flex gap-4 pt-4 text-xs text-gray-400">
+          <div className="flex gap-4 pt-4 text-xs text-muted">
             <span>2002–2025 models</span>
             <span>New & 2nd hand prices</span>
             <span>Smart AI assistant</span>
@@ -60,7 +60,7 @@ export default function Hero() {
           className="relative w-full md:w-[520px] lg:w-[580px]"
         >
           <div className="absolute -inset-6 bg-purple-600/40 blur-3xl opacity-40 pointer-events-none" />
-          <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
+          <div className="relative rounded-2xl overflow-hidden border border-border shadow-2xl">
             <Image
               src="/homepage.png"
               alt="CarChooser homepage preview"

@@ -111,11 +111,11 @@ function BulgariaMap({
   };
 
   return (
-    <div className="relative w-full rounded-3xl border border-white/10 bg-gradient-to-br from-[#120a3a] via-[#0a0621] to-[#050214] p-6 shadow-lg shadow-purple-950/30">
-      <p className="text-sm font-semibold text-white">
+    <div className="relative w-full rounded-3xl border border-border bg-gradient-to-br from-[#120a3a] via-[#0a0621] to-[#050214] p-6 shadow-lg shadow-purple-950/30">
+      <p className="text-sm font-semibold text-text">
         Bulgaria heatmap for top youth schools
       </p>
-      <p className="text-xs text-gray-300">
+      <p className="text-xs text-muted">
         Hover or tap a pin to lock the school and highlight it on the list.
       </p>
       <div className="relative mt-6 aspect-square w-full">
@@ -172,7 +172,7 @@ function BulgariaMap({
               className={`rounded-full border px-3 py-1 text-xs font-semibold transition ${
                 selectedSchool === school.name
                   ? "border-white bg-white text-[#050214]"
-                  : "border-white/40 bg-white/90 text-[#050214]"
+                  : "border-border bg-white/90 text-[#050214]"
               }`}
             >
               {school.city}
@@ -199,9 +199,9 @@ export default function YoungDriversPage() {
 
 
   return (
-    <main className="min-h-screen bg-[#050214] text-white">
+    <main className="min-h-screen bg-page text-text transition-colors">
       <Navbar />
-      <section className="border-b border-white/5 bg-gradient-to-b from-[#120a3a] to-transparent py-16">
+      <section className="border-b border-border bg-gradient-to-b from-[#120a3a] to-transparent py-16">
         <div className="mx-auto max-w-6xl px-6 text-center">
           <p className="text-xs uppercase tracking-[0.35em] text-purple-300">
             Under 18 programs
@@ -209,7 +209,7 @@ export default function YoungDriversPage() {
           <h1 className="mt-2 text-4xl font-semibold md:text-5xl">
             Discover Bulgaria&apos;s best-rated driving schools
           </h1>
-          <p className="mx-auto mt-4 max-w-3xl text-base text-gray-300">
+          <p className="mx-auto mt-4 max-w-3xl text-base text-muted">
             We analyzed dozens of youth-friendly driving academies and curated
             the safest, best-reviewed experiences in every major city. Pick a
             hotspot, submit a request, and gain confidence before you even turn
@@ -226,32 +226,32 @@ export default function YoungDriversPage() {
               selectedSchool={selectedSchool}
               onSelect={setSelectedSchool}
             />
-            <div className="rounded-3xl border border-white/10 bg-white/5 p-5 text-center text-sm text-gray-200">
+            <div className="rounded-3xl border border-border bg-white/5 p-5 text-center text-sm text-gray-200">
               <p className="text-xs uppercase tracking-[0.35em] text-purple-300">
                 Why trust these picks
               </p>
               <div className="mt-5 grid gap-4 md:grid-cols-2">
                 <div className="rounded-2xl bg-white/5 p-4 shadow-inner">
-                  <p className="text-3xl font-semibold text-white">2,500+</p>
-                  <p className="text-xs uppercase tracking-widest text-gray-400">
+                  <p className="text-3xl font-semibold text-text">2,500+</p>
+                  <p className="text-xs uppercase tracking-widest text-muted">
                     Students coached in 2024
                   </p>
                 </div>
                 <div className="rounded-2xl bg-white/5 p-4 shadow-inner">
-                  <p className="text-3xl font-semibold text-white">96%</p>
-                  <p className="text-xs uppercase tracking-widest text-gray-400">
+                  <p className="text-3xl font-semibold text-text">96%</p>
+                  <p className="text-xs uppercase tracking-widest text-muted">
                     Exam pass rate
                   </p>
                 </div>
                 <div className="rounded-2xl bg-white/5 p-4 shadow-inner">
-                  <p className="text-3xl font-semibold text-white">4.5 mo.</p>
-                  <p className="text-xs uppercase tracking-widest text-gray-400">
+                  <p className="text-3xl font-semibold text-text">4.5 mo.</p>
+                  <p className="text-xs uppercase tracking-widest text-muted">
                     Avg time to licence
                   </p>
                 </div>
                 <div className="rounded-2xl bg-white/5 p-4 shadow-inner">
-                  <p className="text-3xl font-semibold text-white">3</p>
-                  <p className="text-xs uppercase tracking-widest text-gray-400">
+                  <p className="text-3xl font-semibold text-text">3</p>
+                  <p className="text-xs uppercase tracking-widest text-muted">
                     Languages offered
                   </p>
                 </div>
@@ -266,8 +266,8 @@ export default function YoungDriversPage() {
                 onClick={() => setSelectedSchool(school.name)}
                 className={`rounded-3xl border bg-white/5 p-5 transition ${
                   selectedSchool === school.name
-                    ? "border-white/60 shadow-lg shadow-purple-900/40"
-                    : "border-white/10"
+                    ? "border-border shadow-lg shadow-purple-900/40"
+                    : "border-border"
                 } cursor-pointer`}
               >
                 <div className="flex items-center justify-between text-xs uppercase tracking-wide">
@@ -277,7 +277,7 @@ export default function YoungDriversPage() {
                   </span>
                 </div>
                 <h3 className="mt-1 text-xl font-semibold">{school.name}</h3>
-                <p className="text-sm text-gray-300">{school.focus}</p>
+                <p className="text-sm text-muted">{school.focus}</p>
                 <Link
                   href={school.url}
                   target="_blank"
@@ -293,22 +293,22 @@ export default function YoungDriversPage() {
         </div>
 
         {spotlightSchool && (
-          <div className="mt-12 rounded-3xl border border-white/10 bg-[#0f0a2c] p-6">
+          <div className="mt-12 rounded-3xl border border-border bg-section p-6">
             <p className="text-xs uppercase tracking-wide text-purple-200">
               Spotlight
             </p>
             <h2 className="text-2xl font-semibold">
               {spotlightSchool.name} · {spotlightSchool.city}
             </h2>
-            <p className="mt-2 text-sm text-gray-300">{spotlightSchool.focus}</p>
-            <div className="mt-4 flex flex-wrap gap-3 text-sm text-gray-300">
-              <span className="rounded-full border border-white/10 px-3 py-1">
+            <p className="mt-2 text-sm text-muted">{spotlightSchool.focus}</p>
+            <div className="mt-4 flex flex-wrap gap-3 text-sm text-muted">
+              <span className="rounded-full border border-border px-3 py-1">
                 Avg. rating {spotlightSchool.rating.toFixed(1)} ★
               </span>
-              <span className="rounded-full border border-white/10 px-3 py-1">
+              <span className="rounded-full border border-border px-3 py-1">
                 Under-18 specialists
               </span>
-              <span className="rounded-full border border-white/10 px-3 py-1">
+              <span className="rounded-full border border-border px-3 py-1">
                 Personal coaching available
               </span>
             </div>
@@ -325,15 +325,15 @@ export default function YoungDriversPage() {
           </div>
         )}
       </section>
-      <section className="border-t border-white/5 bg-[#040111] py-12">
-        <div className="mx-auto max-w-4xl rounded-3xl border border-white/10 bg-gradient-to-br from-[#120a3a] to-[#050214] px-8 py-10 text-center">
+      <section className="border-t border-border bg-page py-12">
+        <div className="mx-auto max-w-4xl rounded-3xl border border-border bg-gradient-to-br from-[#120a3a] to-[#050214] px-8 py-10 text-center">
           <p className="text-xs uppercase tracking-[0.4em] text-purple-300">
             Theory prep
           </p>
           <h3 className="mt-3 text-3xl font-semibold">
             Brush up on the official driving theory
           </h3>
-          <p className="mt-4 text-sm text-gray-300">
+          <p className="mt-4 text-sm text-muted">
             Tackle real exam questions, monitor your score, and repeat weak
             categories until you&apos;re confident.
           </p>
