@@ -6,6 +6,7 @@ import {
   useContext,
   useEffect,
   useMemo,
+  useRef,
   useState,
 } from "react";
 
@@ -33,6 +34,7 @@ function getPreferredTheme(): Theme {
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [theme, setTheme] = useState<Theme>("dark");
+  const transitionRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
     setTheme(getPreferredTheme());
@@ -45,9 +47,30 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     window.localStorage.setItem("carchooser-theme", theme);
   }, [theme]);
 
-  const toggleTheme = useCallback(() => {
-    setTheme((prev) => (prev === "dark" ? "light" : "dark"));
+  useEffect(() => {
+    return () => {
+      if (transitionRef.current) {
+        clearTimeout(transitionRef.current);
+      }
+    };
   }, []);
+
+  const beginTransition = useCallback(() => {
+    if (typeof document === "undefined") return;
+    const root = document.documentElement;
+    root.classList.add("theme-transition");
+    if (transitionRef.current) {
+      clearTimeout(transitionRef.current);
+    }
+    transitionRef.current = window.setTimeout(() => {
+      root.classList.remove("theme-transition");
+    }, 450);
+  }, []);
+
+  const toggleTheme = useCallback(() => {
+    beginTransition();
+    setTheme((prev) => (prev === "dark" ? "light" : "dark"));
+  }, [beginTransition]);
 
   const value = useMemo(() => ({ theme, toggleTheme }), [theme, toggleTheme]);
 
