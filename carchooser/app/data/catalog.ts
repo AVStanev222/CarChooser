@@ -20,6 +20,7 @@ export type CatalogCar = {
   slug: string;
   model: string;
   year: number;
+  summary: string;
   engine: string;
   horsepower: number;
   fuel: string;
