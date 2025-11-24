@@ -27,6 +27,7 @@ const koenigseggKey = (slug: string) => buildManualImageKey("Koenigsegg", slug);
 const mitsubishiKey = (slug: string) => buildManualImageKey("Mitsubishi", slug);
 const opelKey = (slug: string) => buildManualImageKey("Opel", slug);
 const renaultKey = (slug: string) => buildManualImageKey("Renault", slug);
+const subaruKey = (slug: string) => buildManualImageKey("Subaru", slug);
 
 
 // Extend this map with additional models or brands if you have static image URLs.
@@ -1399,6 +1400,193 @@ export const manualVehicleImages: ManualVehicleImageMap = {
       "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Renault_Wind_Gordini_%286147872702%29.jpg/1400px-Renault_Wind_Gordini_%286147872702%29.jpg",
   },
 
+  [subaruKey("legacy-2006")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Subaru_Legacy_front_20071228.jpg/1400px-Subaru_Legacy_front_20071228.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Subaru_Legacy_rear_20071228.jpg/1400px-Subaru_Legacy_rear_20071228.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/e/ea/Legacytwinterior.jpg",
+  },
+  [subaruKey("legacy-2015")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Subaru_Legacy_Concept_front_%2820413433024%29.jpg/1400px-Subaru_Legacy_Concept_front_%2820413433024%29.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Subaru_Legacy_Concept_rear_%2821009837396%29.jpg/1400px-Subaru_Legacy_Concept_rear_%2821009837396%29.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Subaru_LEGACY_OUTBACK_Limited_%28BS%29_interior.JPG/1400px-Subaru_LEGACY_OUTBACK_Limited_%28BS%29_interior.JPG",
+  },
+  [subaruKey("impreza-2007")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/a/ab/2007_Subaru_Impreza_Front_Quarter.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/3/3e/2007_Subaru_Impreza_Rear_Quarter.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Subaru_STI204_019x.JPG/1400px-Subaru_STI204_019x.JPG",
+  },
+  [subaruKey("impreza-wrx-2012")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/2004-2005_Subaru_Impreza_WRX_wagon_--_01-27-2012_front.jpg/1400px-2004-2005_Subaru_Impreza_WRX_wagon_--_01-27-2012_front.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/2004-2005_Subaru_Impreza_WRX_wagon_--_01-27-2012_rear.jpg/1400px-2004-2005_Subaru_Impreza_WRX_wagon_--_01-27-2012_rear.jpg",
+    interior: null,
+  },
+  [subaruKey("wrx-sti-2017")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Subaru_WRX_STI_Type_S_%28CBA-VAB%29_front.jpg/1400px-Subaru_WRX_STI_Type_S_%28CBA-VAB%29_front.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Subaru_WRX_STI_Type_S_%28CBA-VAB%29_rear.jpg/1400px-Subaru_WRX_STI_Type_S_%28CBA-VAB%29_rear.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/The_interior_of_Subaru_WRX_STI_Type_S_2017_year_model.jpg/1400px-The_interior_of_Subaru_WRX_STI_Type_S_2017_year_model.jpg",
+  },
+  [subaruKey("outback-2010")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Subaru_Outback_IV_2.0D_AWD_Active_front_20101017.jpg/1400px-Subaru_Outback_IV_2.0D_AWD_Active_front_20101017.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/2010_Subaru_Outback_rear_--_08-24-2009.jpg/1400px-2010_Subaru_Outback_rear_--_08-24-2009.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/2006_Subaru_Outback_XT_366A7184_%2814530763368%29.jpg/1400px-2006_Subaru_Outback_XT_366A7184_%2814530763368%29.jpg",
+  },
+  [subaruKey("outback-2018")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/2018_Subaru_Outback_SE_Premium_Symmetrical_AWD_2.5_Front.jpg/1400px-2018_Subaru_Outback_SE_Premium_Symmetrical_AWD_2.5_Front.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/2018_Subaru_Outback_SE_Premium_Symmetrical_CVT_Rear_2.5.jpg/1400px-2018_Subaru_Outback_SE_Premium_Symmetrical_CVT_Rear_2.5.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Subaru_LEGACY_OUTBACK_X-BREAK_%28DBA-BS9%29_interior.jpg/1400px-Subaru_LEGACY_OUTBACK_X-BREAK_%28DBA-BS9%29_interior.jpg",
+  },
+  [subaruKey("forester-2008")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Subaru_Forester_front_20080715.jpg/1400px-Subaru_Forester_front_20080715.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Subaru_Forester_rear_20080715.jpg/1400px-Subaru_Forester_rear_20080715.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/2008_Subaru_Forester_%28SH9_MY09%29_X_wagon_%282008-10-10%29_02.jpg/1400px-2008_Subaru_Forester_%28SH9_MY09%29_X_wagon_%282008-10-10%29_02.jpg",
+  },
+  [subaruKey("forester-2016")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Subaru_FORESTER_2.0XT_EyeSight_%28DBA-SJG%29_front.jpg/1400px-Subaru_FORESTER_2.0XT_EyeSight_%28DBA-SJG%29_front.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Subaru_FORESTER_2.0XT_EyeSight_%28DBA-SJG%29_rear.jpg/1400px-Subaru_FORESTER_2.0XT_EyeSight_%28DBA-SJG%29_rear.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/2016_Subaru_Forester_2.0i-L_EyeSight_X-Mode_switch.jpg/1400px-2016_Subaru_Forester_2.0i-L_EyeSight_X-Mode_switch.jpg",
+  },
+  [subaruKey("forester-hybrid-2020")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Blue_Subaru_FORESTER_Advance_%285AA-SKE%29_front.jpg/1400px-Blue_Subaru_FORESTER_Advance_%285AA-SKE%29_front.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Subaru_FORESTER_Advance_%285AA-SKE%29_%26_FORESTER_Premium_%285BA-SK9%29_rear.jpg/1400px-Subaru_FORESTER_Advance_%285AA-SKE%29_%26_FORESTER_Premium_%285BA-SK9%29_rear.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/The_interior_of_Subaru_FORESTER_Advance_%285AA-SKE%29.jpg/1400px-The_interior_of_Subaru_FORESTER_Advance_%285AA-SKE%29.jpg",
+  },
+  [subaruKey("xv-2013")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/2013_Subaru_XV_Crosstrek%2C_front_left_view.jpg/1400px-2013_Subaru_XV_Crosstrek%2C_front_left_view.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/2013_Subaru_XV_Crosstrek%2C_rear_view.jpg/1400px-2013_Subaru_XV_Crosstrek%2C_rear_view.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/d/d9/Subaru_XV_HYBRID_2.0_i-L_Interior.jpg",
+  },
+  [subaruKey("xv-hybrid-2020")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Subaru_XV_Advance_%285AA-GTE%29_front.jpg/1400px-Subaru_XV_Advance_%285AA-GTE%29_front.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Subaru_XV_Advance_Style_Edition_rear.jpg/1400px-Subaru_XV_Advance_Style_Edition_rear.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/The_interior_of_Subaru_XV_Advance_%285AA-GTE%29.jpg/1400px-The_interior_of_Subaru_XV_Advance_%285AA-GTE%29.jpg",
+  },
+  [subaruKey("brz-2013")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Geneva_MotorShow_2013_-_Subaru_BRZ_front.jpg/1400px-Geneva_MotorShow_2013_-_Subaru_BRZ_front.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Subaru_BRZ_%28ZC6%2C_rear%29.jpg/1400px-Subaru_BRZ_%28ZC6%2C_rear%29.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Subaru_BRZ_Interior.JPG/1400px-Subaru_BRZ_Interior.JPG",
+  },
+  [subaruKey("brz-2022")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/2022_Subaru_BRZ_Limited_in_Crystal_Black_Silica%2C_front_right_%28NYIAS_2022%29.jpg/1400px-2022_Subaru_BRZ_Limited_in_Crystal_Black_Silica%2C_front_right_%28NYIAS_2022%29.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/2022_Subaru_BRZ_Limited_in_Crystal_Black_Silica%2C_rear_right_%28NYIAS_2022%29.jpg/1400px-2022_Subaru_BRZ_Limited_in_Crystal_Black_Silica%2C_rear_right_%28NYIAS_2022%29.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/The_interior_of_Subaru_BRZ_S_%283BA-ZD8%29_with_STI_Performance_parts.jpg/1400px-The_interior_of_Subaru_BRZ_S_%283BA-ZD8%29_with_STI_Performance_parts.jpg",
+  },
+  [subaruKey("tribeca-2008")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Subaru_Tribeca.JPG/1400px-Subaru_Tribeca.JPG",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Subaru_Tribeca_Heck.JPG/1400px-Subaru_Tribeca_Heck.JPG",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/2007_Subaru_Tribeca_%28B9_MY08%29_R_Premium_Pack_wagon_02.jpg/1400px-2007_Subaru_Tribeca_%28B9_MY08%29_R_Premium_Pack_wagon_02.jpg",
+  },
+  [subaruKey("tribeca-2012")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/2012_Subaru_Tribeca_3.6R_Limited_in_Ice_Silver_Metallic%2C_front_right.jpg/1400px-2012_Subaru_Tribeca_3.6R_Limited_in_Ice_Silver_Metallic%2C_front_right.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/2012_Subaru_Tribeca_3.6R_Limited_in_Ice_Silver_Metallic%2C_rear_left.jpg/1400px-2012_Subaru_Tribeca_3.6R_Limited_in_Ice_Silver_Metallic%2C_rear_left.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/2007_Subaru_Tribeca_%28B9_MY08%29_R_Premium_Pack_wagon_02.jpg/1400px-2007_Subaru_Tribeca_%28B9_MY08%29_R_Premium_Pack_wagon_02.jpg",
+  },
+  [subaruKey("legacy-outback-2006")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/SubaruOutback.JPG/1400px-SubaruOutback.JPG",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/2010_Subaru_Outback_rear_--_08-24-2009.jpg/1400px-2010_Subaru_Outback_rear_--_08-24-2009.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/2006_Subaru_Outback_XT_366A7184_%2814530763368%29.jpg/1400px-2006_Subaru_Outback_XT_366A7184_%2814530763368%29.jpg",
+  },
+  [subaruKey("liberty-2010")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/2000_Subaru_Liberty_%28BE5_MY01%29_GX_sedan_%282010-05-04%29_01.jpg/1400px-2000_Subaru_Liberty_%28BE5_MY01%29_GX_sedan_%282010-05-04%29_01.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/2010_red_Subaru_Legacy_rear.JPG/1400px-2010_red_Subaru_Legacy_rear.JPG",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/e/ea/Legacytwinterior.jpg",
+  },
+  [subaruKey("sambar-2005")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Subaru_Sambar_804.jpg/1400px-Subaru_Sambar_804.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Subaru_SAMBAR_VAN_Dias_%283BD-S700B%29_rear.jpg/1400px-Subaru_SAMBAR_VAN_Dias_%283BD-S700B%29_rear.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Subaru_Sambar_interior.jpg/1400px-Subaru_Sambar_interior.jpg",
+  },
+  [subaruKey("justy-2007")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Subaru_Justy_1.JPG/1400px-Subaru_Justy_1.JPG",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Subaru_Justy_20170428_rear.jpg/1400px-Subaru_Justy_20170428_rear.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Subaru_Justy_interior_%285104134222%29.jpg/1400px-Subaru_Justy_interior_%285104134222%29.jpg",
+  },
+  [subaruKey("domingo-2004")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Subaru_Libero_front_20070822.jpg/1400px-Subaru_Libero_front_20070822.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Subaru_Domingo_van_on_Kunyang_Street_20100914.jpg/1400px-Subaru_Domingo_van_on_Kunyang_Street_20100914.jpg",
+    interior: null,
+  },
+  [subaruKey("r1-2005")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/9/92/2005_Subaru_R1.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Subaru_R1_102.jpg/1400px-Subaru_R1_102.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/e/e3/R1interior.jpg",
+  },
+  [subaruKey("r2-2004")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Subaru_R2_type_S.JPG/1400px-Subaru_R2_type_S.JPG",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Subaru_R2%2C_facelift%2C_rear_view.jpg/1400px-Subaru_R2%2C_facelift%2C_rear_view.jpg",
+    interior: null,
+  },
+  [subaruKey("wrx-2015")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Subaru_WRX_STI_Type_S_%28CBA-VAB%29_front.jpg/1400px-Subaru_WRX_STI_Type_S_%28CBA-VAB%29_front.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Subaru_WRX_STI_Type_S_%28CBA-VAB%29_rear.jpg/1400px-Subaru_WRX_STI_Type_S_%28CBA-VAB%29_rear.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Subaru_WRX_STI_%28VAB%29_interior.JPG/1400px-Subaru_WRX_STI_%28VAB%29_interior.JPG",
+  },
+  [subaruKey("b9-tribeca-2006")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/2005_Subaru_B9_Tribeca_front.jpg/1400px-2005_Subaru_B9_Tribeca_front.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/2005_Subaru_B9_Tribeca_rear_34.jpg/1400px-2005_Subaru_B9_Tribeca_rear_34.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/2007_Subaru_Tribeca_%28B9_MY08%29_R_Premium_Pack_wagon_02.jpg/1400px-2007_Subaru_Tribeca_%28B9_MY08%29_R_Premium_Pack_wagon_02.jpg",
+  },
+
   [opelKey("corsa-2006")]: {
     front: "https://upload.wikimedia.org/wikipedia/commons/6/61/Opel_Corsa_C_1.2_Elegance_front_20100912.jpg",
     rear: "https://upload.wikimedia.org/wikipedia/commons/f/f9/Opel_Corsa_C_1.2_Elegance_rear_20100912.jpg",
@@ -1558,6 +1746,10 @@ manualVehicleImages[buildManualImageKey("Mitsubishi")] = {
 
 manualVehicleImages[buildManualImageKey("Renault")] = {
   ...manualVehicleImages[renaultKey("clio-2019")],
+};
+
+manualVehicleImages[buildManualImageKey("Subaru")] = {
+  ...manualVehicleImages[subaruKey("forester-2016")],
 };
 
 manualVehicleImages[buildManualImageKey("Opel")] = {
