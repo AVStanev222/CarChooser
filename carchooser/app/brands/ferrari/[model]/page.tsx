@@ -64,7 +64,7 @@ export default async function FerrariModelPage({
           <p className="text-muted text-sm leading-relaxed">
             Save favorite builds, track maintenance, and upload photos once our
             Supabase data bridge ships. For now this space previews the gallery
-            area you'll customize.
+            area you&apos;ll customize.
           </p>
         </div>
       </section>

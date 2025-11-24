@@ -12,8 +12,9 @@ export default function VolkswagenModelsPage() {
           Volkswagen <span className="text-purple-400">Lineup</span>
         </SectionTitle>
         <p className="text-muted max-w-3xl mb-10">
-          Classic Polos, iconic Golfs, and modern ID EVs—scroll through VW's
-          breadth of engineering ahead of our full Supabase integration.
+          Classic Polos, iconic Golfs, and modern ID EVs—scroll through
+          VW&apos;s breadth of engineering ahead of our full Supabase
+          integration.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

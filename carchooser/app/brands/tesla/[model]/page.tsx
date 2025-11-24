@@ -60,8 +60,8 @@ export default async function TeslaModelPage({ params }: TeslaModelPageProps) {
         <div className="bg-card-muted border border-purple-500/20 rounded-2xl p-6 flex flex-col gap-4">
           <h3 className="text-xl font-semibold">Tesla ownership notes</h3>
           <p className="text-muted text-sm leading-relaxed">
-            When Supabase syncs up you'll be able to track charges, service, and
-            market pricing for every Tesla in your garage.
+            When Supabase syncs up you&apos;ll be able to track charges,
+            service, and market pricing for every Tesla in your garage.
           </p>
         </div>
       </section>

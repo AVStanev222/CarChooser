@@ -62,8 +62,9 @@ export default async function MitsubishiModelPage({
         <div className="bg-card-muted border border-purple-500/20 rounded-2xl p-6 flex flex-col gap-4">
           <h3 className="text-xl font-semibold">Mitsubishi ownership notes</h3>
           <p className="text-muted text-sm leading-relaxed">
-            Soon you'll be able to track service, upload trail photos, and log
-            market prices for your favorite Mitsus once Supabase sync arrives.
+            Soon you&apos;ll be able to track service, upload trail photos, and
+            log market prices for your favorite Mitsus once Supabase sync
+            arrives.
           </p>
         </div>
       </section>

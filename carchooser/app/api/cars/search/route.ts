@@ -107,7 +107,7 @@ export async function POST(request: Request) {
 
   try {
     payload = (await request.json()) as SearchRequest;
-  } catch (error) {
+  } catch {
     return NextResponse.json(
       { error: "Invalid JSON payload" },
       { status: 400 },

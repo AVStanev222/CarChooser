@@ -31,7 +31,7 @@ export async function POST(request: Request) {
 
   try {
     payload = await request.json();
-  } catch (error) {
+  } catch {
     return NextResponse.json({ error: "Invalid JSON payload" }, { status: 400 });
   }
 
@@ -90,7 +90,7 @@ export async function POST(request: Request) {
           null;
 
         results[key] = resolvedUrl;
-      } catch (error) {
+      } catch {
         results[key] = null;
       }
     }),

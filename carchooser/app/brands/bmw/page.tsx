@@ -12,9 +12,9 @@ export default function BMWModelsPage() {
           BMW <span className="text-purple-400">Nine Lives</span>
         </SectionTitle>
         <p className="text-muted max-w-3xl mb-10">
-          Track BMW's pedigree from economy-minded 3 Series sedans to M-branded
-          monsters and SUV icons. Tap any entry to inspect specs and the future
-          gallery area.
+          Track BMW&apos;s pedigree from economy-minded 3 Series sedans to
+          M-branded monsters and SUV icons. Tap any entry to inspect specs and
+          the future gallery area.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

@@ -12,8 +12,9 @@ export default function KoenigseggModelsPage() {
           Koenigsegg <span className="text-purple-400">Hypercars</span>
         </SectionTitle>
         <p className="text-muted max-w-3xl mb-10">
-          Trace Koenigsegg's relentless pursuit of speed from the CC8S to the
-          four-seat Gemera. Tap a chassis to view specs and future gallery space.
+          Trace Koenigsegg&apos;s relentless pursuit of speed from the CC8S to
+          the four-seat Gemera. Tap a chassis to view specs and future gallery
+          space.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

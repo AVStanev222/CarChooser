@@ -33,12 +33,8 @@ function getPreferredTheme(): Theme {
 }
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const [theme, setTheme] = useState<Theme>("dark");
+  const [theme, setTheme] = useState<Theme>(() => getPreferredTheme());
   const transitionRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-
-  useEffect(() => {
-    setTheme(getPreferredTheme());
-  }, []);
 
   useEffect(() => {
     const root = document.documentElement;
