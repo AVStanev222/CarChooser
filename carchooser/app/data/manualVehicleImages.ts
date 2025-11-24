@@ -29,6 +29,7 @@ const opelKey = (slug: string) => buildManualImageKey("Opel", slug);
 const renaultKey = (slug: string) => buildManualImageKey("Renault", slug);
 const subaruKey = (slug: string) => buildManualImageKey("Subaru", slug);
 const teslaKey = (slug: string) => buildManualImageKey("Tesla", slug);
+const toyotaKey = (slug: string) => buildManualImageKey("Toyota", slug);
 
 
 // Extend this map with additional models or brands if you have static image URLs.
@@ -1702,6 +1703,100 @@ export const manualVehicleImages: ManualVehicleImageMap = {
     interior: null,
   },
 
+  [toyotaKey("yaris-2006")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Toyota_Yaris_1.3_VVT-i_front.JPG/1400px-Toyota_Yaris_1.3_VVT-i_front.JPG",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/2006_Toyota_Yaris%2C_Rear_Right%2C_07-30-2020.jpg/1400px-2006_Toyota_Yaris%2C_Rear_Right%2C_07-30-2020.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/9/98/2007_Toyota_Yaris_interior_%2889070425%29.jpg",
+  },
+  [toyotaKey("yaris-hybrid-2020")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Toyota_YARIS_HYBRID_G_2WD_%286AA-MXPH10-AHXGB%29_front.jpg/1400px-Toyota_YARIS_HYBRID_G_2WD_%286AA-MXPH10-AHXGB%29_front.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/2020-2024_Toyota_Yaris_Cross_Hybrid_Z_rear.jpg/1400px-2020-2024_Toyota_Yaris_Cross_Hybrid_Z_rear.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/2021_Toyota_Yaris_Cross_Interior.jpg/1400px-2021_Toyota_Yaris_Cross_Interior.jpg",
+  },
+  [toyotaKey("corolla-2005")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/2005_Toyota_Corolla_CE%2C_Front_Left.jpg/1400px-2005_Toyota_Corolla_CE%2C_Front_Left.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/9/9c/2005_toyota_corolla_s_rear_left.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/2003_Toyota_Corolla_Altis_%28Front%29.jpg/1400px-2003_Toyota_Corolla_Altis_%28Front%29.jpg",
+  },
+  [toyotaKey("corolla-hybrid-2021")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/2022_Toyota_Corolla_Hybrid_CRI_11_2021_1900.jpg/1400px-2022_Toyota_Corolla_Hybrid_CRI_11_2021_1900.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Rear_Toyota_Corolla_Hybrid_CRI_09_2021_0780.jpg/1400px-Rear_Toyota_Corolla_Hybrid_CRI_09_2021_0780.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Toyota_COROLLA_CROSS_HYBRID_Z_2WD_%286AA-ZVG11-KHXEB%29_interior.jpg/1400px-Toyota_COROLLA_CROSS_HYBRID_Z_2WD_%286AA-ZVG11-KHXEB%29_interior.jpg",
+  },
+  [toyotaKey("prius-2016")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/TOYOTA_Prius_Front_by_Emotional-Led_New.jpg/1400px-TOYOTA_Prius_Front_by_Emotional-Led_New.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/2015_Toyota_Prius_%28ZVW30R%29_Hybrid_liftback%2C_SMRT_taxis_%282016-01-06%29_02.jpg/1400px-2015_Toyota_Prius_%28ZVW30R%29_Hybrid_liftback%2C_SMRT_taxis_%282016-01-06%29_02.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Toyota_Prius_2016_interior_8.jpg/1400px-Toyota_Prius_2016_interior_8.jpg",
+  },
+  [toyotaKey("camry-hybrid-2019")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Toyota_CAMRY_WS_Leather_Package_%28DAA-AXVH70-AEXSB%28L%29%29_front.jpg/1400px-Toyota_CAMRY_WS_Leather_Package_%28DAA-AXVH70-AEXSB%28L%29%29_front.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Toyota_CAMRY_WS_Leather_Package_%28DAA-AXVH70-AEXSB%28L%29%29_rear.jpg/1400px-Toyota_CAMRY_WS_Leather_Package_%28DAA-AXVH70-AEXSB%28L%29%29_rear.jpg",
+    interior: null,
+  },
+  [toyotaKey("rav4-hybrid-2016")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/2016_Toyota_RAV4_Hybrid_2.5_VVT-i_marlingrau-metallic_Frontalansicht.jpg/1400px-2016_Toyota_RAV4_Hybrid_2.5_VVT-i_marlingrau-metallic_Frontalansicht.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/2016_Toyota_RAV4_Hybrid_2.5_VVT-i_marlingrau-metallic_Heckansicht.jpg/1400px-2016_Toyota_RAV4_Hybrid_2.5_VVT-i_marlingrau-metallic_Heckansicht.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/2016_Toyota_RAV4_Hybrid_2.5_VVT-i_Innenraum_Cockpit_Interieur.jpg/1400px-2016_Toyota_RAV4_Hybrid_2.5_VVT-i_Innenraum_Cockpit_Interieur.jpg",
+  },
+  [toyotaKey("highlander-hybrid-2021")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/2006_Toyota_Highlander_Limited_Hybrid%2C_Front_Left%2C_02-19-2021.jpg/1400px-2006_Toyota_Highlander_Limited_Hybrid%2C_Front_Left%2C_02-19-2021.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/2006_Toyota_Highlander_Limited_Hybrid%2C_Rear_Left%2C_02-19-2021.jpg/1400px-2006_Toyota_Highlander_Limited_Hybrid%2C_Rear_Left%2C_02-19-2021.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/2021_Toyota_Highlander_interior.jpg/1400px-2021_Toyota_Highlander_interior.jpg",
+  },
+  [toyotaKey("land-cruiser-2021")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/2021_Toyota_Land_Cruiser_300_%28Russia%29_front_view.jpg/1400px-2021_Toyota_Land_Cruiser_300_%28Russia%29_front_view.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/2021_Toyota_Land_Cruiser_300_%28Russia%29_rear_view.png/1400px-2021_Toyota_Land_Cruiser_300_%28Russia%29_rear_view.png",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/2021_Toyota_Land_Cruiser_300_%28Colombia%29_interior.png/1400px-2021_Toyota_Land_Cruiser_300_%28Colombia%29_interior.png",
+  },
+  [toyotaKey("hilux-2012")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/2012_Toyota_Hilux_2.5_J_4x2_News5_media_vehicle%2C_front_left.jpg/1400px-2012_Toyota_Hilux_2.5_J_4x2_News5_media_vehicle%2C_front_left.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/QLD_Police_%27HIMEN%22_Toyota_Hilux_4X4_with_Holden_Crewman_rear_ute-canopy_-_Flickr_-_Highway_Patrol_Images.jpg/1400px-QLD_Police_%27HIMEN%22_Toyota_Hilux_4X4_with_Holden_Crewman_rear_ute-canopy_-_Flickr_-_Highway_Patrol_Images.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/1997_Toyota_Hilux_2.4D_4x2_%28interior%29.jpg/1400px-1997_Toyota_Hilux_2.4D_4x2_%28interior%29.jpg",
+  },
+  [toyotaKey("supra-2020")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/2020_Toyota_Supra_front_NYIAS_2019.jpg/1400px-2020_Toyota_Supra_front_NYIAS_2019.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/2020_Toyota_Supra_rear_NYIAS_2019.jpg/1400px-2020_Toyota_Supra_rear_NYIAS_2019.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/1995_Toyota_Supra_RZ-S_-_JSpec_Auto_26.jpg/1400px-1995_Toyota_Supra_RZ-S_-_JSpec_Auto_26.jpg",
+  },
+  [toyotaKey("c-hr-2018")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/2017_Toyota_C-HR_front_4.27.18.jpg/1400px-2017_Toyota_C-HR_front_4.27.18.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/2018_Toyota_C-HR_rear_%282%29_4.27.18.jpg/1400px-2018_Toyota_C-HR_rear_%282%29_4.27.18.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/2017_Toyota_C-HR_Interior.jpg/1400px-2017_Toyota_C-HR_Interior.jpg",
+  },
+
   [opelKey("corsa-2006")]: {
     front: "https://upload.wikimedia.org/wikipedia/commons/6/61/Opel_Corsa_C_1.2_Elegance_front_20100912.jpg",
     rear: "https://upload.wikimedia.org/wikipedia/commons/f/f9/Opel_Corsa_C_1.2_Elegance_rear_20100912.jpg",
@@ -1869,6 +1964,10 @@ manualVehicleImages[buildManualImageKey("Subaru")] = {
 
 manualVehicleImages[buildManualImageKey("Tesla")] = {
   ...manualVehicleImages[teslaKey("model-y-long-range-2022")],
+};
+
+manualVehicleImages[buildManualImageKey("Toyota")] = {
+  ...manualVehicleImages[toyotaKey("corolla-hybrid-2021")],
 };
 
 manualVehicleImages[buildManualImageKey("Opel")] = {
