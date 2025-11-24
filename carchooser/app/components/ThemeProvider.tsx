@@ -34,7 +34,7 @@ function getPreferredTheme(): Theme {
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [theme, setTheme] = useState<Theme>("dark");
-  const transitionRef = useRef<ReturnType<typeof window.setTimeout> | null>(null);
+  const transitionRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
     setTheme(getPreferredTheme());
@@ -62,7 +62,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     if (transitionRef.current) {
       clearTimeout(transitionRef.current);
     }
-    transitionRef.current = window.setTimeout(() => {
+    transitionRef.current = setTimeout(() => {
       root.classList.remove("theme-transition");
     }, 450);
   }, []);
