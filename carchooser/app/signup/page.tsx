@@ -1,10 +1,10 @@
 "use client";
 
-import { useState, FormEvent } from "react";
+import { Suspense, useState, FormEvent } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 
-export default function SignUpPage() {
+function SignUpForm() {
   const searchParams = useSearchParams();
   const callbackUrl = searchParams.get("callbackUrl") ?? "/";
   const [name, setName] = useState("");
@@ -131,5 +131,13 @@ export default function SignUpPage() {
         </p>
       </div>
     </section>
+  );
+}
+
+export default function SignUpPage() {
+  return (
+    <Suspense fallback={<section className="min-h-screen bg-neutral-950" />}>
+      <SignUpForm />
+    </Suspense>
   );
 }

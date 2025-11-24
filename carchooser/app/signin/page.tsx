@@ -2,9 +2,10 @@
 
 import { useState, FormEvent } from "react";
 import Link from "next/link";
+import { Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 
-export default function SignInPage() {
+function SignInForm() {
   const searchParams = useSearchParams();
   const callbackUrl = searchParams.get("callbackUrl") ?? "/";
   const authError = searchParams.get("error");
@@ -110,5 +111,13 @@ export default function SignInPage() {
         </p>
       </div>
     </section>
+  );
+}
+
+export default function SignInPage() {
+  return (
+    <Suspense fallback={<section className="min-h-screen bg-neutral-950" />}>
+      <SignInForm />
+    </Suspense>
   );
 }
