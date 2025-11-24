@@ -1,0 +1,52 @@
+{
+  "cc8s-2002": {
+    "front": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Koenigsegg_CC8S_%28front%29.jpg",
+    "rear": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Koenigsegg_CC8S_%28front%29.jpg",
+    "interior": null
+  },
+  "ccr-2004": {
+    "front": null,
+    "rear": null,
+    "interior": null
+  },
+  "ccx-2008": {
+    "front": "https://upload.wikimedia.org/wikipedia/commons/d/d8/2008_Koenigsegg_CCX_in_Silver%2C_front_left.jpg",
+    "rear": "https://upload.wikimedia.org/wikipedia/commons/8/8c/2008_Koenigsegg_CCX_in_Silver%2C_rear_right.jpg",
+    "interior": "https://upload.wikimedia.org/wikipedia/commons/b/b4/2008_Koenigsegg_CCX_in_Silver%2C_interior.jpg"
+  },
+  "agera-2011": {
+    "front": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Koenigsegg_Agera_RS_at_Bridgehampton%2C_front_right.jpg",
+    "rear": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Koenigsegg_Agera_RS_at_Bridgehampton%2C_front_right.jpg",
+    "interior": "https://upload.wikimedia.org/wikipedia/commons/5/50/Koenigsegg_Agera_R_%285488113699%29.jpg"
+  },
+  "agera-r-2013": {
+    "front": null,
+    "rear": null,
+    "interior": "https://upload.wikimedia.org/wikipedia/commons/5/50/Koenigsegg_Agera_R_%285488113699%29.jpg"
+  },
+  "one-1-2015": {
+    "front": null,
+    "rear": null,
+    "interior": null
+  },
+  "regera-2016": {
+    "front": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Koenigsegg_Regera_Front.jpg",
+    "rear": "https://upload.wikimedia.org/wikipedia/commons/1/13/Koenigsegg_Regera%2C_GIMS_2019%2C_Le_Grand-Saconnex_%28GIMS0010%29.jpg",
+    "interior": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Swedish_Blue_Koenigsegg_Regera_d%E2%80%99Elegance_at_GIMS_2018_%28Ank_Kumar%29_04.jpg"
+  },
+  "jesko-2020": {
+    "front": "https://upload.wikimedia.org/wikipedia/commons/3/35/Koenigsegg_Jesko_at_Bridgehampton_C%26C%2C_front_right.jpg",
+    "rear": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Koenigsegg_Jesko%2C_GIMS_2019%2C_Le_Grand-Saconnex_%28GIMS0844%29.jpg",
+    "interior": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Koenigsegg_Jesko_Absolut_Lego_Technic_%28interior%29.jpg"
+  },
+  "jesko-absolut-2021": {
+    "front": null,
+    "rear": null,
+    "interior": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Koenigsegg_Jesko_Absolut_Lego_Technic_%28interior%29.jpg"
+  },
+  "gemera-2023": {
+    "front": "https://upload.wikimedia.org/wikipedia/commons/7/75/Koenigsegg_Gemera_%282022%29_%2852571686589%29.jpg",
+    "rear": "https://upload.wikimedia.org/wikipedia/commons/7/75/Koenigsegg_Gemera_%282022%29_%2852571686589%29.jpg",
+    "interior": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Koenigsegg_Gemera_%282022%29_%2852571939473%29.jpg"
+  }
+}
