@@ -28,6 +28,7 @@ const mitsubishiKey = (slug: string) => buildManualImageKey("Mitsubishi", slug);
 const opelKey = (slug: string) => buildManualImageKey("Opel", slug);
 const renaultKey = (slug: string) => buildManualImageKey("Renault", slug);
 const subaruKey = (slug: string) => buildManualImageKey("Subaru", slug);
+const teslaKey = (slug: string) => buildManualImageKey("Tesla", slug);
 
 
 // Extend this map with additional models or brands if you have static image URLs.
@@ -1587,6 +1588,120 @@ export const manualVehicleImages: ManualVehicleImageMap = {
       "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/2007_Subaru_Tribeca_%28B9_MY08%29_R_Premium_Pack_wagon_02.jpg/1400px-2007_Subaru_Tribeca_%28B9_MY08%29_R_Premium_Pack_wagon_02.jpg",
   },
 
+  [teslaKey("model-s-2014")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/2014_Tesla_Motors_Model_S_%28front_view%29_Netherlands.jpg/1400px-2014_Tesla_Motors_Model_S_%28front_view%29_Netherlands.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/2014_Tesla_Motors_Model_S_%28rear_view%29_Netherlands.jpg/1400px-2014_Tesla_Motors_Model_S_%28rear_view%29_Netherlands.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/The_interior_of_TESLA_MODEL_S_P100D.jpg/1400px-The_interior_of_TESLA_MODEL_S_P100D.jpg",
+  },
+  [teslaKey("model-s-p90d-2016")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Tesla_Model_S_P90D_Hong_Kong_front_view_%28August_26%2C_2025%29.jpg/1400px-Tesla_Model_S_P90D_Hong_Kong_front_view_%28August_26%2C_2025%29.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Tesla_Model_S_P90D_Hong_Kong_rear_view_%28August_26%2C_2025%29.jpg/1400px-Tesla_Model_S_P90D_Hong_Kong_rear_view_%28August_26%2C_2025%29.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Tesla_Model_S_P90D_%E2%80%93_CeBIT_2016_02.jpg/1400px-Tesla_Model_S_P90D_%E2%80%93_CeBIT_2016_02.jpg",
+  },
+  [teslaKey("model-s-long-range-2020")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/2021_Tesla_Model_S_P2_Long_Range_front_right_view.jpg/1400px-2021_Tesla_Model_S_P2_Long_Range_front_right_view.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/2014_Tesla_Model_S_85%2C_Rear_Right%2C_07-27-2021.jpg/1400px-2014_Tesla_Model_S_85%2C_Rear_Right%2C_07-27-2021.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/The_interior_of_TESLA_MODEL_S_P100D.jpg/1400px-The_interior_of_TESLA_MODEL_S_P100D.jpg",
+  },
+  [teslaKey("model-3-2018")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Tesla_Model_3_parked%2C_front_driver_side.jpg/1400px-Tesla_Model_3_parked%2C_front_driver_side.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Rear_Tesla_Model_3_08_2018_0271.jpg/1400px-Rear_Tesla_Model_3_08_2018_0271.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Digital_control_screen_Tesla_Model_3_DCA_08_2018_0268.jpg/1400px-Digital_control_screen_Tesla_Model_3_DCA_08_2018_0268.jpg",
+  },
+  [teslaKey("model-3-performance-2021")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Tesla_Model_3_front.jpg/1400px-Tesla_Model_3_front.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/2024_Tesla_Model_3_Performance_rear_view.png/1400px-2024_Tesla_Model_3_Performance_rear_view.png",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Tesla_Model_3_Performance_Facelift_-_interior_view.jpg/1400px-Tesla_Model_3_Performance_Facelift_-_interior_view.jpg",
+  },
+  [teslaKey("model-y-2021")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Tesla_Model_Y_CRI_04_2021_8240.jpg/1400px-Tesla_Model_Y_CRI_04_2021_8240.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/2022_Tesla_Model_Y_Long_Range_AWD_Rear.jpg/1400px-2022_Tesla_Model_Y_Long_Range_AWD_Rear.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Tesla_Model_Y_2025_interior.jpg/1400px-Tesla_Model_Y_2025_interior.jpg",
+  },
+  [teslaKey("model-y-long-range-2022")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/2022_Tesla_Model_Y_Long_Range_AWD_Front.jpg/1400px-2022_Tesla_Model_Y_Long_Range_AWD_Front.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/2022_Tesla_Model_Y_Long_Range_AWD_Rear.jpg/1400px-2022_Tesla_Model_Y_Long_Range_AWD_Rear.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Tesla_Model_Y_Juniper_Long_Range_AWD_White_%2B_Black_03.jpg/1400px-Tesla_Model_Y_Juniper_Long_Range_AWD_White_%2B_Black_03.jpg",
+  },
+  [teslaKey("model-x-2016")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Tesla_Model_X_100D_1X7A6736.jpg/1400px-Tesla_Model_X_100D_1X7A6736.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Tesla_Model_X_100D_1X7A6737.jpg/1400px-Tesla_Model_X_100D_1X7A6737.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/The_interior_of_TESLA_MODEL_X_75D.jpg/1400px-The_interior_of_TESLA_MODEL_X_75D.jpg",
+  },
+  [teslaKey("model-x-p100d-2017")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/2017_Tesla_Model_X_100D_Front.jpg/1400px-2017_Tesla_Model_X_100D_Front.jpg",
+    rear: null,
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/The_interior_of_Tesla_Model_X_P90D.jpg/1400px-The_interior_of_Tesla_Model_X_P90D.jpg",
+  },
+  [teslaKey("model-x-long-range-2021")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Tesla_Model_X_100D_1X7A6736.jpg/1400px-Tesla_Model_X_100D_1X7A6736.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/2017_Tesla_Model_X_rear_5.27.18.jpg/1400px-2017_Tesla_Model_X_rear_5.27.18.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/The_interior_of_TESLA_MODEL_X_75D.jpg/1400px-The_interior_of_TESLA_MODEL_X_75D.jpg",
+  },
+  [teslaKey("cybertruck-awd-2024")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Tesla_Cybertruck_Front_Street_Lovingston_VA_June_2024_01.jpg/1400px-Tesla_Cybertruck_Front_Street_Lovingston_VA_June_2024_01.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/2024_Tesla_Cybertruck%2C_rear_9.7.24.jpg/1400px-2024_Tesla_Cybertruck%2C_rear_9.7.24.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Tesla_Cybertruck_-_Interior_-_Tesla_Store_Athens_2024.jpg/1400px-Tesla_Cybertruck_-_Interior_-_Tesla_Store_Athens_2024.jpg",
+  },
+  [teslaKey("cybertruck-tri-motor-2024")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Tesla_Cybertruck_Front_Street_Lovingston_VA_June_2024_02.jpg/1400px-Tesla_Cybertruck_Front_Street_Lovingston_VA_June_2024_02.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/2024_Tesla_Cybertruck_Foundation_Series_IMG_0634_%28cropped%29.jpg/1400px-2024_Tesla_Cybertruck_Foundation_Series_IMG_0634_%28cropped%29.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Tesla_Cybertruck_-_Interior_3_-_Tesla_Store_Athens_2024.jpg/1400px-Tesla_Cybertruck_-_Interior_3_-_Tesla_Store_Athens_2024.jpg",
+  },
+  [teslaKey("roadster-2010")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Tesla_Roadster_Ladevorgang.JPG/1400px-Tesla_Roadster_Ladevorgang.JPG",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Roadster_2.5_rear.jpg/1400px-Roadster_2.5_rear.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Tesla_Roadster_2.5_Sport_%2822022010371%29.jpg/1400px-Tesla_Roadster_2.5_Sport_%2822022010371%29.jpg",
+  },
+  [teslaKey("roadster-2025")]: {
+    front: null,
+    rear: null,
+    interior: null,
+  },
+  [teslaKey("semi-2023")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Tesla_Semi_From_the_Front_%2847619421222%29.jpg/1400px-Tesla_Semi_From_the_Front_%2847619421222%29.jpg",
+    rear: null,
+    interior: null,
+  },
+
   [opelKey("corsa-2006")]: {
     front: "https://upload.wikimedia.org/wikipedia/commons/6/61/Opel_Corsa_C_1.2_Elegance_front_20100912.jpg",
     rear: "https://upload.wikimedia.org/wikipedia/commons/f/f9/Opel_Corsa_C_1.2_Elegance_rear_20100912.jpg",
@@ -1750,6 +1865,10 @@ manualVehicleImages[buildManualImageKey("Renault")] = {
 
 manualVehicleImages[buildManualImageKey("Subaru")] = {
   ...manualVehicleImages[subaruKey("forester-2016")],
+};
+
+manualVehicleImages[buildManualImageKey("Tesla")] = {
+  ...manualVehicleImages[teslaKey("model-y-long-range-2022")],
 };
 
 manualVehicleImages[buildManualImageKey("Opel")] = {
