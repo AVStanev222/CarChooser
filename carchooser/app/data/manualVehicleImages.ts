@@ -24,6 +24,9 @@ const bmwKey = (slug: string) => buildManualImageKey("BMW", slug);
 const bentleyKey = (slug: string) => buildManualImageKey("Bentley", slug);
 const mercedesKey = (slug: string) => buildManualImageKey("Mercedes-Benz", slug);
 const koenigseggKey = (slug: string) => buildManualImageKey("Koenigsegg", slug);
+const mitsubishiKey = (slug: string) => buildManualImageKey("Mitsubishi", slug);
+const opelKey = (slug: string) => buildManualImageKey("Opel", slug);
+const renaultKey = (slug: string) => buildManualImageKey("Renault", slug);
 
 
 // Extend this map with additional models or brands if you have static image URLs.
@@ -1078,6 +1081,447 @@ export const manualVehicleImages: ManualVehicleImageMap = {
       "https://upload.wikimedia.org/wikipedia/commons/b/b3/Koenigsegg_Gemera_%282022%29_%2852571939473%29.jpg",
   },
 
+  [mitsubishiKey("mirage-2013")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/2/29/2013_Mitsubishi_Mirage_2_1.2_Front.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/8/8c/2013_Mitsubishi_Mirage_2_1.2_Rear.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Mitsubishi_MIRAGE_G_%28DBA-A03A-XTHX%29_interior.jpg",
+  },
+  [mitsubishiKey("colt-2008")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/0/0c/2008_Mitsubishi_Colt_CZI_1.1.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/2/20/Mitsubishi_Colt_rear_20080328.jpg",
+    interior: "https://carsevolution.net/wp-content/uploads/2018/04/Mitsubishi-Colt-2008-interior.jpg",
+  },
+  [mitsubishiKey("lancer-2010")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/2/20/2012_Mitsubishi_Lancer_SE_sedan_--_02-04-2012_2.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/b/b8/Mitsubishi_Lancer_VIII_rear_20100612.jpg",
+    interior: "https://static.cargurus.com/images/site/2010/05/24/02/58/2010_mitsubishi_lancer_gts-pic-2570713461895093277.jpeg",
+  },
+  [mitsubishiKey("lancer-evolution-2014")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/9/91/2017-04-02_Mitsubishi_Lancer_Evolution_X_MR_SST_14_%282%29.jpg",
+    rear: "https://live.staticflickr.com/5565/14044870259_91e28bf375_b.jpg",
+    interior: "https://img.cintamobil.com/2018/12/23/X04JVabA/mitsubishi-lancer-evolution-x-interior-6457.jpg",
+  },
+  [mitsubishiKey("outlander-2013")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/4/4c/2014_Mitsubishi_Outlander_%28ZJ_MY14%29_LS_2WD_wagon_%282016-07-07%29_01.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/7/71/2014_Mitsubishi_Outlander_%28ZJ_MY14%29_LS_2WD_wagon_%282016-07-07%29_02.jpg",
+    interior: "https://st.motortrendenespanol.com/uploads/sites/45/2014/01/2014-Mitsubishi-Outlander-interior.jpg",
+  },
+  [mitsubishiKey("outlander-2021")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/9/99/2022_Mitsubishi_Outlander_SE_S-AWC%2C_07-29-2022.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/b/bd/2021-2024_Mitsubishi_Outlander_PHEV_P_rear.jpg",
+    interior: "https://autotrends.org/wp-content/uploads/2021/02/5Q5A8116e2-scaled.jpg",
+  },
+  [mitsubishiKey("asx-2012")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/f/f2/Mitsubishi_ASX_1.8_DI-D%2B_ClearTec_Edition_%E2%80%93_Frontansicht%2C_1._April_2012%2C_Essen_%282%29.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/a/a3/Mitsubishi_ASX_1.8_DI-D%2B_ClearTec_Edition_%E2%80%93_Heckansicht%2C_1._April_2012%2C_Essen_%282%29.jpg",
+    interior: "https://www.carx.it/foto/listino/mitsubishi-asx-2019-interior.jpg",
+  },
+  [mitsubishiKey("asx-2019")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/d/dd/Mitsubishi_ASX_%282019%29_IMG_6615.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/b/b1/Mitsubishi_ASX_%282019%29_IMG_6614.jpg",
+    interior: "https://www.carx.it/foto/listino/mitsubishi-asx-2019-interior.jpg",
+  },
+  [mitsubishiKey("eclipse-cross-2018")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/4/47/2018_Mitsubishi_Eclipse_Cross_3_4X2_1.5_Front.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/f/f9/2018_Mitsubishi_Eclipse_Cross_3_4X2_1.5_Rear.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/a/ac/Innenansicht_Mitsubishi_Eclipse_Cross_Value_4x4.jpg",
+  },
+  [mitsubishiKey("pajero-2007")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/3/36/Mitsubishi_V98_Pajero_Long_Body_Super_Exceed_3200_DI-D.JPG",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/f/fe/Mitsubishi_V98_Pajero_Long_Body_Super_Exceed_3200_DI-D_Rear.JPG",
+    interior: "https://c8.alamy.com/comp/AD433G/interior-of-mitsubishi-pajero-2007-AD433G.jpg",
+  },
+  [mitsubishiKey("pajero-2015")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/1/12/2014_Mitsubishi_Shogun_SG3_Di-D_LWB_Automatic_3.2.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/7/74/Mitsubishi_Shogun_SUV_4x4_In_The_Snow_%28rear%29_%28cropped%29.jpg",
+    interior: "https://www.automobiledimension.com/photos/interior/mitsubishi-pajero-5p-2015-dashboard.jpg",
+  },
+  [mitsubishiKey("l200-2012")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/8/8f/Mitsubishi_L200_2500_DI-D%2B_Intense_Doppelkabine_%28IV%2C_Facelift%29_%E2%80%93_Frontansicht%2C_16._April_2011%2C_Hilden.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/d/db/Mitsubishi_L200_2500_DI-D%2B_Intense_Doppelkabine_%28IV%2C_Facelift%29_%E2%80%93_Heckansicht%2C_16._April_2011%2C_Hilden.jpg",
+    interior: "https://www.autodata1.com/media/mitsubishi/pics/mitsubishi-l-200-2012-%5B6400%5D.jpg",
+  },
+  [mitsubishiKey("l200-2020")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/3/39/2019_Mitsubishi_L200_Barbarian_X_DI-D_Automatic_2.3.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/7/76/2019_Mitsubishi_L200_Warrior_DI-D_2.3_Rear.jpg",
+    interior: "https://i.ytimg.com/vi/dS8eAttVDkA/maxresdefault.jpg",
+  },
+  [mitsubishiKey("outlander-phev-2022")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/c/cf/2022_Mitsubishi_Outlander_PHEV_P_4WD_2.4_5LA-GN0W_%2820220904%29.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/b/bd/2021-2024_Mitsubishi_Outlander_PHEV_P_rear.jpg",
+    interior: "https://autotrends.org/wp-content/uploads/2021/02/5Q5A8116e2-scaled.jpg",
+  },
+  [mitsubishiKey("imiev-2014")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/9/93/2010_Mitsubishi_i-MiEV_%28GA_MY10%29_hatchback_%282015-11-11%29_01.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/1/12/2010_Mitsubishi_i-MiEV_%28GA_MY10%29_hatchback_%282015-11-11%29_02.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/9/9e/Mitsubishi_i_MiEV_dashboard.jpg",
+  },
+  [mitsubishiKey("colt-2010")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/f/f2/2010_Mitsubishi_Colt_%28RG_MY11%29_VR-X_5-door_hatchback_%282010-10-16%29.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/7/72/Mitsubishi_Colt_%28Z30%29_Facelift_rear_20100731.jpg",
+    interior: "https://blog.beforward.jp/wp-content/uploads/2021/12/MITSUBISHI-COLT-2010-2-1.jpg",
+  },
+  [mitsubishiKey("grandis-2007")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/8/88/2009_Mitsubishi_Grandis_Equippe_Di-D_2.0.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/e/ea/2005_Mitsubishi_Grandis_Equippe_Automatic_2.4_Rear.jpg",
+    interior: "https://imagenes.km77.com/fotos/bbtcontent/clippingnew/KM7KPH20091027_0001/full.jpg",
+  },
+  [mitsubishiKey("grandis-2011")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/8/88/2009_Mitsubishi_Grandis_Equippe_Di-D_2.0.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/e/ea/2005_Mitsubishi_Grandis_Equippe_Automatic_2.4_Rear.jpg",
+    interior: "https://imagenes.km77.com/fotos/bbtcontent/clippingnew/KM7KPH20091027_0001/full.jpg",
+  },
+  [mitsubishiKey("lancer-2015")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/3/38/2016_Mitsubishi_Lancer_%28CF_MY16%29_ES_Sport_sedan_%282016-11-13%29_01.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/3/3a/2016_Mitsubishi_Lancer_%28CF_MY16%29_ES_Sport_sedan_%282016-11-13%29_02.jpg",
+    interior: "https://4.bp.blogspot.com/-Mnk7GBnsCms/VFGeaDiZdsI/AAAAAAAB5hI/lDMRdviO5CA/s1600/Mitsubishi-Lancer-2015%2B(11).jpg",
+  },
+  [mitsubishiKey("lancer-evolution-x-2013")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/9/91/2017-04-02_Mitsubishi_Lancer_Evolution_X_MR_SST_14_%282%29.jpg",
+    rear: "https://live.staticflickr.com/5565/14044870259_91e28bf375_b.jpg",
+    interior: "https://img.cintamobil.com/2018/12/23/X04JVabA/mitsubishi-lancer-evolution-x-interior-6457.jpg",
+  },
+  [mitsubishiKey("galant-2008")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/d/d7/2007-2008_Mitsubishi_Galant_--_08-16-2010.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/e/e9/Mitsubishi_Galant_Ralliart_--_09-29-2010.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/f/fd/Mitsubishi_Galant_EA5A_Cockpit.jpg",
+  },
+
+  [renaultKey("clio-2005")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/2005_Renault_Clio_Dynamique_16V_1.1_Front.jpg/1400px-2005_Renault_Clio_Dynamique_16V_1.1_Front.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/2005_Renault_Clio_V6_Rear_BS_O24.jpg/1400px-2005_Renault_Clio_V6_Rear_BS_O24.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Renault_Clio_sport_f1_team_R27.jpg/1400px-Renault_Clio_sport_f1_team_R27.jpg",
+  },
+  [renaultKey("clio-2012")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/2012_Renault_Clio_IV_front_logo.JPG/1400px-2012_Renault_Clio_IV_front_logo.JPG",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Renault_Clio_IV_RS_%28rear%29.JPG/1400px-Renault_Clio_IV_RS_%28rear%29.JPG",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/2013_Renault_Clio_IV_Dynamique_interior_1.jpg/1400px-2013_Renault_Clio_IV_Dynamique_interior_1.jpg",
+  },
+  [renaultKey("clio-2019")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2019_Renault_Clio_Iconic_Front.jpg/1400px-2019_Renault_Clio_Iconic_Front.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/2019_Renault_Clio_Iconic_Rear.jpg/1400px-2019_Renault_Clio_Iconic_Rear.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/2019_Renault_Clio_Iconic_TCe_100_Interior.jpg/1400px-2019_Renault_Clio_Iconic_TCe_100_Interior.jpg",
+  },
+  [renaultKey("megane-2007")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/2007_Renault_Megane_Dynamique_1.6_Front.jpg/1400px-2007_Renault_Megane_Dynamique_1.6_Front.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Renault_Megane_rear_20071002.jpg/1400px-Renault_Megane_rear_20071002.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/2006_Renault_Megane_Expression_interior.jpg/1400px-2006_Renault_Megane_Expression_interior.jpg",
+  },
+  [renaultKey("megane-2015")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Renault_M%C3%A9gane_III_1.6_16V_%282010%29_%2853326982104%29.jpg/1400px-Renault_M%C3%A9gane_III_1.6_16V_%282010%29_%2853326982104%29.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Renault_M%C3%A9gane_rear.jpg/1400px-Renault_M%C3%A9gane_rear.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/3/34/RS_265_Interior_%288165589005%29.jpg",
+  },
+  [renaultKey("megane-rs-2018")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Renault_MEGANE_R.S._%28ABA-MF4R2%29_front.jpg/1400px-Renault_MEGANE_R.S._%28ABA-MF4R2%29_front.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Renault_MEGANE_R.S._%28ABA-MF4R2%29_rear.jpg/1400px-Renault_MEGANE_R.S._%28ABA-MF4R2%29_rear.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Renault_Megane_RS_interior_-_Tokyo_Auto_Salon_2011.jpg/1400px-Renault_Megane_RS_interior_-_Tokyo_Auto_Salon_2011.jpg",
+  },
+  [renaultKey("talisman-2017")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Renault_Talisman_Break_Initial_%28front_view%29.jpg/1400px-Renault_Talisman_Break_Initial_%28front_view%29.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Renault_Talisman_%282015%29_1X7A1604.jpg/1400px-Renault_Talisman_%282015%29_1X7A1604.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Renault_Talisman_Grandtour_%287%29_-_Undeployed_airbag.jpg/1400px-Renault_Talisman_Grandtour_%287%29_-_Undeployed_airbag.jpg",
+  },
+  [renaultKey("laguna-2009")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Renault_Laguna_III_Grandtour_GT_20090808_front.JPG/1400px-Renault_Laguna_III_Grandtour_GT_20090808_front.JPG",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Renault_Laguna_III_Grandtour_GT_20090808_rear.JPG/1400px-Renault_Laguna_III_Grandtour_GT_20090808_rear.JPG",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Renault_Laguna_Coup%C3%A9_Concept_%28interior%29_-_Flickr_-_cosmic_spanner.jpg/1400px-Renault_Laguna_Coup%C3%A9_Concept_%28interior%29_-_Flickr_-_cosmic_spanner.jpg",
+  },
+  [renaultKey("kadjar-2016")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/2016_Renault_Kadjar_Dynamique_NAV_DCi_1.5_Front.jpg/1400px-2016_Renault_Kadjar_Dynamique_NAV_DCi_1.5_Front.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/2016_Renault_Kadjar_Dynamique_NAV_DCi_1.5_Rear.jpg/1400px-2016_Renault_Kadjar_Dynamique_NAV_DCi_1.5_Rear.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/2019_Renault_Kadjar_S_Edition_Blue_DCi_115_Interior.jpg/1400px-2019_Renault_Kadjar_S_Edition_Blue_DCi_115_Interior.jpg",
+  },
+  [renaultKey("captur-2014")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/2014_Renault_Captur_Que_S_NRG_900cc_Front.jpg/1400px-2014_Renault_Captur_Que_S_NRG_900cc_Front.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/2014_Renault_Captur_Que_S_NRG_900cc_Rear.jpg/1400px-2014_Renault_Captur_Que_S_NRG_900cc_Rear.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Renault_Captur_interior_seen_from_rear.jpg/1400px-Renault_Captur_interior_seen_from_rear.jpg",
+  },
+  [renaultKey("captur-2020")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/2020_Renault_Captur_S_Edition_Front_%281%29.jpg/1400px-2020_Renault_Captur_S_Edition_Front_%281%29.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/2020_Renault_Captur_S_Edition_Rear_%281%29.jpg/1400px-2020_Renault_Captur_S_Edition_Rear_%281%29.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/2020_Renault_Captur_S_Edition_Interior.jpg/1400px-2020_Renault_Captur_S_Edition_Interior.jpg",
+  },
+  [renaultKey("scenic-2012")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Renault_Sc%C3%A9nic_--_Front.JPG/1400px-Renault_Sc%C3%A9nic_--_Front.JPG",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Renault_Sc%C3%A9nic_--_Rear.JPG/1400px-Renault_Sc%C3%A9nic_--_Rear.JPG",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Renault_Scenic_-_Flickr_-_Axel_Schwenke_%2818%29.jpg/1400px-Renault_Scenic_-_Flickr_-_Axel_Schwenke_%2818%29.jpg",
+  },
+  [renaultKey("grand-scenic-2017")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/2017_Renault_Grand_Scenic_SIG_NAV_DCi_1.5_Front.jpg/1400px-2017_Renault_Grand_Scenic_SIG_NAV_DCi_1.5_Front.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/2017_Renault_Grand_Scenic_SIG_NAV_DCi_1.5_Rear.jpg/1400px-2017_Renault_Grand_Scenic_SIG_NAV_DCi_1.5_Rear.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Renault_Scenic_-_Flickr_-_Axel_Schwenke_%2818%29.jpg/1400px-Renault_Scenic_-_Flickr_-_Axel_Schwenke_%2818%29.jpg",
+  },
+  [renaultKey("espace-2015")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/2015-present_Renault_Espace_Front.jpg/1400px-2015-present_Renault_Espace_Front.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/2015-present_Renault_Espace_Rear.jpg/1400px-2015-present_Renault_Espace_Rear.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Renault_Espace_%C3%A9corch%C3%A9_-_Mondial_de_l%27Automobile_de_Paris_2014_-_009.jpg/1400px-Renault_Espace_%C3%A9corch%C3%A9_-_Mondial_de_l%27Automobile_de_Paris_2014_-_009.jpg",
+  },
+  [renaultKey("koleos-2009")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Renault_Koleos_2.0_dCi_4x2_%282009%29_%2853334141119%29.jpg/1400px-Renault_Koleos_2.0_dCi_4x2_%282009%29_%2853334141119%29.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Renault_Koleos_%28seit_2008%29_rear_MJ.JPG/1400px-Renault_Koleos_%28seit_2008%29_rear_MJ.JPG",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Renault_Grand_Koleos_esprit_Alpine_Aurora_I_Black.jpg/1400px-Renault_Grand_Koleos_esprit_Alpine_Aurora_I_Black.jpg",
+  },
+  [renaultKey("koleos-2018")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/2018_Renault_Koleos_Initiale_Paris_DCi_4X4_2.0_Front.jpg/1400px-2018_Renault_Koleos_Initiale_Paris_DCi_4X4_2.0_Front.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/2018_Renault_Koleos_Initiale_Paris_DCi_4X4_2.0_Rear.jpg/1400px-2018_Renault_Koleos_Initiale_Paris_DCi_4X4_2.0_Rear.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Renault_Grand_Koleos_esprit_Alpine_Aurora_I_Black.jpg/1400px-Renault_Grand_Koleos_esprit_Alpine_Aurora_I_Black.jpg",
+  },
+  [renaultKey("zoe-2013")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/2013-03-29--Renault-ZOE.jpg/1400px-2013-03-29--Renault-ZOE.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/White_Renault_Zoe_%28rear%29.jpg/1400px-White_Renault_Zoe_%28rear%29.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Renault_Zoe_Preview_%28interior%29.jpg/1400px-Renault_Zoe_Preview_%28interior%29.jpg",
+  },
+  [renaultKey("zoe-2020")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/2018_Renault_ZOE.jpg/1400px-2018_Renault_ZOE.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/White_Renault_Zoe_%28rear%29.jpg/1400px-White_Renault_Zoe_%28rear%29.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/2020_Renault_Zoe_Intens_R135_Z.E._50_Interior.jpg/1400px-2020_Renault_Zoe_Intens_R135_Z.E._50_Interior.jpg",
+  },
+  [renaultKey("twingo-2008")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/2008_Renault_Twingo_Renaultsport_133_1.6_Front.jpg/1400px-2008_Renault_Twingo_Renaultsport_133_1.6_Front.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/2008_Renault_Twingo_Renaultsport_133_1.6_Rear.jpg/1400px-2008_Renault_Twingo_Renaultsport_133_1.6_Rear.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Renault_Twingo_Interior_-_Flickr_-_Alan_D.jpg/1400px-Renault_Twingo_Interior_-_Flickr_-_Alan_D.jpg",
+  },
+  [renaultKey("twingo-2016")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Renault_Twingo_04_by-dpc.jpg/1400px-Renault_Twingo_04_by-dpc.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Renault_TWINGO_INTENS_Canvas_top_%28DBA-AHH4B%29_rear.jpg/1400px-Renault_TWINGO_INTENS_Canvas_top_%28DBA-AHH4B%29_rear.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Renault_TWINGO_INTENS_Canvas_top_%28DBA-AHH4B%29_interior.jpg/1400px-Renault_TWINGO_INTENS_Canvas_top_%28DBA-AHH4B%29_interior.jpg",
+  },
+  [renaultKey("fluence-2011")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Renault_Fluence_front%2C_Guangdong%2C_Dongguan%2C_China_24_May_2024.jpg/1400px-Renault_Fluence_front%2C_Guangdong%2C_Dongguan%2C_China_24_May_2024.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Renault_Fluence_Z.E._%28rear_quarter%29.jpg/1400px-Renault_Fluence_Z.E._%28rear_quarter%29.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Renault_Fluence_Z.E._Concept_interior.jpg/1400px-Renault_Fluence_Z.E._Concept_interior.jpg",
+  },
+  [renaultKey("fluence-ze-2013")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Renault_Fluence_Z.E._%28side%29.jpg/1400px-Renault_Fluence_Z.E._%28side%29.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Renault_Fluence_Z.E._%28rear_quarter%29.jpg/1400px-Renault_Fluence_Z.E._%28rear_quarter%29.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Renault_Fluence_Z.E._Concept_interior.jpg/1400px-Renault_Fluence_Z.E._Concept_interior.jpg",
+  },
+  [renaultKey("laguna-coupe-2011")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/2011_Renault_Laguna_Coupe_2.0_dCi_150_Dynamique_TomTom_%28Front%29.jpg/1400px-2011_Renault_Laguna_Coupe_2.0_dCi_150_Dynamique_TomTom_%28Front%29.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/2011_Renault_Laguna_Coupe_2.0_dCi_150_Dynamique_TomTom_in_Black_%28Rear%29.jpg/1400px-2011_Renault_Laguna_Coupe_2.0_dCi_150_Dynamique_TomTom_in_Black_%28Rear%29.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Renault_Laguna_Coup%C3%A9_Concept_%28interior%29_-_Flickr_-_cosmic_spanner.jpg/1400px-Renault_Laguna_Coup%C3%A9_Concept_%28interior%29_-_Flickr_-_cosmic_spanner.jpg",
+  },
+  [renaultKey("alaskan-2018")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Renault_Alaskan_IMG_9663.jpg/1400px-Renault_Alaskan_IMG_9663.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Renault_Alaskan_%28France%29_rear_view.jpg/1400px-Renault_Alaskan_%28France%29_rear_view.jpg",
+    interior: null,
+  },
+  [renaultKey("trafic-2015")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Green_2015_Renault_Trafic_dci_120_-_Front.jpg/1400px-Green_2015_Renault_Trafic_dci_120_-_Front.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Green_2015_Renault_Trafic_dci_120_-_Rear.jpg/1400px-Green_2015_Renault_Trafic_dci_120_-_Rear.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/2023-02-03_Renault_Trafic_Interior.jpg/1400px-2023-02-03_Renault_Trafic_Interior.jpg",
+  },
+  [renaultKey("master-2017")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Brocante_%C3%A0_Gif-sur-Yvette_le_21_mai_2017_-_22.jpg/1400px-Brocante_%C3%A0_Gif-sur-Yvette_le_21_mai_2017_-_22.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/3/32/Renault_master_rear.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Renault-master-mpv-interior-2-501394.jpg/1400px-Renault-master-mpv-interior-2-501394.jpg",
+  },
+  [renaultKey("wind-2011")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Renault_Wind_TCe_100_%282011%29_%2853335007808%29.jpg/1400px-Renault_Wind_TCe_100_%282011%29_%2853335007808%29.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Renault_Wind_Dynamique_TCe_100_rear_20100918.jpg/1400px-Renault_Wind_Dynamique_TCe_100_rear_20100918.jpg",
+    interior:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Renault_Wind_Gordini_%286147872702%29.jpg/1400px-Renault_Wind_Gordini_%286147872702%29.jpg",
+  },
+
+  [opelKey("corsa-2006")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/6/61/Opel_Corsa_C_1.2_Elegance_front_20100912.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/f/f9/Opel_Corsa_C_1.2_Elegance_rear_20100912.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/1/1b/Opel_Corsa_interior.JPG",
+  },
+  [opelKey("corsa-2014")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/e/e3/2018_Vauxhall_Corsa_Energy_AC_1.4_Front.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/4/42/Opel_Corsa_1.4_Turbo_ecoFLEX_Color_Edition_%28E%29_%E2%80%93_Heckansicht%2C_24._Oktober_2015%2C_M%C3%BCnster.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/9/9c/2018_Vauxhall_Corsa_Limited_Editon_Interior.jpg",
+  },
+  [opelKey("corsa-e-2020")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/e/e9/Opel_Corsa-e_at_IAA_2019_IMG_0738.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/b/b2/2019_Vauxhall_Corsa_SE_NAV_1.2_Rear.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/b/bd/2019_Vauxhall_Corsa_SRi_1.2_Interior.jpg",
+  },
+  [opelKey("astra-2007")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/c/c4/Opel_Astra_H_1.6_Twinport_front_20100509.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/5/58/Opel_Astra_H_1.6_Twinport_rear_20100509.jpg",
+    interior: "https://s1.cdn.autoevolution.com/images/gallery/OPEL-Astra-Sedan-3498_10.jpg",
+  },
+  [opelKey("astra-2016")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/4/42/Opel_Astra_1.6_CDTI_ecoFLEX_Edition_%28K%29_%E2%80%93_Frontansicht%2C_13._Oktober_2015%2C_D%C3%BCsseldorf.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/a/a4/Opel_Astra_1.6_CDTI_ecoFLEX_Edition_%28K%29_%E2%80%93_Heckansicht%2C_13._Oktober_2015%2C_D%C3%BCsseldorf.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/6/69/Opel_Astra_1.4_EDIT_ecoFLEX_Innovation_%28K%29_%E2%80%93_Innenraum%2C_10._Oktober_2015%2C_D%C3%BCsseldorf.jpg",
+  },
+  [opelKey("astra-sports-tourer-2021")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/0/0d/Opel_Astra_L_Sports_Tourer_Leonberg_2022_1X7A0417.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/2/2b/Opel_Astra_1.2_Turbo_Ultimate_%28L%29_%E2%80%93_h_13122024.jpg",
+    interior: "https://cdn.motor1.com/images/mgl/g403wg/s2/opel-astra-sports-tourer-2022-im-studio.jpg",
+  },
+  [opelKey("insignia-2008")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/2/29/Opel_Insignia_2.0_BiTurbo_CDTI_Sport_OPC_Line-Paket_%E2%80%93_Frontansicht%2C_3._April_2012%2C_Velbert.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/8/83/Opel_Insignia_CDTI_rear_20100926.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/6/6c/Opel_Insignia_Sportstourer_Edition_Pannacotta_Interieur.JPG",
+  },
+  [opelKey("insignia-2017")]: {
+    front:
+      "https://upload.wikimedia.org/wikipedia/commons/d/d4/Opel_Insignia_Grand_Sport_1.6_Diesel_Business_Innovation_%28B%29_%E2%80%93_Frontansicht%2C_5._Mai_2017%2C_D%C3%BCsseldorf.jpg",
+    rear:
+      "https://upload.wikimedia.org/wikipedia/commons/c/c8/Opel_Insignia_Grand_Sport_1.6_Diesel_Business_Innovation_%28B%29_%E2%80%93_Heckansicht%2C_5._Mai_2017%2C_D%C3%BCsseldorf.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/5/50/2018_Vauxhall_Insignia_SRi_Interior.jpg",
+  },
+  [opelKey("mokka-2013")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/5/51/Opel_Mokka_1.4_Turbo_ecoFLEX_Innovation_%E2%80%93_Frontansicht%2C_20._Oktober_2012%2C_Heiligenhaus.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/7/7a/Opel_Mokka_X_1.6_CDTI_ecoFLEX_4x4_Edition_%28Facelift%29_%E2%80%93_Heckansicht%2C_23._Dezember_2016%2C_D%C3%BCsseldorf.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/c/cf/Opel_Mokka_1.4_Turbo_ecoFLEX_Innovation_%E2%80%93_Innenraum%2C_13._Oktober_2015%2C_D%C3%BCsseldorf.jpg",
+  },
+  [opelKey("mokka-e-2022")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/c/c9/2021_Opel_Mokka-e_front_view.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/1/1f/Opel_Mokka_B_IMG_4458.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/a/a6/Opel-mokka-gs-line-innen-1.jpg",
+  },
+  [opelKey("crossland-2018")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/d/d2/Opel_Crossland_IMG_4883.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/5/5d/Opel_Crossland_IMG_4885.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/6/6d/Vauxhall_Crossland_X_Interior.jpg",
+  },
+  [opelKey("grandland-x-2019")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/6/6c/2018_Vauxhall_Grandland_X_Elite_Nav_Turbo_Diesel_1.6_Front.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/8/83/Opel_Grandland_X_IMG_0383.jpg",
+    interior: "https://media.whatcar.com/wc-image/vauxhall-grandland-x-2019-2826d.jpg",
+  },
+  [opelKey("zafira-tourer-2012")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/a/a0/Opel_Zafira_Tourer_1.4_Turbo_ecoFLEX_Edition_%28C%29_%E2%80%93_Frontansicht%2C_15._September_2012%2C_D%C3%BCsseldorf.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/5/53/Opel_Zafira_Tourer_1.4_Turbo_ecoFLEX_Edition_%28C%29_%E2%80%93_Heckansicht%2C_15._September_2012%2C_D%C3%BCsseldorf.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/d/d4/2017_Vauxhall_Zafira_Tourer_Elite_Nav_Turbo_-_1364cc_1.4_%28140PS%29_Petrol_-_Mineral_Black_-_05-2024%2C_Interior.jpg",
+  },
+  [opelKey("zafira-life-2021")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/0/0e/Opel_Zafira_Life_IMG_3458.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/3/39/Opel_Zafira_Life_%28Facelift%29_DSC_6023.jpg",
+    interior: "https://i.ytimg.com/vi/HzD4fHjTa3U/maxresdefault.jpg",
+  },
+  [opelKey("astra-gtc-2013")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/2/29/Opel_Astra_GTC_%28H%2C_Facelift%29_%E2%80%93_Frontansicht%2C_28._Mai_2011%2C_Ratingen.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/f/f4/Opel_Astra_GTC_%28H%2C_Facelift%29_%E2%80%93_Heckansicht%2C_28._Mai_2011%2C_Ratingen.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/9/92/Astra_J_Innenraum.jpg",
+  },
+  [opelKey("monterey-2007")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/5/52/Opel_Monterey_RS.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/0/08/2001-2003_Holden_Monterey_%28UBS%29_wagon_02.jpg",
+    interior: "https://cms-assets.autoscout24.com/uaddx06iwzdz/17VdggsjGrDnaYmC2GdKAS/12b8cd6b0ea16879dbf80a130a858784/opel-monterey-interior.jpeg?w=1100&fit=fill",
+  },
+  [opelKey("tigra-2004")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/c/cf/Opel_Tigra_Twin_Top_20090510_front.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/e/e4/Opel_Tigra_Twin_Top_20090510_rear.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/c/c1/Tigra_2x2_interior_layout.jpg",
+  },
+  [opelKey("agila-2008")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/a/af/Opel_Agila_1.2_ecoFLEX_Edition_%28B%29_%E2%80%93_Frontansicht%2C_7._April_2011%2C_Velbert.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/b/b9/Opel_Agila_1.2_ecoFLEX_Edition_%28B%29_%E2%80%93_Heckansicht%2C_7._April_2011%2C_Velbert.jpg",
+    interior: "https://imagenes.km77.com/fotos/bbtcontent/clippingnew/KM7KPH20091120_0164/full.jpg",
+  },
+  [opelKey("karl-rocks-2017")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/d/d4/2018_Vauxhall_Viva_Rocks_1.0_Front_%281%29.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/4/40/2018_Vauxhall_Viva_Rocks_1.0_Rear_%281%29.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/0/0a/Opel_Karl_1.0_ecoFLEX_Exklusiv_%E2%80%93_Innenraum%2C_28._Oktober_2015%2C_D%C3%BCsseldorf.jpg",
+  },
+  [opelKey("adam-2015")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Opel_Adam_1.4_Slam_%E2%80%93_Frontansicht%2C_15._Januar_2014%2C_D%C3%BCsseldorf.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/5/5a/Opel_Adam_1.4_Glam_%E2%80%93_Heckansicht%2C_15._Januar_2014%2C_D%C3%BCsseldorf.jpg",
+    interior: "https://motordigital.com/files/2012/07/Opel-Adam-interior.jpg",
+  },
+  [opelKey("antara-2011")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/4/4e/Opel_Antara_2.4_4x4_Design_Edition_%28Facelift%29_%E2%80%93_Frontansicht%2C_29._Oktober_2011%2C_D%C3%BCsseldorf.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/3/3d/Opel_Antara_2.4_4x4_Design_Edition_%28Facelift%29_%E2%80%93_Heckansicht%2C_29._Oktober_2011%2C_D%C3%BCsseldorf.jpg",
+    interior: "https://s1.cdn.autoevolution.com/images/gallery/OPEL-Antara-1037_23.jpg",
+  },
+  [opelKey("insignia-gsi-2018")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/7/74/Opel_Insignia_B_GSi_Classic-Days_2022_DSC_0288.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/3/31/Opel_Insignia_B_GSi_Classic-Days_2022_DSC_0287.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/5/50/2018_Vauxhall_Insignia_SRi_Interior.jpg",
+  },
+  [opelKey("astra-opc-2014")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/0/05/2013_Opel_Astra_%28AS%29_OPC_3-door_hatchback_%2826608054501%29.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/f/f8/2013_Opel_Astra_%28AS%29_OPC_3-door_hatchback_%2826608068581%29.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/6/69/Opel_Astra_1.4_EDIT_ecoFLEX_Innovation_%28K%29_%E2%80%93_Innenraum%2C_10._Oktober_2015%2C_D%C3%BCsseldorf.jpg",
+  },
+  [opelKey("insignia-grand-sport-2020")]: {
+    front: "https://upload.wikimedia.org/wikipedia/commons/4/44/2020_Vauxhall_Insignia_SE_NAV_CDTi_facelift_1.5_Front.jpg",
+    rear: "https://upload.wikimedia.org/wikipedia/commons/9/90/Opel_Insignia_B_FL_IMG_4456.jpg",
+    interior: "https://upload.wikimedia.org/wikipedia/commons/5/50/2018_Vauxhall_Insignia_SRi_Interior.jpg",
+  },
+
 };
 
 manualVehicleImages[buildManualImageKey("Ferrari")] = {
@@ -1106,4 +1550,16 @@ manualVehicleImages[buildManualImageKey("Bentley")] = {
 
 manualVehicleImages[buildManualImageKey("Mercedes-Benz")] = {
   ...manualVehicleImages[mercedesKey("c300-2020")],
+};
+
+manualVehicleImages[buildManualImageKey("Mitsubishi")] = {
+  ...manualVehicleImages[mitsubishiKey("outlander-2021")],
+};
+
+manualVehicleImages[buildManualImageKey("Renault")] = {
+  ...manualVehicleImages[renaultKey("clio-2019")],
+};
+
+manualVehicleImages[buildManualImageKey("Opel")] = {
+  ...manualVehicleImages[opelKey("astra-2016")],
 };
